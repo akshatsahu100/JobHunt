@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Hunt Dashboard — iOS Engineer & Product Manager</title>
+<style>
+  :root {
+    --bg: #0f0f13;
+    --surface: #1a1a24;
+    --surface2: #22223a;
+    --border: #2e2e4a;
+    --accent: #6c63ff;
+    --accent2: #00d2ff;
+    --green: #00e676;
+    --gold: #ffd600;
+    --red: #ff5252;
+    --text: #e8e8f0;
+    --text2: #9999b0;
+    --text3: #66667a;
+    --header-bg: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    --card-hover-shadow: rgba(108, 99, 255, 0.12);
+  }
+  html.light {
+    --bg: #f0f2f5;
+    --surface: #ffffff;
+    --surface2: #f0f1f5;
+    --border: #dde0e6;
+    --accent: #5046e5;
+    --accent2: #0095cc;
+    --green: #0a8f4f;
+    --gold: #b8960c;
+    --red: #d32f2f;
+    --text: #1a1a2e;
+    --text2: #555770;
+    --text3: #8888a0;
+    --header-bg: linear-gradient(135deg, #e8eaf6 0%, #e3f2fd 50%, #e1f5fe 100%);
+    --card-hover-shadow: rgba(80, 70, 229, 0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .header {
+    background: var(--header-bg);
+    padding: 32px 24px 24px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-top {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header .subtitle {
+    color: var(--text2);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .current-info {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .current-info .label { color: var(--text3); }
+  .current-info .value { color: var(--gold); font-weight: 600; }
+  .controls {
+    max-width: 1400px;
+    margin: 16px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .search-box {
+    flex: 1;
+    min-width: 220px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-box:focus { border-color: var(--accent); }
+  .search-box::placeholder { color: var(--text3); }
+  select, .filter-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  select:focus, .filter-btn:focus { border-color: var(--accent); }
+  .filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .filter-btn.active {
+    border-color: var(--accent);
+    background: rgba(108, 99, 255, 0.15);
+    color: var(--accent);
+  }
+  .stats-bar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 18px;
+    min-width: 140px;
+    flex: 1;
+    text-align: center;
+  }
+  .stat-card .stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent2);
+  }
+  .stat-card .stat-label {
+    font-size: 11px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+  }
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+  }
+  .section-label {
+    font-size: 13px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0 12px;
+    padding-left: 4px;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    transition: transform 0.15s, border-color 0.2s, box-shadow 0.2s;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 30px var(--card-hover-shadow);
+  }
+  .card-rank {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 11px;
+    color: var(--text3);
+    background: var(--surface2);
+    padding: 2px 8px;
+    border-radius: 6px;
+  }
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .card-title { font-size: 18px; font-weight: 700; line-height: 1.3; }
+  .card-hq { font-size: 12px; color: var(--text3); margin-top: 2px; }
+  .card-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .badge {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  .badge-category { background: rgba(108,99,255,0.15); color: var(--accent); }
+  .badge-mode { background: rgba(0,210,255,0.12); color: var(--accent2); }
+  .badge-currency-inr { background: rgba(0,230,118,0.12); color: var(--green); }
+  .badge-currency-usd { background: rgba(255,214,0,0.15); color: var(--gold); }
+  .badge-currency-eur { background: rgba(255,82,82,0.12); color: var(--red); }
+  .badge-rsu { background: rgba(0,230,118,0.1); color: var(--green); }
+  .card-key-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+    background: var(--surface2);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .key-item {}
+  .key-label {
+    font-size: 10px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  .key-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .key-value.green { color: var(--green); }
+  .key-value.accent { color: var(--accent2); }
+  .key-value.gold { color: var(--gold); }
+  .key-value-sub {
+    font-size: 11px;
+    color: var(--text3);
+    margin-top: 1px;
+  }
+  .card-role {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+  .card-role-level {
+    font-size: 12px;
+    color: var(--text2);
+    margin-bottom: 14px;
+  }
+  .card-locations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  .loc-tag {
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--surface2);
+    color: var(--text2);
+  }
+  .loc-tag.preferred {
+    background: rgba(255,214,0,0.12);
+    color: var(--gold);
+    border: 1px solid rgba(255,214,0,0.25);
+  }
+  .card-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  .tech-tag {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(108,99,255,0.08);
+    color: var(--text2);
+  }
+  .card-notes {
+    font-size: 12px;
+    color: var(--text3);
+    line-height: 1.5;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-rating {
+    font-size: 12px;
+    color: var(--text3);
+  }
+  .card-rating .stars { color: var(--gold); }
+  .card-link {
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+  .card-link:hover { color: var(--accent2); }
+  .no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text3);
+    font-size: 16px;
+  }
+
+  /* Mobile filter toggle bar */
+  .mobile-filter-bar {
+    display: none;
+    gap: 8px;
+    align-items: center;
+    margin-top: 0;
+  }
+  .filter-toggle-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    justify-content: center;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .filter-toggle-btn:hover { border-color: var(--accent); }
+  .filter-toggle-btn.has-filters {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .filter-count-badge {
+    background: var(--accent);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 10px;
+    min-width: 18px;
+    text-align: center;
+  }
+
+  /* Filter drawer (mobile bottom sheet) */
+  .filter-drawer-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 200;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .filter-drawer-overlay.open { opacity: 1; }
+  .filter-drawer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-radius: 16px 16px 0 0;
+    padding: 0 16px 24px;
+    z-index: 201;
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+    max-height: 80vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .filter-drawer.open { transform: translateY(0); }
+  .filter-drawer-handle {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0 8px;
+    position: sticky;
+    top: 0;
+    background: var(--surface);
+    z-index: 1;
+  }
+  .filter-drawer-handle::after {
+    content: '';
+    width: 36px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+  }
+  .filter-drawer-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filter-drawer-close {
+    background: none;
+    border: none;
+    color: var(--text3);
+    font-size: 22px;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+  }
+  .filter-drawer .filter-group {
+    margin-bottom: 16px;
+  }
+  .filter-drawer .filter-group-label {
+    font-size: 11px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .filter-drawer select,
+  .filter-drawer .filter-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 14px;
+    margin-bottom: 0;
+  }
+  .filter-drawer .drawer-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .filter-drawer .drawer-apply-btn {
+    flex: 1;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .filter-drawer .drawer-apply-btn:hover { opacity: 0.9; }
+  .filter-drawer .drawer-reset-btn {
+    background: rgba(255,82,82,0.1);
+    border: 1px solid rgba(255,82,82,0.25);
+    border-radius: 8px;
+    padding: 14px 18px;
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* Preferred locations popup (desktop) */
+  .pref-loc-popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    min-width: 220px;
+    z-index: 150;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  }
+  .pref-loc-popup.show { display: block; }
+  .pref-loc-popup-title {
+    font-size: 11px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .pref-loc-popup-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .pref-loc-chip {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: rgba(255,214,0,0.12);
+    color: var(--gold);
+    border: 1px solid rgba(255,214,0,0.25);
+    font-weight: 500;
+  }
+  .pref-loc-wrapper {
+    position: relative;
+  }
+  /* Preferred locations mobile popup */
+  .pref-loc-mobile-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px 16px 0 0;
+    padding: 16px;
+    z-index: 203;
+    box-shadow: 0 -8px 30px rgba(0,0,0,0.25);
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  .pref-loc-mobile-popup.open { display: block; transform: translateY(0); }
+
+  .theme-toggle {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    transition: border-color 0.2s;
+  }
+  .theme-toggle:hover { border-color: var(--accent); }
+  .reset-btn {
+    background: rgba(255,82,82,0.1);
+    border: 1px solid rgba(255,82,82,0.25);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--red);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s;
+  }
+  .reset-btn:hover { background: rgba(255,82,82,0.18); }
+  .reset-btn.visible { display: flex; }
+  .role-switcher {
+    background: var(--surface);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 18px;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    min-width: 200px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236c63ff' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .role-switcher:hover {
+    background: rgba(108, 99, 255, 0.08);
+  }
+  .role-switcher option {
+    background: var(--surface);
+    color: var(--text);
+  }
+
+  /* Tablet */
+  @media (max-width: 900px) {
+    .card-grid { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .header {
+      padding: 16px 12px 12px;
+      position: sticky;
+      top: 0;
+    }
+    .header-top {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .header h1 { font-size: 18px; }
+    .header .subtitle { font-size: 11px; line-height: 1.4; }
+    .header-top > div:last-child {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .role-switcher {
+      flex: 1;
+      min-width: 0;
+      font-size: 13px;
+      padding: 8px 28px 8px 12px;
+    }
+    /* Hide desktop filters, show mobile bar */
+    .desktop-filters { display: none !important; }
+    .mobile-filter-bar { display: flex; }
+    .controls {
+      flex-direction: column;
+      gap: 8px;
+    }
+    .search-box {
+      width: 100%;
+      min-width: 100%;
+      font-size: 16px;
+    }
+    .stats-bar {
+      padding: 10px 12px;
+      gap: 8px;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .stats-bar::-webkit-scrollbar { display: none; }
+    .stat-card {
+      min-width: 100px;
+      flex: 0 0 auto;
+      padding: 10px 12px;
+    }
+    .stat-card .stat-value { font-size: 18px; }
+    .stat-card .stat-label { font-size: 9px; }
+    .main {
+      padding: 0 12px 32px;
+    }
+    .section-label {
+      font-size: 12px;
+      margin: 14px 0 10px;
+    }
+    .card-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .card {
+      padding: 14px;
+      border-radius: 12px;
+    }
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .card-header { gap: 10px; margin-bottom: 10px; }
+    .card-title { font-size: 16px; }
+    .card-hq { font-size: 11px; }
+    .card-rank { font-size: 10px; top: 10px; right: 10px; }
+    .card-role { font-size: 13px; }
+    .card-role-level { font-size: 11px; margin-bottom: 10px; }
+    .card-key-info {
+      padding: 10px 12px;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .key-value { font-size: 14px; }
+    .key-value-sub { font-size: 10px; }
+    .card-badges { gap: 5px; margin-bottom: 10px; }
+    .badge { font-size: 10px; padding: 2px 6px; }
+    .card-locations { gap: 4px; margin-bottom: 8px; }
+    .loc-tag { font-size: 10px; padding: 2px 6px; }
+    .card-tech { gap: 3px; margin-bottom: 8px; }
+    .tech-tag { font-size: 9px; }
+    .card-notes {
+      font-size: 11px;
+      line-height: 1.45;
+      padding-top: 8px;
+      margin-bottom: 8px;
+    }
+    .card-footer {
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-start;
+    }
+    .card-rating { font-size: 11px; }
+    .card-link { font-size: 12px; }
+    .no-results { padding: 40px 16px; font-size: 14px; }
+    .current-info {
+      padding: 8px 12px;
+      font-size: 12px;
+      gap: 8px;
+    }
+  }
+
+  /* Small phones */
+  @media (max-width: 380px) {
+    .header h1 { font-size: 16px; }
+    .header .subtitle { font-size: 10px; }
+    .card-key-info { grid-template-columns: 1fr; }
+    .stat-card { min-width: 85px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div>
+      <h1 id="dashboardTitle">iOS Engineer Job Hunt Dashboard</h1>
+      <div class="subtitle" id="dashboardSubtitle">Companies paying ₹40 LPA+ base | India + Remote (USD/EUR) roles | Data sourced from Levels.fyi, Glassdoor, Arc.dev</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+      <select class="role-switcher" id="roleSwitcher" onchange="switchRole()">
+        <option value="ios">🍎 iOS Engineer</option>
+        <option value="pm">📊 Product Manager</option>
+      </select>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle light/dark mode">☀️</button>
+    </div>
+  </div>
+  <div class="controls">
+    <input type="text" class="search-box" id="searchBox" placeholder="Search company, role, tech stack, location, notes...">
+    <!-- Desktop filters (hidden on mobile via CSS) -->
+    <div class="desktop-filters" style="display:contents;">
+      <select id="sortBy">
+        <option value="rank">Sort: Rank</option>
+        <option value="salary-desc">Sort: Base Salary (High→Low)</option>
+        <option value="salary-asc">Sort: Base Salary (Low→High)</option>
+        <option value="company">Sort: Company (A→Z)</option>
+        <option value="rating">Sort: Glassdoor Rating</option>
+      </select>
+      <select id="filterCurrency">
+        <option value="all">All Currencies</option>
+        <option value="INR">₹ INR (India)</option>
+        <option value="USD">$ USD (US Remote)</option>
+        <option value="EUR">€ EUR (EU Remote)</option>
+      </select>
+      <select id="filterWorkMode">
+        <option value="all">All Work Modes</option>
+        <option value="remote">Fully Remote / WFH</option>
+        <option value="hybrid">Hybrid</option>
+        <option value="office">Office</option>
+      </select>
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="Big Tech">Big Tech (FAANG+)</option>
+        <option value="Finance">Finance / Trading</option>
+        <option value="SaaS">SaaS / Product</option>
+        <option value="Fintech">Fintech</option>
+        <option value="E-Commerce">E-Commerce</option>
+        <option value="Remote Platform">Remote Platforms</option>
+        <option value="Startup">Indian Startups</option>
+      </select>
+      <div class="pref-loc-wrapper">
+        <button class="filter-btn" id="preferredLocationBtn" onclick="togglePreferredLocation()" onmouseenter="showPrefPopup()" onmouseleave="hidePrefPopup()">
+          📍 Preferred Locations Only
+        </button>
+        <div class="pref-loc-popup" id="prefLocPopup">
+          <div class="pref-loc-popup-title">Preferred Locations</div>
+          <div class="pref-loc-popup-list" id="prefLocList"></div>
+        </div>
+      </div>
+      <button class="filter-btn" id="rsuBtn" onclick="toggleRSU()">
+        📈 Has RSUs/ESOPs
+      </button>
+      <button class="reset-btn" id="resetBtn" onclick="resetFilters()">
+        ✕ Reset All Filters
+      </button>
+    </div>
+    <!-- Mobile: compact filter bar -->
+    <div class="mobile-filter-bar" id="mobileFilterBar">
+      <button class="filter-toggle-btn" id="filterToggleBtn" onclick="openFilterDrawer()">
+        ⚙️ Filters &amp; Sort <span class="filter-count-badge" id="filterCountBadge" style="display:none;">0</span>
+      </button>
+      <button class="filter-btn" id="prefLocMobileBtn" onclick="togglePrefLocMobilePopup()" style="flex:0 0 auto;padding:10px 12px;">
+        📍 Locations
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile filter drawer (bottom sheet) -->
+<div class="filter-drawer-overlay" id="filterDrawerOverlay" onclick="closeFilterDrawer()"></div>
+<div class="filter-drawer" id="filterDrawer">
+  <div class="filter-drawer-handle"></div>
+  <div class="filter-drawer-title">
+    Filters &amp; Sort
+    <button class="filter-drawer-close" onclick="closeFilterDrawer()">&times;</button>
+  </div>
+  <div class="filter-group">
+    <div class="filter-group-label">Sort By</div>
+    <select id="drawerSortBy">
+      <option value="rank">Rank</option>
+      <option value="salary-desc">Base Salary (High→Low)</option>
+      <option value="salary-asc">Base Salary (Low→High)</option>
+      <option value="company">Company (A→Z)</option>
+      <option value="rating">Glassdoor Rating</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <div class="filter-group-label">Currency</div>
+    <select id="drawerCurrency">
+      <option value="all">All Currencies</option>
+      <option value="INR">₹ INR (India)</option>
+      <option value="USD">$ USD (US Remote)</option>
+      <option value="EUR">€ EUR (EU Remote)</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <div class="filter-group-label">Work Mode</div>
+    <select id="drawerWorkMode">
+      <option value="all">All Work Modes</option>
+      <option value="remote">Fully Remote / WFH</option>
+      <option value="hybrid">Hybrid</option>
+      <option value="office">Office</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <div class="filter-group-label">Category</div>
+    <select id="drawerCategory">
+      <option value="all">All Categories</option>
+      <option value="Big Tech">Big Tech (FAANG+)</option>
+      <option value="Finance">Finance / Trading</option>
+      <option value="SaaS">SaaS / Product</option>
+      <option value="Fintech">Fintech</option>
+      <option value="E-Commerce">E-Commerce</option>
+      <option value="Remote Platform">Remote Platforms</option>
+      <option value="Startup">Indian Startups</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <div class="filter-group-label">Toggles</div>
+    <button class="filter-btn" id="drawerPrefBtn" onclick="togglePreferredLocation();syncDrawerToggles();" style="width:100%;margin-bottom:8px;justify-content:center;">
+      📍 Preferred Locations Only
+    </button>
+    <button class="filter-btn" id="drawerRsuBtn" onclick="toggleRSU();syncDrawerToggles();" style="width:100%;justify-content:center;">
+      📈 Has RSUs/ESOPs
+    </button>
+  </div>
+  <div class="drawer-actions">
+    <button class="drawer-reset-btn" onclick="resetFilters();closeFilterDrawer();">✕ Reset</button>
+    <button class="drawer-apply-btn" onclick="applyDrawerFilters()">Apply Filters</button>
+  </div>
+</div>
+
+<!-- Mobile preferred locations popup -->
+<div class="filter-drawer-overlay" id="prefLocOverlay" onclick="closePrefLocMobilePopup()" style="z-index:202;"></div>
+<div class="pref-loc-mobile-popup" id="prefLocMobilePopup">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+    <span style="font-size:15px;font-weight:700;color:var(--text);">📍 Preferred Locations</span>
+    <button class="filter-drawer-close" onclick="closePrefLocMobilePopup()" style="font-size:18px;padding:2px 6px;">&times;</button>
+  </div>
+  <div class="pref-loc-popup-list" id="prefLocMobileList" style="margin-bottom:14px;"></div>
+  <button class="filter-btn" id="prefLocMobileFilterBtn" onclick="togglePreferredLocation();updatePrefLocUI();" style="width:100%;justify-content:center;font-size:14px;padding:12px;">
+    📍 Show Preferred Only
+  </button>
+</div>
+<div class="stats-bar" id="statsBar"></div>
+
+<div class="main">
+  <div class="section-label" id="sectionLabel">All Companies</div>
+  <div class="card-grid" id="cardGrid"></div>
+  <div class="no-results" id="noResults" style="display:none;">No companies match your filters. Try broadening your search.</div>
+</div>
+
+<script src="companies.js"></script>
+<script src="pm_companies.js"></script>
+<script>
+const ROLE_CONFIG = {
+  ios: {
+    data: COMPANIES_DATA,
+    title: 'iOS Engineer Job Hunt Dashboard',
+    subtitle: 'Companies paying ₹40 LPA+ base | India + Remote (USD/EUR) roles | Data sourced from Levels.fyi, Glassdoor, Arc.dev',
+    preferredLocations: ['Pune', 'Gurugram', 'Hyderabad', 'WFH', 'Remote'],
+    currentBase: 35
+  },
+  pm: {
+    data: PM_COMPANIES_DATA,
+    title: 'Product Manager Job Hunt Dashboard',
+    subtitle: 'Companies paying ₹18 LPA+ base | 4 yrs exp PM roles | Preferred: Pune, Hyderabad, Gurugram, Delhi NCR, Remote',
+    preferredLocations: ['Pune', 'Hyderabad', 'Gurugram', 'Noida', 'Delhi', 'WFH', 'Remote'],
+    currentBase: 0
+  }
+};
+
+let currentRole = localStorage.getItem('preferredRole') || 'ios';
+if (!ROLE_CONFIG[currentRole]) currentRole = 'ios';
+let companies = ROLE_CONFIG[currentRole].data;
+let preferredOnly = false;
+let rsuOnly = false;
+
+// Set dropdown + header to match saved role
+(function initRole() {
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('roleSwitcher').value = currentRole;
+    document.getElementById('dashboardTitle').textContent = ROLE_CONFIG[currentRole].title;
+    document.getElementById('dashboardSubtitle').textContent = ROLE_CONFIG[currentRole].subtitle;
+  });
+})();
+
+// Theme
+function toggleTheme() {
+  const html = document.documentElement;
+  const isLight = html.classList.toggle('light');
+  document.getElementById('themeToggle').textContent = isLight ? '🌙' : '☀️';
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+}
+(function initTheme() {
+  if (localStorage.getItem('theme') === 'light') {
+    document.documentElement.classList.add('light');
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('themeToggle').textContent = '🌙';
+    });
+  }
+})();
+
+// Reset filters
+function resetFilters() {
+  document.getElementById('searchBox').value = '';
+  document.getElementById('sortBy').value = 'rank';
+  document.getElementById('filterCurrency').value = 'all';
+  document.getElementById('filterWorkMode').value = 'all';
+  document.getElementById('filterCategory').value = 'all';
+  preferredOnly = false;
+  rsuOnly = false;
+  document.getElementById('preferredLocationBtn').classList.remove('active');
+  document.getElementById('rsuBtn').classList.remove('active');
+  render();
+}
+
+function updateResetBtn() {
+  const f = getFilters();
+  const hasFilters = f.search || f.currency !== 'all' || f.workMode !== 'all' || f.category !== 'all' || f.sortBy !== 'rank' || preferredOnly || rsuOnly;
+  document.getElementById('resetBtn').classList.toggle('visible', hasFilters);
+}
+
+function getFilters() {
+  const search = document.getElementById('searchBox').value.toLowerCase().trim();
+  const sortBy = document.getElementById('sortBy').value;
+  const currency = document.getElementById('filterCurrency').value;
+  const workMode = document.getElementById('filterWorkMode').value;
+  const category = document.getElementById('filterCategory').value;
+  return { search, sortBy, currency, workMode, category };
+}
+
+function switchRole() {
+  currentRole = document.getElementById('roleSwitcher').value;
+  localStorage.setItem('preferredRole', currentRole);
+  companies = ROLE_CONFIG[currentRole].data;
+  document.getElementById('dashboardTitle').textContent = ROLE_CONFIG[currentRole].title;
+  document.getElementById('dashboardSubtitle').textContent = ROLE_CONFIG[currentRole].subtitle;
+  resetFilters();
+}
+
+function matchesPreferred(locations) {
+  const prefs = ROLE_CONFIG[currentRole].preferredLocations;
+  return locations.some(l => 
+    prefs.some(p => l.toLowerCase().includes(p.toLowerCase()))
+  );
+}
+
+function isPreferred(loc) {
+  const prefs = ROLE_CONFIG[currentRole].preferredLocations;
+  return prefs.some(p => loc.toLowerCase().includes(p.toLowerCase()));
+}
+
+function matchesWorkMode(company, mode) {
+  if (mode === 'all') return true;
+  const wm = company.workMode.toLowerCase();
+  if (mode === 'remote') return wm.includes('remote') || wm.includes('wfh');
+  if (mode === 'hybrid') return wm.includes('hybrid');
+  if (mode === 'office') return wm.includes('office') && !wm.includes('remote');
+  return true;
+}
+
+function matchesCategory(company, cat) {
+  if (cat === 'all') return true;
+  const c = company.category.toLowerCase();
+  const t = company.type.toLowerCase();
+  if (cat === 'Big Tech') return c.includes('big tech') || c.includes('faang');
+  if (cat === 'Finance') return c.includes('finance') || c.includes('trading') || c.includes('hedge') || c.includes('investment');
+  if (cat === 'SaaS') return c.includes('saas') || c.includes('enterprise') || c.includes('productivity');
+  if (cat === 'Fintech') return c.includes('fintech') || c.includes('payment');
+  if (cat === 'E-Commerce') return c.includes('commerce') || c.includes('retail');
+  if (cat === 'Remote Platform') return c.includes('platform') || c.includes('marketplace') || c.includes('freelance');
+  if (cat === 'Startup') return t.includes('indian startup') || t.includes('indian company');
+  return true;
+}
+
+function matchesCurrency(company, curr) {
+  if (curr === 'all') return true;
+  return company.currency.includes(curr);
+}
+
+function baseLPANormalized(company) {
+  // For INR, use baseSalaryLPA directly. For USD/EUR, already set.
+  return company.baseSalaryLPA;
+}
+
+function sortCompanies(arr, sortBy) {
+  const sorted = [...arr];
+  switch(sortBy) {
+    case 'salary-desc': sorted.sort((a,b) => b.baseSalaryLPA - a.baseSalaryLPA); break;
+    case 'salary-asc': sorted.sort((a,b) => a.baseSalaryLPA - b.baseSalaryLPA); break;
+    case 'company': sorted.sort((a,b) => a.company.localeCompare(b.company)); break;
+    case 'rating': sorted.sort((a,b) => b.glassdoorRating - a.glassdoorRating); break;
+    default: sorted.sort((a,b) => a.rank - b.rank);
+  }
+  return sorted;
+}
+
+function currencyBadgeClass(currency) {
+  if (currency.includes('USD')) return 'badge-currency-usd';
+  if (currency.includes('EUR')) return 'badge-currency-eur';
+  return 'badge-currency-inr';
+}
+
+function renderStars(rating) {
+  const full = Math.floor(rating);
+  const half = rating - full >= 0.3;
+  let s = '';
+  for (let i = 0; i < full; i++) s += '★';
+  if (half) s += '½';
+  return s;
+}
+
+function renderCard(c) {
+  const locsHTML = c.locations.map(l => 
+    `<span class="loc-tag ${isPreferred(l) ? 'preferred' : ''}">${l}</span>`
+  ).join('');
+
+  const skills = c.techStack || c.skillsRequired || [];
+  const techHTML = skills.slice(0, 6).map(t => `<span class="tech-tag">${t}</span>`).join('') +
+    (skills.length > 6 ? `<span class="tech-tag">+${skills.length - 6} more</span>` : '');
+
+  return `
+    <div class="card">
+      <span class="card-rank">#${c.rank}</span>
+      <div class="card-header">
+        <div class="card-icon">${c.company.charAt(0)}</div>
+        <div>
+          <div class="card-title">${c.company}</div>
+          <div class="card-hq">${c.hq} · ${c.type}</div>
+        </div>
+      </div>
+      <div class="card-role">${c.role}</div>
+      <div class="card-role-level">Level: ${c.levelEquivalent} · Exp: ${c.yearsExpNeeded} yrs</div>
+      <div class="card-key-info">
+        <div class="key-item">
+          <div class="key-label">Base Salary</div>
+          <div class="key-value green">${c.currency === 'INR' ? '₹' + c.baseSalaryLPA + ' LPA' : c.baseSalaryRange}</div>
+          <div class="key-value-sub">Range: ${c.baseSalaryRange}</div>
+        </div>
+        <div class="key-item">
+          <div class="key-label">Total Compensation</div>
+          <div class="key-value accent">${c.totalCompRange}</div>
+          <div class="key-value-sub">${c.stocksRSU ? 'Includes RSUs/ESOPs' : 'Base + Bonus'}</div>
+        </div>
+      </div>
+      <div class="card-badges">
+        <span class="badge badge-category">${c.category}</span>
+        <span class="badge badge-mode">${c.workMode}</span>
+        <span class="badge ${currencyBadgeClass(c.currency)}">${c.currency}</span>
+        ${c.stocksRSU ? '<span class="badge badge-rsu">RSUs/ESOPs</span>' : ''}
+      </div>
+      <div class="card-locations">${locsHTML}</div>
+      <div class="card-tech">${techHTML}</div>
+      <div class="card-notes">${c.notes}</div>
+      <div class="card-footer">
+        <div class="card-rating"><span class="stars">${renderStars(c.glassdoorRating)}</span> ${c.glassdoorRating} Glassdoor · <span style="color:var(--text3)">${c.source}</span></div>
+        <a class="card-link" href="${c.careerPage}" target="_blank" rel="noopener noreferrer">Careers →</a>
+      </div>
+    </div>
+  `;
+}
+
+function render() {
+  updateResetBtn();
+  const f = getFilters();
+  let filtered = companies.filter(c => {
+    if (f.search) {
+      const skills = c.techStack || c.skillsRequired || [];
+      const haystack = [c.company, c.role, c.category, c.type, c.hq, c.notes, c.levelEquivalent, ...c.locations, ...skills, c.workMode, c.currency].join(' ').toLowerCase();
+      if (!haystack.includes(f.search)) return false;
+    }
+    if (!matchesCurrency(c, f.currency)) return false;
+    if (!matchesWorkMode(c, f.workMode)) return false;
+    if (!matchesCategory(c, f.category)) return false;
+    if (preferredOnly && !matchesPreferred(c.locations)) return false;
+    if (rsuOnly && !c.stocksRSU) return false;
+    return true;
+  });
+
+  filtered = sortCompanies(filtered, f.sortBy);
+
+  // Stats
+  const inrCompanies = filtered.filter(c => c.currency === 'INR');
+  const remoteCompanies = filtered.filter(c => c.currency !== 'INR');
+  const avgBase = inrCompanies.length ? Math.round(inrCompanies.reduce((s,c) => s + c.baseSalaryLPA, 0) / inrCompanies.length) : 0;
+  const maxBase = inrCompanies.length ? Math.max(...inrCompanies.map(c => c.baseSalaryLPA)) : 0;
+  const withRSU = filtered.filter(c => c.stocksRSU).length;
+  const prefCount = filtered.filter(c => matchesPreferred(c.locations)).length;
+
+  document.getElementById('statsBar').innerHTML = `
+    <div class="stat-card"><div class="stat-value">${filtered.length}</div><div class="stat-label">Companies Shown</div></div>
+    <div class="stat-card"><div class="stat-value">${inrCompanies.length}</div><div class="stat-label">India Office</div></div>
+    <div class="stat-card"><div class="stat-value">${remoteCompanies.length}</div><div class="stat-label">Remote (USD/EUR)</div></div>
+    <div class="stat-card"><div class="stat-value">₹${avgBase}L</div><div class="stat-label">Avg Base (INR)</div></div>
+    <div class="stat-card"><div class="stat-value">₹${maxBase}L</div><div class="stat-label">Max Base (INR)</div></div>
+    <div class="stat-card"><div class="stat-value">${withRSU}</div><div class="stat-label">With RSUs/ESOPs</div></div>
+    <div class="stat-card"><div class="stat-value">${prefCount}</div><div class="stat-label">Preferred Locations</div></div>
+  `;
+
+  const grid = document.getElementById('cardGrid');
+  const noResults = document.getElementById('noResults');
+  const label = document.getElementById('sectionLabel');
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '';
+    noResults.style.display = 'block';
+    label.textContent = 'No Results';
+  } else {
+    noResults.style.display = 'none';
+    label.textContent = `${filtered.length} Companies · Sorted by ${document.getElementById('sortBy').selectedOptions[0].text}`;
+    grid.innerHTML = filtered.map(renderCard).join('');
+  }
+}
+
+function togglePreferredLocation() {
+  preferredOnly = !preferredOnly;
+  document.getElementById('preferredLocationBtn').classList.toggle('active', preferredOnly);
+  render();
+}
+
+function toggleRSU() {
+  rsuOnly = !rsuOnly;
+  document.getElementById('rsuBtn').classList.toggle('active', rsuOnly);
+  render();
+}
+
+// Debounce search
+let searchTimeout;
+document.getElementById('searchBox').addEventListener('input', () => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(render, 200);
+});
+document.getElementById('sortBy').addEventListener('change', render);
+document.getElementById('filterCurrency').addEventListener('change', render);
+document.getElementById('filterWorkMode').addEventListener('change', render);
+document.getElementById('filterCategory').addEventListener('change', render);
+
+// --- Mobile filter drawer ---
+function isMobile() { return window.innerWidth <= 768; }
+
+function openFilterDrawer() {
+  document.getElementById('drawerSortBy').value = document.getElementById('sortBy').value;
+  document.getElementById('drawerCurrency').value = document.getElementById('filterCurrency').value;
+  document.getElementById('drawerWorkMode').value = document.getElementById('filterWorkMode').value;
+  document.getElementById('drawerCategory').value = document.getElementById('filterCategory').value;
+  syncDrawerToggles();
+  document.getElementById('filterDrawerOverlay').style.display = 'block';
+  requestAnimationFrame(() => {
+    document.getElementById('filterDrawerOverlay').classList.add('open');
+    document.getElementById('filterDrawer').classList.add('open');
+  });
+  document.body.style.overflow = 'hidden';
+}
+
+function closeFilterDrawer() {
+  document.getElementById('filterDrawerOverlay').classList.remove('open');
+  document.getElementById('filterDrawer').classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(() => {
+    document.getElementById('filterDrawerOverlay').style.display = 'none';
+  }, 300);
+}
+
+function applyDrawerFilters() {
+  document.getElementById('sortBy').value = document.getElementById('drawerSortBy').value;
+  document.getElementById('filterCurrency').value = document.getElementById('drawerCurrency').value;
+  document.getElementById('filterWorkMode').value = document.getElementById('drawerWorkMode').value;
+  document.getElementById('filterCategory').value = document.getElementById('drawerCategory').value;
+  closeFilterDrawer();
+  render();
+}
+
+function syncDrawerToggles() {
+  const prefBtn = document.getElementById('drawerPrefBtn');
+  const rsuBtn = document.getElementById('drawerRsuBtn');
+  if (prefBtn) {
+    prefBtn.classList.toggle('active', preferredOnly);
+    prefBtn.innerHTML = preferredOnly ? '📍 Preferred Locations ✓' : '📍 Preferred Locations Only';
+  }
+  if (rsuBtn) {
+    rsuBtn.classList.toggle('active', rsuOnly);
+    rsuBtn.innerHTML = rsuOnly ? '📈 Has RSUs/ESOPs ✓' : '📈 Has RSUs/ESOPs';
+  }
+}
+
+function updateMobileFilterBadge() {
+  let count = 0;
+  if (document.getElementById('sortBy').value !== 'rank') count++;
+  if (document.getElementById('filterCurrency').value !== 'all') count++;
+  if (document.getElementById('filterWorkMode').value !== 'all') count++;
+  if (document.getElementById('filterCategory').value !== 'all') count++;
+  if (preferredOnly) count++;
+  if (rsuOnly) count++;
+  const badge = document.getElementById('filterCountBadge');
+  if (count > 0) {
+    badge.style.display = 'inline-block';
+    badge.textContent = count;
+    document.getElementById('filterToggleBtn').classList.add('has-filters');
+  } else {
+    badge.style.display = 'none';
+    document.getElementById('filterToggleBtn').classList.remove('has-filters');
+  }
+}
+
+// --- Preferred Locations popup (desktop hover) ---
+function showPrefPopup() {
+  if (isMobile()) return;
+  renderPrefLocList('prefLocList');
+  document.getElementById('prefLocPopup').classList.add('show');
+}
+function hidePrefPopup() {
+  document.getElementById('prefLocPopup').classList.remove('show');
+}
+function renderPrefLocList(containerId) {
+  const locs = ROLE_CONFIG[currentRole].preferredLocations;
+  document.getElementById(containerId).innerHTML = locs.map(l =>
+    '<span class="pref-loc-chip">' + l + '</span>'
+  ).join('');
+}
+
+// --- Preferred Locations popup (mobile tap) ---
+function togglePrefLocMobilePopup() {
+  const popup = document.getElementById('prefLocMobilePopup');
+  if (popup.classList.contains('open')) {
+    closePrefLocMobilePopup();
+  } else {
+    renderPrefLocList('prefLocMobileList');
+    updatePrefLocUI();
+    const overlay = document.getElementById('prefLocOverlay');
+    overlay.style.display = 'block';
+    // Force reflow then animate
+    popup.style.display = 'block';
+    requestAnimationFrame(() => {
+      overlay.classList.add('open');
+      popup.classList.add('open');
+    });
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closePrefLocMobilePopup() {
+  const popup = document.getElementById('prefLocMobilePopup');
+  const overlay = document.getElementById('prefLocOverlay');
+  overlay.classList.remove('open');
+  popup.classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(() => {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+  }, 300);
+}
+
+function updatePrefLocUI() {
+  const btn = document.getElementById('prefLocMobileFilterBtn');
+  if (btn) {
+    btn.classList.toggle('active', preferredOnly);
+    btn.innerHTML = preferredOnly ? '📍 Showing Preferred Only ✓' : '📍 Show Preferred Only';
+  }
+}
+
+// Wrap original render to also update mobile UI
+const _baseRender = render;
+render = function() {
+  _baseRender();
+  updateMobileFilterBadge();
+  syncDrawerToggles();
+  updatePrefLocUI();
+};
+
+// Render on page ready
+render();
+</script>
+</body>
+</html>

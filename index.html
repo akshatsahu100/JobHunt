@@ -635,6 +635,25 @@
   .status-select.status-offer { border-left-color: var(--green); background: rgba(0,230,118,0.08); }
   .status-select.status-rejected { border-left-color: var(--red); background: rgba(255,82,82,0.08); }
 
+  /* Star / Bookmark */
+  .star-btn {
+    position: absolute;
+    top: 12px;
+    right: 44px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text2);
+    opacity: 0.7;
+    transition: opacity 0.2s, transform 0.2s, color 0.2s;
+    padding: 2px;
+    line-height: 1;
+    z-index: 2;
+  }
+  .star-btn:hover { opacity: 1; transform: scale(1.15); color: var(--gold); }
+  .star-btn.starred { opacity: 1; color: var(--gold); }
+
   /* Tablet */
   @media (max-width: 900px) {
     .card-grid { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
@@ -716,6 +735,7 @@
     .card-title { font-size: 16px; }
     .card-hq { font-size: 11px; }
     .card-rank { font-size: 10px; top: 10px; right: 10px; }
+    .star-btn { top: 10px; right: 36px; font-size: 18px; }
     .card-role { font-size: 13px; }
     .card-role-level { font-size: 11px; margin-bottom: 10px; }
     .status-select { font-size: 12px; padding: 7px 10px; }
@@ -823,6 +843,9 @@
       <button class="filter-btn" id="rsuBtn" onclick="toggleRSU()">
         📈 Has RSUs/ESOPs
       </button>
+      <button class="filter-btn" id="starBtn" onclick="toggleStarFilter()">
+        ⭐ Starred Only
+      </button>
       <select id="filterStatus">
         <option value="all">All Statuses</option>
         <option value="Not Applied">⊘ Not Applied</option>
@@ -915,6 +938,9 @@
     <button class="filter-btn" id="drawerRsuBtn" onclick="toggleRSU();syncDrawerToggles();" style="width:100%;justify-content:center;">
       📈 Has RSUs/ESOPs
     </button>
+    <button class="filter-btn" id="drawerStarBtn" onclick="toggleStarFilter();syncDrawerToggles();" style="width:100%;margin-top:8px;justify-content:center;">
+      ⭐ Starred Only
+    </button>
   </div>
   <div class="drawer-actions">
     <button class="drawer-reset-btn" onclick="resetFilters();closeFilterDrawer();">✕ Reset</button>
@@ -986,6 +1012,29 @@ function onStatusChange(el) {
 }
 loadAppStatuses();
 
+// Starred / bookmarked companies
+let starredSet = new Set();
+let starredOnly = false;
+function loadStarred() {
+  try { starredSet = new Set(JSON.parse(localStorage.getItem('starred_' + currentRole)) || []); }
+  catch(e) { starredSet = new Set(); }
+}
+function saveStarred() {
+  localStorage.setItem('starred_' + currentRole, JSON.stringify([...starredSet]));
+}
+function toggleStar(company) {
+  if (starredSet.has(company)) starredSet.delete(company);
+  else starredSet.add(company);
+  saveStarred();
+  render();
+}
+function toggleStarFilter() {
+  starredOnly = !starredOnly;
+  document.getElementById('starBtn').classList.toggle('active', starredOnly);
+  render();
+}
+loadStarred();
+
 // Set dropdown + header to match saved role
 (function initRole() {
   document.addEventListener('DOMContentLoaded', () => {
@@ -1021,14 +1070,16 @@ function resetFilters() {
   document.getElementById('filterStatus').value = 'all';
   preferredOnly = false;
   rsuOnly = false;
+  starredOnly = false;
   document.getElementById('preferredLocationBtn').classList.remove('active');
   document.getElementById('rsuBtn').classList.remove('active');
+  document.getElementById('starBtn').classList.remove('active');
   render();
 }
 
 function updateResetBtn() {
   const f = getFilters();
-  const hasFilters = f.search || f.currency !== 'all' || f.workMode !== 'all' || f.category !== 'all' || f.status !== 'all' || f.sortBy !== 'rank' || preferredOnly || rsuOnly;
+  const hasFilters = f.search || f.currency !== 'all' || f.workMode !== 'all' || f.category !== 'all' || f.status !== 'all' || f.sortBy !== 'rank' || preferredOnly || rsuOnly || starredOnly;
   document.getElementById('resetBtn').classList.toggle('visible', hasFilters);
 }
 
@@ -1047,6 +1098,7 @@ function switchRole() {
   localStorage.setItem('preferredRole', currentRole);
   companies = ROLE_CONFIG[currentRole].data;
   loadAppStatuses();
+  loadStarred();
   document.getElementById('dashboardTitle').textContent = ROLE_CONFIG[currentRole].title;
   document.getElementById('dashboardSubtitle').textContent = ROLE_CONFIG[currentRole].subtitle;
   resetFilters();
@@ -1142,9 +1194,13 @@ function renderCard(c) {
     `<option value="${s}" ${s === status ? 'selected' : ''}>${statusEmoji[s]} ${s}</option>`
   ).join('');
 
+  const isStarred = starredSet.has(c.company);
+
   return `
     <div class="card">
       <span class="card-rank">#${c.rank}</span>
+      <button class="star-btn ${isStarred ? 'starred' : ''}" onclick="toggleStar('${escapedCo.replace(/'/g, "\\'")}')"
+        title="${isStarred ? 'Remove bookmark' : 'Bookmark this company'}">${isStarred ? '⭐' : '☆'}</button>
       <div class="card-header">
         <div class="card-icon">${c.company.charAt(0)}</div>
         <div>
@@ -1202,6 +1258,7 @@ function render() {
     if (!matchesCategory(c, f.category)) return false;
     if (preferredOnly && !matchesPreferred(c.locations)) return false;
     if (rsuOnly && !c.stocksRSU) return false;
+    if (starredOnly && !starredSet.has(c.company)) return false;
     if (f.status !== 'all') {
       const cStatus = appStatuses[c.company] || 'Not Applied';
       if (cStatus !== f.status) return false;
@@ -1219,9 +1276,11 @@ function render() {
   const withRSU = filtered.filter(c => c.stocksRSU).length;
   const prefCount = filtered.filter(c => matchesPreferred(c.locations)).length;
   const trackedCount = filtered.filter(c => appStatuses[c.company]).length;
+  const starredCount = filtered.filter(c => starredSet.has(c.company)).length;
 
   document.getElementById('statsBar').innerHTML = `
     <div class="stat-card"><div class="stat-value">${filtered.length}</div><div class="stat-label">Companies Shown</div></div>
+    <div class="stat-card"><div class="stat-value">${starredCount}</div><div class="stat-label">⭐ Starred</div></div>
     <div class="stat-card"><div class="stat-value">${trackedCount}</div><div class="stat-label">Tracked</div></div>
     <div class="stat-card"><div class="stat-value">${inrCompanies.length}</div><div class="stat-label">India Office</div></div>
     <div class="stat-card"><div class="stat-value">${remoteCompanies.length}</div><div class="stat-label">Remote (USD/EUR)</div></div>
@@ -1318,6 +1377,11 @@ function syncDrawerToggles() {
     rsuBtn.classList.toggle('active', rsuOnly);
     rsuBtn.innerHTML = rsuOnly ? '📈 Has RSUs/ESOPs ✓' : '📈 Has RSUs/ESOPs';
   }
+  const starBtn = document.getElementById('drawerStarBtn');
+  if (starBtn) {
+    starBtn.classList.toggle('active', starredOnly);
+    starBtn.innerHTML = starredOnly ? '⭐ Starred Only ✓' : '⭐ Starred Only';
+  }
 }
 
 function updateMobileFilterBadge() {
@@ -1329,6 +1393,7 @@ function updateMobileFilterBadge() {
   if (document.getElementById('filterStatus').value !== 'all') count++;
   if (preferredOnly) count++;
   if (rsuOnly) count++;
+  if (starredOnly) count++;
   const badge = document.getElementById('filterCountBadge');
   if (count > 0) {
     badge.style.display = 'inline-block';

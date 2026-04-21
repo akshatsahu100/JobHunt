@@ -607,6 +607,34 @@
     color: var(--text);
   }
 
+  /* Application Status Tracker */
+  .card-status { margin-bottom: 10px; }
+  .status-select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%239999b0' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 28px;
+    transition: border-color 0.2s, background 0.2s;
+    border-left: 3px solid var(--text3);
+  }
+  .status-select:focus { border-color: var(--accent); }
+  .status-select.status-applied { border-left-color: var(--accent); background: rgba(108,99,255,0.08); }
+  .status-select.status-interview { border-left-color: var(--gold); background: rgba(255,214,0,0.08); }
+  .status-select.status-offer { border-left-color: var(--green); background: rgba(0,230,118,0.08); }
+  .status-select.status-rejected { border-left-color: var(--red); background: rgba(255,82,82,0.08); }
+
   /* Tablet */
   @media (max-width: 900px) {
     .card-grid { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
@@ -690,6 +718,7 @@
     .card-rank { font-size: 10px; top: 10px; right: 10px; }
     .card-role { font-size: 13px; }
     .card-role-level { font-size: 11px; margin-bottom: 10px; }
+    .status-select { font-size: 12px; padding: 7px 10px; }
     .card-key-info {
       padding: 10px 12px;
       gap: 8px;
@@ -794,6 +823,14 @@
       <button class="filter-btn" id="rsuBtn" onclick="toggleRSU()">
         📈 Has RSUs/ESOPs
       </button>
+      <select id="filterStatus">
+        <option value="all">All Statuses</option>
+        <option value="Not Applied">⊘ Not Applied</option>
+        <option value="Applied">📤 Applied</option>
+        <option value="Interview">🎤 Interview</option>
+        <option value="Offer">🎉 Offer</option>
+        <option value="Rejected">✕ Rejected</option>
+      </select>
       <button class="reset-btn" id="resetBtn" onclick="resetFilters()">
         ✕ Reset All Filters
       </button>
@@ -860,6 +897,17 @@
     </select>
   </div>
   <div class="filter-group">
+    <div class="filter-group-label">Application Status</div>
+    <select id="drawerStatus">
+      <option value="all">All Statuses</option>
+      <option value="Not Applied">⊘ Not Applied</option>
+      <option value="Applied">📤 Applied</option>
+      <option value="Interview">🎤 Interview</option>
+      <option value="Offer">🎉 Offer</option>
+      <option value="Rejected">✕ Rejected</option>
+    </select>
+  </div>
+  <div class="filter-group">
     <div class="filter-group-label">Toggles</div>
     <button class="filter-btn" id="drawerPrefBtn" onclick="togglePreferredLocation();syncDrawerToggles();" style="width:100%;margin-bottom:8px;justify-content:center;">
       📍 Preferred Locations Only
@@ -920,6 +968,24 @@ let companies = ROLE_CONFIG[currentRole].data;
 let preferredOnly = false;
 let rsuOnly = false;
 
+// Application status tracker
+let appStatuses = {};
+function loadAppStatuses() {
+  try { appStatuses = JSON.parse(localStorage.getItem('appStatuses_' + currentRole)) || {}; }
+  catch(e) { appStatuses = {}; }
+}
+function setAppStatus(company, status) {
+  if (status === 'Not Applied') { delete appStatuses[company]; }
+  else { appStatuses[company] = status; }
+  localStorage.setItem('appStatuses_' + currentRole, JSON.stringify(appStatuses));
+}
+function onStatusChange(el) {
+  const company = el.getAttribute('data-company');
+  setAppStatus(company, el.value);
+  el.className = 'status-select status-' + el.value.toLowerCase().replace(/\s+/g, '-');
+}
+loadAppStatuses();
+
 // Set dropdown + header to match saved role
 (function initRole() {
   document.addEventListener('DOMContentLoaded', () => {
@@ -952,6 +1018,7 @@ function resetFilters() {
   document.getElementById('filterCurrency').value = 'all';
   document.getElementById('filterWorkMode').value = 'all';
   document.getElementById('filterCategory').value = 'all';
+  document.getElementById('filterStatus').value = 'all';
   preferredOnly = false;
   rsuOnly = false;
   document.getElementById('preferredLocationBtn').classList.remove('active');
@@ -961,7 +1028,7 @@ function resetFilters() {
 
 function updateResetBtn() {
   const f = getFilters();
-  const hasFilters = f.search || f.currency !== 'all' || f.workMode !== 'all' || f.category !== 'all' || f.sortBy !== 'rank' || preferredOnly || rsuOnly;
+  const hasFilters = f.search || f.currency !== 'all' || f.workMode !== 'all' || f.category !== 'all' || f.status !== 'all' || f.sortBy !== 'rank' || preferredOnly || rsuOnly;
   document.getElementById('resetBtn').classList.toggle('visible', hasFilters);
 }
 
@@ -971,13 +1038,15 @@ function getFilters() {
   const currency = document.getElementById('filterCurrency').value;
   const workMode = document.getElementById('filterWorkMode').value;
   const category = document.getElementById('filterCategory').value;
-  return { search, sortBy, currency, workMode, category };
+  const status = document.getElementById('filterStatus').value;
+  return { search, sortBy, currency, workMode, category, status };
 }
 
 function switchRole() {
   currentRole = document.getElementById('roleSwitcher').value;
   localStorage.setItem('preferredRole', currentRole);
   companies = ROLE_CONFIG[currentRole].data;
+  loadAppStatuses();
   document.getElementById('dashboardTitle').textContent = ROLE_CONFIG[currentRole].title;
   document.getElementById('dashboardSubtitle').textContent = ROLE_CONFIG[currentRole].subtitle;
   resetFilters();
@@ -1064,6 +1133,15 @@ function renderCard(c) {
   const techHTML = skills.slice(0, 6).map(t => `<span class="tech-tag">${t}</span>`).join('') +
     (skills.length > 6 ? `<span class="tech-tag">+${skills.length - 6} more</span>` : '');
 
+  const status = appStatuses[c.company] || 'Not Applied';
+  const statusClass = status.toLowerCase().replace(/\s+/g, '-');
+  const escapedCo = c.company.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+  const statusOpts = ['Not Applied','Applied','Interview','Offer','Rejected'];
+  const statusEmoji = {'Not Applied':'⊘','Applied':'📤','Interview':'🎤','Offer':'🎉','Rejected':'✕'};
+  const statusOptionsHTML = statusOpts.map(s =>
+    `<option value="${s}" ${s === status ? 'selected' : ''}>${statusEmoji[s]} ${s}</option>`
+  ).join('');
+
   return `
     <div class="card">
       <span class="card-rank">#${c.rank}</span>
@@ -1076,6 +1154,11 @@ function renderCard(c) {
       </div>
       <div class="card-role">${c.role}</div>
       <div class="card-role-level">Level: ${c.levelEquivalent} · Exp: ${c.yearsExpNeeded} yrs</div>
+      <div class="card-status">
+        <select class="status-select status-${statusClass}" data-company="${escapedCo}" onchange="onStatusChange(this)">
+          ${statusOptionsHTML}
+        </select>
+      </div>
       <div class="card-key-info">
         <div class="key-item">
           <div class="key-label">Base Salary</div>
@@ -1119,6 +1202,10 @@ function render() {
     if (!matchesCategory(c, f.category)) return false;
     if (preferredOnly && !matchesPreferred(c.locations)) return false;
     if (rsuOnly && !c.stocksRSU) return false;
+    if (f.status !== 'all') {
+      const cStatus = appStatuses[c.company] || 'Not Applied';
+      if (cStatus !== f.status) return false;
+    }
     return true;
   });
 
@@ -1131,9 +1218,11 @@ function render() {
   const maxBase = inrCompanies.length ? Math.max(...inrCompanies.map(c => c.baseSalaryLPA)) : 0;
   const withRSU = filtered.filter(c => c.stocksRSU).length;
   const prefCount = filtered.filter(c => matchesPreferred(c.locations)).length;
+  const trackedCount = filtered.filter(c => appStatuses[c.company]).length;
 
   document.getElementById('statsBar').innerHTML = `
     <div class="stat-card"><div class="stat-value">${filtered.length}</div><div class="stat-label">Companies Shown</div></div>
+    <div class="stat-card"><div class="stat-value">${trackedCount}</div><div class="stat-label">Tracked</div></div>
     <div class="stat-card"><div class="stat-value">${inrCompanies.length}</div><div class="stat-label">India Office</div></div>
     <div class="stat-card"><div class="stat-value">${remoteCompanies.length}</div><div class="stat-label">Remote (USD/EUR)</div></div>
     <div class="stat-card"><div class="stat-value">₹${avgBase}L</div><div class="stat-label">Avg Base (INR)</div></div>
@@ -1179,6 +1268,7 @@ document.getElementById('sortBy').addEventListener('change', render);
 document.getElementById('filterCurrency').addEventListener('change', render);
 document.getElementById('filterWorkMode').addEventListener('change', render);
 document.getElementById('filterCategory').addEventListener('change', render);
+document.getElementById('filterStatus').addEventListener('change', render);
 
 // --- Mobile filter drawer ---
 function isMobile() { return window.innerWidth <= 768; }
@@ -1188,6 +1278,7 @@ function openFilterDrawer() {
   document.getElementById('drawerCurrency').value = document.getElementById('filterCurrency').value;
   document.getElementById('drawerWorkMode').value = document.getElementById('filterWorkMode').value;
   document.getElementById('drawerCategory').value = document.getElementById('filterCategory').value;
+  document.getElementById('drawerStatus').value = document.getElementById('filterStatus').value;
   syncDrawerToggles();
   document.getElementById('filterDrawerOverlay').style.display = 'block';
   requestAnimationFrame(() => {
@@ -1211,6 +1302,7 @@ function applyDrawerFilters() {
   document.getElementById('filterCurrency').value = document.getElementById('drawerCurrency').value;
   document.getElementById('filterWorkMode').value = document.getElementById('drawerWorkMode').value;
   document.getElementById('filterCategory').value = document.getElementById('drawerCategory').value;
+  document.getElementById('filterStatus').value = document.getElementById('drawerStatus').value;
   closeFilterDrawer();
   render();
 }
@@ -1234,6 +1326,7 @@ function updateMobileFilterBadge() {
   if (document.getElementById('filterCurrency').value !== 'all') count++;
   if (document.getElementById('filterWorkMode').value !== 'all') count++;
   if (document.getElementById('filterCategory').value !== 'all') count++;
+  if (document.getElementById('filterStatus').value !== 'all') count++;
   if (preferredOnly) count++;
   if (rsuOnly) count++;
   const badge = document.getElementById('filterCountBadge');

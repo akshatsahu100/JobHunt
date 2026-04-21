@@ -1,12 +1,15 @@
-const PM_COMPANIES_DATA =
-[
+const PM_COMPANIES_DATA = [
   {
     "rank": 1,
     "company": "Google",
     "hq": "Mountain View, USA",
     "type": "India Office",
     "category": "Big Tech (FAANG)",
-    "locations": ["Bangalore", "Hyderabad", "Gurugram"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad",
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager 1 (L4)",
     "baseSalaryLPA": 47,
@@ -16,9 +19,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "L4 (PM1) / L5 (PM2)",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "Data Analysis", "SQL", "A/B Testing", "PRDs", "Cross-functional leadership"],
-    "hiringProcess": "Recruiter Screen → Phone Screen → Onsite (4 rounds: Product Sense, Analytical, Strategy, Leadership & Drive)",
-    "notes": "Google PM1 L4 base ₹47L, TC ₹63.6L. PM2 L5 base ₹62.4L, TC ₹115.2L per Levels.fyi Apr 2026. Hyderabad & Gurugram offices (preferred). APM program also exists. 5-day work week.",
+    "skillsRequired": [
+      "Product Strategy",
+      "Data Analysis",
+      "SQL",
+      "A/B Testing",
+      "PRDs",
+      "Cross-functional leadership"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Strategy, Leadership & Drive)",
+    "notes": "Google PM1 L4 base \u20b947L, TC \u20b963.6L. PM2 L5 base \u20b962.4L, TC \u20b9115.2L per Levels.fyi Apr 2026. Hyderabad & Gurugram offices (preferred). APM program also exists. 5-day work week.",
     "careerPage": "https://careers.google.com/jobs/results/?q=product%20manager&location=India",
     "glassdoorRating": 4.3,
     "source": "Levels.fyi (Apr 2026)"
@@ -29,7 +39,11 @@ const PM_COMPANIES_DATA =
     "hq": "Redmond, USA",
     "type": "India Office",
     "category": "Big Tech",
-    "locations": ["Hyderabad", "Bangalore", "Noida"],
+    "locations": [
+      "Hyderabad",
+      "Bangalore",
+      "Noida"
+    ],
     "workMode": "Hybrid",
     "role": "Program Manager 2 (Level 62)",
     "baseSalaryLPA": 37,
@@ -39,9 +53,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "61 (PM2) / 62 (PM2) / 63 (Senior PM)",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Specs", "Data Analysis", "Azure/Cloud", "Stakeholder Management", "Agile", "Technical Writing"],
-    "hiringProcess": "Recruiter Screen → Phone Screen → Onsite (4-5 rounds: Product Design, Analytical, Behavioral, As Appropriate)",
-    "notes": "Microsoft 62 PM2 base ₹37.1L TC ₹53.1L, 63 PM base ₹50L TC ₹77L per Levels.fyi Apr 2026. Hyderabad & Noida offices (preferred). 5-day week. Good WLB. RSUs vest 25%/yr.",
+    "skillsRequired": [
+      "Product Specs",
+      "Data Analysis",
+      "Azure/Cloud",
+      "Stakeholder Management",
+      "Agile",
+      "Technical Writing"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4-5 rounds: Product Design, Analytical, Behavioral, As Appropriate)",
+    "notes": "Microsoft 62 PM2 base \u20b937.1L TC \u20b953.1L, 63 PM base \u20b950L TC \u20b977L per Levels.fyi Apr 2026. Hyderabad & Noida offices (preferred). 5-day week. Good WLB. RSUs vest 25%/yr.",
     "careerPage": "https://careers.microsoft.com/us/en/search-results?keywords=product%20manager&location=India",
     "glassdoorRating": 4.2,
     "source": "Levels.fyi (Apr 2026)"
@@ -52,7 +73,10 @@ const PM_COMPANIES_DATA =
     "hq": "Seattle, USA",
     "type": "India Office",
     "category": "Big Tech (FAANG)",
-    "locations": ["Bangalore", "Hyderabad"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid (5 days RTO)",
     "role": "Product Manager - Tech (L5)",
     "baseSalaryLPA": 42,
@@ -62,9 +86,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "L5 (PM) / L6 (Senior PM) / L7 (Principal PM)",
     "yearsExpNeeded": "3-10",
-    "skillsRequired": ["Working Backwards", "Customer Obsession", "Data Analysis", "SQL", "Leadership Principles", "6-pagers"],
-    "hiringProcess": "Recruiter Screen → Phone Screen → Onsite (5-6 rounds: Bar Raiser, Product Sense, LPs, Technical, Analytical)",
-    "notes": "Amazon PM L5 base ₹42.2L TC ₹57.5L. L6 Senior PM base ₹60.1L TC ₹79.5L. L7 Principal base ₹98.3L TC ₹173.8L. Backloaded RSU vesting (5/15/40/40). Hyderabad (preferred). 5-day RTO mandate from 2025.",
+    "skillsRequired": [
+      "Working Backwards",
+      "Customer Obsession",
+      "Data Analysis",
+      "SQL",
+      "Leadership Principles",
+      "6-pagers"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (5-6 rounds: Bar Raiser, Product Sense, LPs, Technical, Analytical)",
+    "notes": "Amazon PM L5 base \u20b942.2L TC \u20b957.5L. L6 Senior PM base \u20b960.1L TC \u20b979.5L. L7 Principal base \u20b998.3L TC \u20b9173.8L. Backloaded RSU vesting (5/15/40/40). Hyderabad (preferred). 5-day RTO mandate from 2025.",
     "careerPage": "https://www.amazon.jobs/en/search?base_query=product+manager&loc_query=India",
     "glassdoorRating": 3.9,
     "source": "Levels.fyi (Apr 2026)"
@@ -75,7 +106,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "Big Tech (Mobility)",
-    "locations": ["Bangalore", "Hyderabad"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager II (L4)",
     "baseSalaryLPA": 51,
@@ -85,9 +119,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "L4 (PM II) / L5a (Senior PM)",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "Metrics", "Experimentation", "SQL", "Marketplace dynamics", "Cross-functional leadership"],
-    "hiringProcess": "Recruiter Screen → Phone Screen → Onsite (4 rounds: Product Sense, Execution, Analytical, Leadership)",
-    "notes": "Uber PM II L4 base ₹51.2L TC ₹75L. Senior PM L5a base ₹73.8L TC ₹115.4L. Very recent submission: PM II with 4 yrs exp, TC ₹67L. Hyderabad office (preferred). Front-loaded RSU vesting (35/30/20/15).",
+    "skillsRequired": [
+      "Product Strategy",
+      "Metrics",
+      "Experimentation",
+      "SQL",
+      "Marketplace dynamics",
+      "Cross-functional leadership"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Execution, Analytical, Leadership)",
+    "notes": "Uber PM II L4 base \u20b951.2L TC \u20b975L. Senior PM L5a base \u20b973.8L TC \u20b9115.4L. Very recent submission: PM II with 4 yrs exp, TC \u20b967L. Hyderabad office (preferred). Front-loaded RSU vesting (35/30/20/15).",
     "careerPage": "https://www.uber.com/us/en/careers/?q=product%20manager&location=India",
     "glassdoorRating": 4.1,
     "source": "Levels.fyi (Apr 2026)"
@@ -98,7 +139,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Company (Walmart-owned)",
     "category": "E-Commerce",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager I / II",
     "baseSalaryLPA": 32,
@@ -108,9 +151,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM I / PM II / Senior PM",
     "yearsExpNeeded": "3-10",
-    "skillsRequired": ["Product Sense", "Data Analysis", "E-commerce", "Metrics", "A/B Testing", "SQL"],
-    "hiringProcess": "Recruiter Screen → Case Study → Product Round → Behavioral → Hiring Manager",
-    "notes": "Flipkart PM I base ₹31.7L TC ₹39.3L. PM II base ₹40.5L TC ₹57.9L per Levels.fyi. Walmart-backed, stock options. Bangalore only but strong PM culture. PM II at 4 yrs is a stretch but possible.",
+    "skillsRequired": [
+      "Product Sense",
+      "Data Analysis",
+      "E-commerce",
+      "Metrics",
+      "A/B Testing",
+      "SQL"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Case Study \u2192 Product Round \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Flipkart PM I base \u20b931.7L TC \u20b939.3L. PM II base \u20b940.5L TC \u20b957.9L per Levels.fyi. Walmart-backed, stock options. Bangalore only but strong PM culture. PM II at 4 yrs is a stretch but possible.",
     "careerPage": "https://www.flipkartcareers.com/",
     "glassdoorRating": 4.0,
     "source": "Levels.fyi (Apr 2026)"
@@ -121,7 +171,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Company (Listed)",
     "category": "Quick Commerce / Food Delivery",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager I (L6) / PM II (L7)",
     "baseSalaryLPA": 30,
@@ -131,9 +183,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "L6 (PM I) / L7 (PM II) / L8 (PM III)",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Sense", "Experimentation", "SQL", "Metrics", "Consumer Product", "Growth"],
-    "hiringProcess": "Phone Screen → Case Study → Product Round → Behavioral → Hiring Manager",
-    "notes": "Swiggy L6 PM I base ₹30L TC ₹41.7L. L7 PM II base ₹46.9L TC ₹51.1L. L8 PM III base ₹53.6L TC ₹70.9L. Listed on NSE. Consumer PM culture. Bangalore only.",
+    "skillsRequired": [
+      "Product Sense",
+      "Experimentation",
+      "SQL",
+      "Metrics",
+      "Consumer Product",
+      "Growth"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Case Study \u2192 Product Round \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Swiggy L6 PM I base \u20b930L TC \u20b941.7L. L7 PM II base \u20b946.9L TC \u20b951.1L. L8 PM III base \u20b953.6L TC \u20b970.9L. Listed on NSE. Consumer PM culture. Bangalore only.",
     "careerPage": "https://careers.swiggy.com/",
     "glassdoorRating": 3.8,
     "source": "Levels.fyi (Apr 2026)"
@@ -144,7 +203,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Company",
     "category": "Fintech (Payments)",
-    "locations": ["Bangalore", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager 1 / PM 2",
     "baseSalaryLPA": 34,
@@ -154,9 +216,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM 1 / PM 2 / Senior PM",
     "yearsExpNeeded": "3-10",
-    "skillsRequired": ["Product Strategy", "Payments/UPI", "Data Analysis", "SQL", "Fintech", "User Research"],
-    "hiringProcess": "Phone Screen → Case Study → Product Round → Behavioral → Hiring Manager",
-    "notes": "PhonePe PM1 base ₹34.1L TC ₹42.6L. PM2 base ₹37.2L TC ₹49.5L. Senior PM base ₹54.6L TC ₹66L. Pune office (preferred). India's #1 UPI app. Stock options vest 25%/yr.",
+    "skillsRequired": [
+      "Product Strategy",
+      "Payments/UPI",
+      "Data Analysis",
+      "SQL",
+      "Fintech",
+      "User Research"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Case Study \u2192 Product Round \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "PhonePe PM1 base \u20b934.1L TC \u20b942.6L. PM2 base \u20b937.2L TC \u20b949.5L. Senior PM base \u20b954.6L TC \u20b966L. Pune office (preferred). India's #1 UPI app. Stock options vest 25%/yr.",
     "careerPage": "https://www.phonepe.com/careers/",
     "glassdoorRating": 3.9,
     "source": "Levels.fyi (Apr 2026)"
@@ -167,7 +236,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bentonville, USA",
     "type": "India Office",
     "category": "E-Commerce / Retail",
-    "locations": ["Bangalore", "Hyderabad"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager II / Senior PM",
     "baseSalaryLPA": 35,
@@ -177,9 +249,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM II / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "Retail/E-Commerce", "Data Analysis", "SQL", "Agile", "Platform thinking"],
-    "hiringProcess": "Phone Screen → Case Study → Product + Analytical → Behavioral → Hiring Manager",
-    "notes": "Walmart Global Tech India PM II base ~₹35L. Hyderabad office (preferred). WMT listed stock RSUs. Good WLB. Owns Flipkart, PhonePe ecosystem. 5-day week.",
+    "skillsRequired": [
+      "Product Strategy",
+      "Retail/E-Commerce",
+      "Data Analysis",
+      "SQL",
+      "Agile",
+      "Platform thinking"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Case Study \u2192 Product + Analytical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Walmart Global Tech India PM II base ~\u20b935L. Hyderabad office (preferred). WMT listed stock RSUs. Good WLB. Owns Flipkart, PhonePe ecosystem. 5-day week.",
     "careerPage": "https://careers.walmart.com/technology",
     "glassdoorRating": 4.0,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -190,7 +269,9 @@ const PM_COMPANIES_DATA =
     "hq": "Mountain View, USA",
     "type": "India Office",
     "category": "SaaS / Fintech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager 2 / Senior PM",
     "baseSalaryLPA": 35,
@@ -200,9 +281,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM 2 / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Customer-Driven Innovation", "Design Thinking", "Data Analysis", "Experimentation", "Agile"],
-    "hiringProcess": "Phone Screen → Product Round (case) → Analytical → Behavioral → Hiring Manager",
-    "notes": "Intuit PM2 base ~₹35L. Known for Design for Delight (D4D) PM culture. TurboTax, QuickBooks, Mailchimp products. Strong PM mentoring. INTU listed RSUs.",
+    "skillsRequired": [
+      "Customer-Driven Innovation",
+      "Design Thinking",
+      "Data Analysis",
+      "Experimentation",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Round (case) \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Intuit PM2 base ~\u20b935L. Known for Design for Delight (D4D) PM culture. TurboTax, QuickBooks, Mailchimp products. Strong PM mentoring. INTU listed RSUs.",
     "careerPage": "https://www.intuit.com/careers/",
     "glassdoorRating": 4.2,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -213,7 +300,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Jose, USA",
     "type": "India Office",
     "category": "SaaS / Creative",
-    "locations": ["Noida", "Bangalore"],
+    "locations": [
+      "Noida",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 32,
@@ -223,9 +313,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "Design Thinking", "Data Analysis", "Agile", "UX Sense", "Market Research"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
-    "notes": "Adobe Noida office (preferred Delhi NCR). PM base ~₹32L+. Creative Cloud, Document Cloud, Experience Cloud PM roles. ADBE listed RSUs. Excellent WLB and culture.",
+    "skillsRequired": [
+      "Product Strategy",
+      "Design Thinking",
+      "Data Analysis",
+      "Agile",
+      "UX Sense",
+      "Market Research"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Adobe Noida office (preferred Delhi NCR). PM base ~\u20b932L+. Creative Cloud, Document Cloud, Experience Cloud PM roles. ADBE listed RSUs. Excellent WLB and culture.",
     "careerPage": "https://www.adobe.com/careers.html",
     "glassdoorRating": 4.3,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -236,7 +333,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "SaaS / CRM",
-    "locations": ["Hyderabad", "Bangalore"],
+    "locations": [
+      "Hyderabad",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 35,
@@ -246,9 +346,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "MTS / SMTS / LMTS",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "CRM/SaaS", "Platform Thinking", "Data Analysis", "Agile", "Stakeholder Management"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → VP Round",
-    "notes": "Salesforce Hyderabad office (preferred). PM base ~₹35L+. CRM listed RSUs. Known for V2MOM planning. Slack (owned) PM roles also available in Pune. Excellent culture.",
+    "skillsRequired": [
+      "Product Strategy",
+      "CRM/SaaS",
+      "Platform Thinking",
+      "Data Analysis",
+      "Agile",
+      "Stakeholder Management"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 VP Round",
+    "notes": "Salesforce Hyderabad office (preferred). PM base ~\u20b935L+. CRM listed RSUs. Known for V2MOM planning. Slack (owned) PM roles also available in Pune. Excellent culture.",
     "careerPage": "https://careers.salesforce.com/",
     "glassdoorRating": 4.1,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -259,7 +366,9 @@ const PM_COMPANIES_DATA =
     "hq": "Santa Clara, USA",
     "type": "India Office",
     "category": "SaaS / Enterprise",
-    "locations": ["Hyderabad"],
+    "locations": [
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 33,
@@ -269,9 +378,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Enterprise SaaS", "ITSM/ITOM", "Product Strategy", "Agile", "Workflow Automation", "Data Analysis"],
-    "hiringProcess": "Phone Screen → Product Case → Technical Round → Behavioral → Hiring Manager",
-    "notes": "ServiceNow Hyderabad office (preferred). PM base ~₹33L. NOW listed RSUs (stock ~$900+). Enterprise workflow PM. Growing fast in AI/ML product areas.",
+    "skillsRequired": [
+      "Enterprise SaaS",
+      "ITSM/ITOM",
+      "Product Strategy",
+      "Agile",
+      "Workflow Automation",
+      "Data Analysis"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical Round \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "ServiceNow Hyderabad office (preferred). PM base ~\u20b933L. NOW listed RSUs (stock ~$900+). Enterprise workflow PM. Growing fast in AI/ML product areas.",
     "careerPage": "https://www.servicenow.com/careers.html",
     "glassdoorRating": 4.2,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -282,7 +398,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Fintech (Payments)",
-    "locations": ["Bangalore", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 28,
@@ -292,9 +411,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Payments", "Fintech", "Product Sense", "SQL", "Experimentation", "B2B Product"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Founder Round",
-    "notes": "Razorpay PM base ~₹28L. Pune office exists (preferred). B2B payments powerhouse. Pre-IPO ESOPs can be very lucrative. Strong PM culture. May negotiate higher with competing offers.",
+    "skillsRequired": [
+      "Payments",
+      "Fintech",
+      "Product Sense",
+      "SQL",
+      "Experimentation",
+      "B2B Product"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Founder Round",
+    "notes": "Razorpay PM base ~\u20b928L. Pune office exists (preferred). B2B payments powerhouse. Pre-IPO ESOPs can be very lucrative. Strong PM culture. May negotiate higher with competing offers.",
     "careerPage": "https://razorpay.com/careers/",
     "glassdoorRating": 3.7,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -305,7 +431,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Fintech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Office",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -315,9 +443,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Consumer Product", "Design Thinking", "Experimentation", "SQL", "Growth Strategy", "UX"],
-    "hiringProcess": "Phone Screen → Product Case → Design Sense → Founder Round",
-    "notes": "CRED PM base ~₹30L. Premium consumer fintech. Strong design-driven PM culture. Kunal Shah's vision. Pre-IPO ESOPs. Bangalore only. 5-day week.",
+    "skillsRequired": [
+      "Consumer Product",
+      "Design Thinking",
+      "Experimentation",
+      "SQL",
+      "Growth Strategy",
+      "UX"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Design Sense \u2192 Founder Round",
+    "notes": "CRED PM base ~\u20b930L. Premium consumer fintech. Strong design-driven PM culture. Kunal Shah's vision. Pre-IPO ESOPs. Bangalore only. 5-day week.",
     "careerPage": "https://careers.cred.club/",
     "glassdoorRating": 3.8,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -328,7 +463,9 @@ const PM_COMPANIES_DATA =
     "hq": "Sydney, Australia",
     "type": "India Office",
     "category": "SaaS / Developer Tools",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid (Team Anywhere)",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 38,
@@ -338,9 +475,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "P4 / P5",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "Developer Tools", "Agile/Scrum", "Data Analysis", "Technical Product Sense", "B2B SaaS"],
-    "hiringProcess": "Recruiter Screen → Product Case → Values Interview → Cross-functional → Hiring Manager",
-    "notes": "Atlassian PM base ₹38L. Jira, Confluence, Trello PM roles. Team Anywhere policy = flexible. TEAM listed RSUs. Values-driven hiring. Excellent culture.",
+    "skillsRequired": [
+      "Product Strategy",
+      "Developer Tools",
+      "Agile/Scrum",
+      "Data Analysis",
+      "Technical Product Sense",
+      "B2B SaaS"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Values Interview \u2192 Cross-functional \u2192 Hiring Manager",
+    "notes": "Atlassian PM base \u20b938L. Jira, Confluence, Trello PM roles. Team Anywhere policy = flexible. TEAM listed RSUs. Values-driven hiring. Excellent culture.",
     "careerPage": "https://www.atlassian.com/company/careers",
     "glassdoorRating": 4.3,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -351,7 +495,9 @@ const PM_COMPANIES_DATA =
     "hq": "Sunnyvale, USA",
     "type": "India Office",
     "category": "Big Tech (Social/Professional)",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 38,
@@ -361,9 +507,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "Growth", "Social Platforms", "Data Analysis", "A/B Testing", "SQL"],
-    "hiringProcess": "Recruiter Screen → Phone Screen → Onsite (Product Sense, Execution, Leadership, Analytical)",
-    "notes": "LinkedIn PM base ~₹38L. Microsoft-owned, MSFT RSUs. Professional networking platform. Strong PM org. Data-driven PM culture.",
+    "skillsRequired": [
+      "Product Strategy",
+      "Growth",
+      "Social Platforms",
+      "Data Analysis",
+      "A/B Testing",
+      "SQL"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (Product Sense, Execution, Leadership, Analytical)",
+    "notes": "LinkedIn PM base ~\u20b938L. Microsoft-owned, MSFT RSUs. Professional networking platform. Strong PM org. Data-driven PM culture.",
     "careerPage": "https://careers.linkedin.com/",
     "glassdoorRating": 4.1,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -374,7 +527,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "E-Commerce (Social Commerce)",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 28,
@@ -384,9 +539,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Consumer Product", "Growth", "Experimentation", "SQL", "Tier 2/3 user empathy", "Social Commerce"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
-    "notes": "Meesho PM base ~₹28L. India's social commerce leader. Building for Bharat (Tier 2/3 cities). Pre-IPO ESOPs. Strong PM culture. Rapidly growing.",
+    "skillsRequired": [
+      "Consumer Product",
+      "Growth",
+      "Experimentation",
+      "SQL",
+      "Tier 2/3 user empathy",
+      "Social Commerce"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Meesho PM base ~\u20b928L. India's social commerce leader. Building for Bharat (Tier 2/3 cities). Pre-IPO ESOPs. Strong PM culture. Rapidly growing.",
     "careerPage": "https://www.meesho.io/careers",
     "glassdoorRating": 3.7,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -397,7 +559,9 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Company (Unicorn)",
     "category": "Gaming / Fantasy Sports",
-    "locations": ["Mumbai"],
+    "locations": [
+      "Mumbai"
+    ],
     "workMode": "Office",
     "role": "Product Manager",
     "baseSalaryLPA": 32,
@@ -407,9 +571,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Consumer Product", "Gaming/Sports", "Gamification", "Data Analytics", "Growth", "Experimentation"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Founder Round",
-    "notes": "Dream11 PM base ~₹32L. India's largest fantasy sports platform. Consumer product at massive scale. Mumbai only. Pre-IPO ESOPs very valuable (IPO expected).",
+    "skillsRequired": [
+      "Consumer Product",
+      "Gaming/Sports",
+      "Gamification",
+      "Data Analytics",
+      "Growth",
+      "Experimentation"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Founder Round",
+    "notes": "Dream11 PM base ~\u20b932L. India's largest fantasy sports platform. Consumer product at massive scale. Mumbai only. Pre-IPO ESOPs very valuable (IPO expected).",
     "careerPage": "https://www.dreamsports.group/careers",
     "glassdoorRating": 4.0,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -420,7 +591,12 @@ const PM_COMPANIES_DATA =
     "hq": "Austin, USA",
     "type": "India Office",
     "category": "Cloud / Enterprise",
-    "locations": ["Hyderabad", "Bangalore", "Pune", "Noida"],
+    "locations": [
+      "Hyderabad",
+      "Bangalore",
+      "Pune",
+      "Noida"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager (IC3/IC4)",
     "baseSalaryLPA": 30,
@@ -430,8 +606,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "IC3 / IC4",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Cloud/SaaS", "Enterprise Product", "Technical Product", "Data Analysis", "SQL", "Agile"],
-    "hiringProcess": "Phone Screen → Product Case → Technical Round → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Cloud/SaaS",
+      "Enterprise Product",
+      "Technical Product",
+      "Data Analysis",
+      "SQL",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical Round \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Oracle OCI PM roles. Offices in Hyderabad, Pune, Noida (all preferred). ORCL RSUs. Cloud product management growing. 5-day week. Decent WLB.",
     "careerPage": "https://www.oracle.com/careers/",
     "glassdoorRating": 3.8,
@@ -443,7 +626,10 @@ const PM_COMPANIES_DATA =
     "hq": "Noida, India",
     "type": "Indian Company (Listed)",
     "category": "Fintech (Payments)",
-    "locations": ["Noida", "Bangalore"],
+    "locations": [
+      "Noida",
+      "Bangalore"
+    ],
     "workMode": "Office",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 22,
@@ -453,9 +639,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Fintech", "Payments/UPI", "Consumer Product", "SQL", "Data Analysis", "Growth"],
-    "hiringProcess": "Phone Screen → Product Case → Behavioral → Hiring Manager",
-    "notes": "Paytm PM base ~₹22L. Noida HQ (preferred). Listed RSUs. Payments, lending, insurance PM roles. Turnaround story post-RBI issues. 5-day week.",
+    "skillsRequired": [
+      "Fintech",
+      "Payments/UPI",
+      "Consumer Product",
+      "SQL",
+      "Data Analysis",
+      "Growth"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Paytm PM base ~\u20b922L. Noida HQ (preferred). Listed RSUs. Payments, lending, insurance PM roles. Turnaround story post-RBI issues. 5-day week.",
     "careerPage": "https://paytm.com/careers/",
     "glassdoorRating": 3.4,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -466,7 +659,10 @@ const PM_COMPANIES_DATA =
     "hq": "Palo Alto, USA",
     "type": "India Office",
     "category": "Cloud Security / Data",
-    "locations": ["Bangalore", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 35,
@@ -476,8 +672,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Data Security", "Cloud/SaaS", "Technical Product", "Competitive Analysis", "Agile", "Go-to-Market"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Data Security",
+      "Cloud/SaaS",
+      "Technical Product",
+      "Competitive Analysis",
+      "Agile",
+      "Go-to-Market"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Rubrik PM roles in Pune (preferred) and Bangalore. IPO'd 2024 (RBRK). Data security platform. RSUs. Growing PM team in India.",
     "careerPage": "https://www.rubrik.com/company/careers",
     "glassdoorRating": 4.2,
@@ -489,7 +692,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "HR Tech / SaaS",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 35,
@@ -499,9 +704,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["B2B SaaS", "HR/Payroll", "Platform Thinking", "SQL", "Technical Product", "Agile"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
-    "notes": "Rippling PM base ~₹35L. Fastest growing HR-tech startup. Compound startup model (multiple products). Pre-IPO stock options. Bangalore engineering center.",
+    "skillsRequired": [
+      "B2B SaaS",
+      "HR/Payroll",
+      "Platform Thinking",
+      "SQL",
+      "Technical Product",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Rippling PM base ~\u20b935L. Fastest growing HR-tech startup. Compound startup model (multiple products). Pre-IPO stock options. Bangalore engineering center.",
     "careerPage": "https://www.rippling.com/careers",
     "glassdoorRating": 4.0,
     "source": "Glassdoor (2025-2026)"
@@ -512,7 +724,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Mateo, USA",
     "type": "India Office (Founded in India)",
     "category": "SaaS / CRM",
-    "locations": ["Chennai", "Hyderabad"],
+    "locations": [
+      "Chennai",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 26,
@@ -522,8 +737,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["B2B SaaS", "CRM", "Helpdesk/ITSM", "Product Strategy", "Agile", "Market Research"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "B2B SaaS",
+      "CRM",
+      "Helpdesk/ITSM",
+      "Product Strategy",
+      "Agile",
+      "Market Research"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Freshworks listed on NASDAQ (FRSH). Hyderabad office (preferred). CRM, ITSM, Marketing automation PM roles. RSUs. India-founded success story.",
     "careerPage": "https://www.freshworks.com/company/careers/",
     "glassdoorRating": 3.7,
@@ -535,7 +757,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Company (Listed)",
     "category": "Fintech (Investing)",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Office",
     "role": "Product Manager",
     "baseSalaryLPA": 26,
@@ -545,8 +769,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Fintech", "Investing/Trading", "Consumer Product", "Data Analysis", "SEBI Regulations", "Growth"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Fintech",
+      "Investing/Trading",
+      "Consumer Product",
+      "Data Analysis",
+      "SEBI Regulations",
+      "Growth"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Groww IPO'd. India's largest stock brokerage. Consumer fintech PM. Listed RSUs. Massive user base. Bangalore only.",
     "careerPage": "https://groww.in/careers",
     "glassdoorRating": 3.8,
@@ -558,7 +789,10 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Quick Commerce",
-    "locations": ["Mumbai", "Bangalore"],
+    "locations": [
+      "Mumbai",
+      "Bangalore"
+    ],
     "workMode": "Office",
     "role": "Product Manager",
     "baseSalaryLPA": 28,
@@ -568,9 +802,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Consumer Product", "Quick Commerce", "Operations Product", "SQL", "Experimentation", "Supply Chain"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Founder Round",
-    "notes": "Zepto PM base ~₹28L. India's fastest-growing quick commerce. 10-min delivery. Massive funding. Pre-IPO ESOPs very valuable. High-impact PM role.",
+    "skillsRequired": [
+      "Consumer Product",
+      "Quick Commerce",
+      "Operations Product",
+      "SQL",
+      "Experimentation",
+      "Supply Chain"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Founder Round",
+    "notes": "Zepto PM base ~\u20b928L. India's fastest-growing quick commerce. 10-min delivery. Massive funding. Pre-IPO ESOPs very valuable. High-impact PM role.",
     "careerPage": "https://www.zeptonow.com/careers",
     "glassdoorRating": 3.6,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -581,7 +822,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Company (Listed)",
     "category": "Food Delivery / Quick Commerce",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Office",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 26,
@@ -591,8 +834,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Consumer Product", "Food/Commerce", "Growth", "SQL", "Experimentation", "Marketplace"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Consumer Product",
+      "Food/Commerce",
+      "Growth",
+      "SQL",
+      "Experimentation",
+      "Marketplace"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Zomato HQ in Gurugram (preferred!). Listed on NSE. Owns Blinkit (quick commerce). Listed RSUs. Consumer PM at scale. Deepinder Goyal-led.",
     "careerPage": "https://www.zomato.com/careers",
     "glassdoorRating": 3.6,
@@ -604,7 +854,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "DevOps / SaaS",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -614,8 +866,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["DevOps/CI-CD", "Technical Product", "B2B SaaS", "Platform Thinking", "Developer UX", "Agile"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "DevOps/CI-CD",
+      "Technical Product",
+      "B2B SaaS",
+      "Platform Thinking",
+      "Developer UX",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Harness (Jyoti Bansal - AppDynamics founder). CI/CD and DevOps PM. Bangalore center. Pre-IPO ESOPs. Technical PM role. Growing fast.",
     "careerPage": "https://www.harness.io/company/careers",
     "glassdoorRating": 4.1,
@@ -627,7 +886,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "Developer Tools / API",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 28,
@@ -637,9 +898,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["API/Developer Tools", "Technical Product", "Developer UX", "B2B SaaS", "Community-led Growth", "Data Analysis"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
-    "notes": "Postman PM base ~₹28L. World's most popular API platform. Bangalore HQ engineering. Developer-focused PM. Pre-IPO ESOPs. 30M+ users.",
+    "skillsRequired": [
+      "API/Developer Tools",
+      "Technical Product",
+      "Developer UX",
+      "B2B SaaS",
+      "Community-led Growth",
+      "Data Analysis"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Postman PM base ~\u20b928L. World's most popular API platform. Bangalore HQ engineering. Developer-focused PM. Pre-IPO ESOPs. 30M+ users.",
     "careerPage": "https://www.postman.com/careers/",
     "glassdoorRating": 3.8,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -650,7 +918,9 @@ const PM_COMPANIES_DATA =
     "hq": "Jakarta, Indonesia",
     "type": "India Office",
     "category": "Super App / Ride-hailing",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 28,
@@ -660,9 +930,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Consumer Product", "Marketplace", "Growth", "SQL", "Super App", "Southeast Asian markets"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
-    "notes": "Gojek (GoTo Group) PM base ~₹28L. Super-app experience (ride-hailing, food, payments). India engineering hub. ESOPs. Good PM culture.",
+    "skillsRequired": [
+      "Consumer Product",
+      "Marketplace",
+      "Growth",
+      "SQL",
+      "Super App",
+      "Southeast Asian markets"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Gojek (GoTo Group) PM base ~\u20b928L. Super-app experience (ride-hailing, food, payments). India engineering hub. ESOPs. Good PM culture.",
     "careerPage": "https://www.gojek.io/careers",
     "glassdoorRating": 4.0,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -673,7 +950,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Jose, USA",
     "type": "India Office",
     "category": "Cloud / Infrastructure",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -683,9 +962,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Cloud/Infra", "Technical Product", "Virtualization", "B2B Enterprise", "Competitive Analysis", "Agile"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
-    "notes": "Nutanix PM base ~₹30L. Listed (NTNX). Cloud infrastructure platform. Technical PM roles. RSUs. Bangalore office.",
+    "skillsRequired": [
+      "Cloud/Infra",
+      "Technical Product",
+      "Virtualization",
+      "B2B Enterprise",
+      "Competitive Analysis",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Nutanix PM base ~\u20b930L. Listed (NTNX). Cloud infrastructure platform. Technical PM roles. RSUs. Bangalore office.",
     "careerPage": "https://www.nutanix.com/company/careers",
     "glassdoorRating": 4.0,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -696,7 +982,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "Identity / Security SaaS",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 32,
@@ -706,9 +994,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM / Staff PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Identity/Security", "B2B SaaS", "Technical Product", "OAuth/OIDC", "Platform", "Go-to-Market"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
-    "notes": "Okta PM base ~₹32L. Listed (OKTA). Identity/Auth platform. Security-focused PM. RSUs vest quarterly. Active PM hiring in Bangalore.",
+    "skillsRequired": [
+      "Identity/Security",
+      "B2B SaaS",
+      "Technical Product",
+      "OAuth/OIDC",
+      "Platform",
+      "Go-to-Market"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Okta PM base ~\u20b932L. Listed (OKTA). Identity/Auth platform. Security-focused PM. RSUs vest quarterly. Active PM hiring in Bangalore.",
     "careerPage": "https://www.okta.com/company/careers/",
     "glassdoorRating": 4.0,
     "source": "Glassdoor (2025-2026)"
@@ -719,7 +1014,9 @@ const PM_COMPANIES_DATA =
     "hq": "Santa Clara, USA",
     "type": "India Office",
     "category": "Cybersecurity",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 32,
@@ -729,9 +1026,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Cybersecurity", "Cloud Security", "Technical Product", "B2B Enterprise", "Competitive Analysis", "Go-to-Market"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
-    "notes": "Palo Alto Networks PM base ~₹32L. Listed (PANW). Multiple security product lines. RSUs. Cybersecurity PM is a growing niche.",
+    "skillsRequired": [
+      "Cybersecurity",
+      "Cloud Security",
+      "Technical Product",
+      "B2B Enterprise",
+      "Competitive Analysis",
+      "Go-to-Market"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Palo Alto Networks PM base ~\u20b932L. Listed (PANW). Multiple security product lines. RSUs. Cybersecurity PM is a growing niche.",
     "careerPage": "https://www.paloaltonetworks.com/company/careers",
     "glassdoorRating": 4.1,
     "source": "Glassdoor (2025-2026)"
@@ -742,7 +1046,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Jose, USA",
     "type": "India Office",
     "category": "Fintech (Payments)",
-    "locations": ["Bangalore", "Hyderabad"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 28,
@@ -752,8 +1059,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Payments", "Fintech", "Consumer + Merchant Product", "Data Analysis", "Compliance", "Global Product"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Payments",
+      "Fintech",
+      "Consumer + Merchant Product",
+      "Data Analysis",
+      "Compliance",
+      "Global Product"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "PayPal PM in Hyderabad (preferred) and Bangalore. Listed (PYPL) RSUs. Global payments PM. Good WLB. 5-day week.",
     "careerPage": "https://careers.pypl.com/",
     "glassdoorRating": 3.9,
@@ -765,7 +1079,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Company (Flipkart-owned)",
     "category": "E-Commerce (Fashion)",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 26,
@@ -775,9 +1091,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["E-Commerce", "Fashion/Lifestyle", "Consumer Product", "Personalization", "Growth", "SQL"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
-    "notes": "Myntra (Flipkart/Walmart-owned). PM base ~₹26L. Fashion e-commerce. Strong personalization/recommendation PM. Walmart stock options.",
+    "skillsRequired": [
+      "E-Commerce",
+      "Fashion/Lifestyle",
+      "Consumer Product",
+      "Personalization",
+      "Growth",
+      "SQL"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Myntra (Flipkart/Walmart-owned). PM base ~\u20b926L. Fashion e-commerce. Strong personalization/recommendation PM. Walmart stock options.",
     "careerPage": "https://www.myntra.com/careers",
     "glassdoorRating": 3.8,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -788,7 +1111,9 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Developer Tools / Testing",
-    "locations": ["Mumbai"],
+    "locations": [
+      "Mumbai"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 28,
@@ -798,9 +1123,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Developer Tools", "Testing/QA", "B2B SaaS", "Technical Product", "Platform", "Developer UX"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
-    "notes": "BrowserStack PM base ~₹28L. World's leading testing platform. $4B+ valuation. Developer-focused PM. Mumbai. Pre-IPO ESOPs.",
+    "skillsRequired": [
+      "Developer Tools",
+      "Testing/QA",
+      "B2B SaaS",
+      "Technical Product",
+      "Platform",
+      "Developer UX"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "BrowserStack PM base ~\u20b928L. World's leading testing platform. $4B+ valuation. Developer-focused PM. Mumbai. Pre-IPO ESOPs.",
     "careerPage": "https://www.browserstack.com/careers",
     "glassdoorRating": 3.8,
     "source": "Glassdoor, AmbitionBox (2025-2026)"
@@ -811,7 +1143,9 @@ const PM_COMPANIES_DATA =
     "hq": "Sunnyvale, USA",
     "type": "India Office",
     "category": "Analytics / SaaS",
-    "locations": ["Hyderabad"],
+    "locations": [
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -821,8 +1155,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Analytics/BI", "AI/ML", "B2B SaaS", "Data Visualization", "Technical Product", "SQL"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Analytics/BI",
+      "AI/ML",
+      "B2B SaaS",
+      "Data Visualization",
+      "Technical Product",
+      "SQL"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "ThoughtSpot Hyderabad office (preferred!). AI-powered analytics. Pre-IPO ESOPs. PM for AI search-driven analytics. Good culture.",
     "careerPage": "https://www.thoughtspot.com/careers",
     "glassdoorRating": 4.0,
@@ -834,7 +1175,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "SaaS / Legal Tech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -844,9 +1187,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["SaaS", "E-Signatures", "Legal/Compliance", "Platform Thinking", "B2B Product", "Agile"],
-    "hiringProcess": "Phone Screen → Product Case → Behavioral → Hiring Manager",
-    "notes": "Docusign (DOCU listed). PM base ~₹30L. E-signature/CLM PM. RSUs vest quarterly. Bangalore office.",
+    "skillsRequired": [
+      "SaaS",
+      "E-Signatures",
+      "Legal/Compliance",
+      "Platform Thinking",
+      "B2B Product",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Docusign (DOCU listed). PM base ~\u20b930L. E-signature/CLM PM. RSUs vest quarterly. Bangalore office.",
     "careerPage": "https://www.docusign.com/careers",
     "glassdoorRating": 3.9,
     "source": "Glassdoor (2025-2026)"
@@ -857,7 +1207,9 @@ const PM_COMPANIES_DATA =
     "hq": "Mountain View, USA",
     "type": "India Office",
     "category": "Data Streaming / SaaS",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 32,
@@ -867,8 +1219,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Data Streaming", "Apache Kafka", "Platform/Infra", "Technical Product", "B2B SaaS", "Developer UX"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Data Streaming",
+      "Apache Kafka",
+      "Platform/Infra",
+      "Technical Product",
+      "B2B SaaS",
+      "Developer UX"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Confluent (Apache Kafka creators). Listed (CFLT). PM for data streaming platform. Technical PM. RSUs. Bangalore office.",
     "careerPage": "https://www.confluent.io/careers/",
     "glassdoorRating": 4.0,
@@ -880,7 +1239,9 @@ const PM_COMPANIES_DATA =
     "hq": "Seattle, USA",
     "type": "India Office",
     "category": "Travel / E-Commerce",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 28,
@@ -890,8 +1251,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Travel/Marketplace", "Consumer Product", "A/B Testing", "Revenue Optimization", "Data Analysis", "SQL"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Travel/Marketplace",
+      "Consumer Product",
+      "A/B Testing",
+      "Revenue Optimization",
+      "Data Analysis",
+      "SQL"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Expedia Gurugram office (preferred!). EXPE listed. Travel marketplace PM. RSUs. Hotels.com, Vrbo products too. Good WLB.",
     "careerPage": "https://lifeatexpediagroup.com/",
     "glassdoorRating": 3.9,
@@ -903,7 +1271,9 @@ const PM_COMPANIES_DATA =
     "hq": "New York, USA",
     "type": "India Office",
     "category": "Database / Developer Tools",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -913,8 +1283,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Database/Data", "Developer Tools", "Technical Product", "B2B SaaS", "Cloud/Atlas", "SQL/NoSQL"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Database/Data",
+      "Developer Tools",
+      "Technical Product",
+      "B2B SaaS",
+      "Cloud/Atlas",
+      "SQL/NoSQL"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "MongoDB Gurugram office (preferred!). Listed (MDB). Database platform PM. Cloud Atlas, Realm. Technical PM. RSUs.",
     "careerPage": "https://www.mongodb.com/careers",
     "glassdoorRating": 4.2,
@@ -926,7 +1303,10 @@ const PM_COMPANIES_DATA =
     "hq": "Amsterdam, Netherlands",
     "type": "Remote-friendly",
     "category": "Travel / E-Commerce",
-    "locations": ["Bangalore", "Remote"],
+    "locations": [
+      "Bangalore",
+      "Remote"
+    ],
     "workMode": "Hybrid / Remote",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -936,8 +1316,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Travel", "Consumer Product", "Experimentation", "A/B Testing", "Data Analysis", "Localization"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Travel",
+      "Consumer Product",
+      "Experimentation",
+      "A/B Testing",
+      "Data Analysis",
+      "Localization"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Booking.com (BKNG listed). Travel PM. Very strong experimentation culture. RSUs from parent Booking Holdings. Remote-friendly options.",
     "careerPage": "https://careers.booking.com/",
     "glassdoorRating": 3.9,
@@ -949,7 +1336,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Fintech (Banking Tech)",
-    "locations": ["Bangalore", "Hyderabad"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 26,
@@ -959,8 +1349,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Banking/Fintech", "Card Issuance", "B2B Platform", "API Products", "Payments", "Product Strategy"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Banking/Fintech",
+      "Card Issuance",
+      "B2B Platform",
+      "API Products",
+      "Payments",
+      "Product Strategy"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Zeta Hyderabad office (preferred!). Neo-banking platform. Directi-backed. B2B banking-infrastructure PM. Pre-IPO ESOPs.",
     "careerPage": "https://www.zeta.tech/careers/",
     "glassdoorRating": 3.7,
@@ -972,7 +1369,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Social Media",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 24,
@@ -982,8 +1381,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Social Media", "Content/Feed", "Growth", "Experimentation", "ML-driven Product", "Consumer"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Social Media",
+      "Content/Feed",
+      "Growth",
+      "Experimentation",
+      "ML-driven Product",
+      "Consumer"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "ShareChat + Moj (short video). Google-backed. Social media PM at scale. Content recommendation PM. Pre-IPO ESOPs.",
     "careerPage": "https://sharechat.com/careers",
     "glassdoorRating": 3.5,
@@ -995,7 +1401,9 @@ const PM_COMPANIES_DATA =
     "hq": "New York, USA",
     "type": "India Office",
     "category": "SaaS / CXM",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -1005,8 +1413,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["CXM/Social", "B2B Enterprise", "AI/ML", "Platform Thinking", "Data Analysis", "Agile"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "CXM/Social",
+      "B2B Enterprise",
+      "AI/ML",
+      "Platform Thinking",
+      "Data Analysis",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Sprinklr HQ in Gurugram (preferred!). Listed (CXM). Customer experience management. AI-powered PM. India-founded. RSUs.",
     "careerPage": "https://www.sprinklr.com/careers/",
     "glassdoorRating": 3.6,
@@ -1018,7 +1433,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "Data / AI Platform",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 40,
@@ -1028,9 +1445,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Data/AI", "Lakehouse", "Technical Product", "ML/Gen AI", "SQL", "Platform"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
-    "notes": "Databricks PM base ~₹40L. $62B+ valuation. Pre-IPO RSUs can be very valuable. AI/Data lakehouse PM. Bangalore. Technical PM.",
+    "skillsRequired": [
+      "Data/AI",
+      "Lakehouse",
+      "Technical Product",
+      "ML/Gen AI",
+      "SQL",
+      "Platform"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Databricks PM base ~\u20b940L. $62B+ valuation. Pre-IPO RSUs can be very valuable. AI/Data lakehouse PM. Bangalore. Technical PM.",
     "careerPage": "https://www.databricks.com/company/careers",
     "glassdoorRating": 4.3,
     "source": "Glassdoor (2025-2026)"
@@ -1041,7 +1465,11 @@ const PM_COMPANIES_DATA =
     "hq": "Santa Clara, USA",
     "type": "India Office",
     "category": "Big Tech (Semiconductor/AI)",
-    "locations": ["Bangalore", "Hyderabad", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager (GPU/AI Software)",
     "baseSalaryLPA": 32,
@@ -1051,8 +1479,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["GPU/AI", "Technical Product", "Hardware-Software", "Developer Tools", "Platform", "ML"],
-    "hiringProcess": "Phone Screen → Technical Assessment → Product Case → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "GPU/AI",
+      "Technical Product",
+      "Hardware-Software",
+      "Developer Tools",
+      "Platform",
+      "ML"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Technical Assessment \u2192 Product Case \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Nvidia PM in Pune and Hyderabad (preferred locations!). NVDA stock RSUs (stock has surged). AI/GPU product management. Very technical.",
     "careerPage": "https://www.nvidia.com/en-us/about-nvidia/careers/",
     "glassdoorRating": 4.3,
@@ -1064,7 +1499,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Home Services",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Office",
     "role": "Product Manager",
     "baseSalaryLPA": 24,
@@ -1074,8 +1511,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Consumer Product", "Marketplace", "Operations Product", "Supply-Demand", "Growth", "SQL"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Consumer Product",
+      "Marketplace",
+      "Operations Product",
+      "Supply-Demand",
+      "Growth",
+      "SQL"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Urban Company HQ in Gurugram (preferred!). Home services marketplace. Consumer + Partner PM. Pre-IPO ESOPs.",
     "careerPage": "https://www.urbancompany.com/careers",
     "glassdoorRating": 3.6,
@@ -1087,7 +1531,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Jose, USA",
     "type": "India Office",
     "category": "Data Management / Security",
-    "locations": ["Pune", "Bangalore"],
+    "locations": [
+      "Pune",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -1097,8 +1544,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Data Management", "Security", "Cloud", "Technical Product", "B2B Enterprise", "Agile"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Data Management",
+      "Security",
+      "Cloud",
+      "Technical Product",
+      "B2B Enterprise",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Cohesity Pune office (preferred!). Data management platform. Pre-IPO ESOPs. Technical PM. Merged with Veritas data business.",
     "careerPage": "https://www.cohesity.com/company/careers/",
     "glassdoorRating": 3.9,
@@ -1110,7 +1564,10 @@ const PM_COMPANIES_DATA =
     "hq": "Palo Alto, USA",
     "type": "India Office / Remote",
     "category": "AI / Enterprise Search",
-    "locations": ["Bangalore", "Remote"],
+    "locations": [
+      "Bangalore",
+      "Remote"
+    ],
     "workMode": "Hybrid / Remote",
     "role": "Product Manager",
     "baseSalaryLPA": 38,
@@ -1120,8 +1577,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["AI/LLM", "Enterprise Search", "Technical Product", "NLP", "Platform", "B2B SaaS"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Team Fit",
+    "skillsRequired": [
+      "AI/LLM",
+      "Enterprise Search",
+      "Technical Product",
+      "NLP",
+      "Platform",
+      "B2B SaaS"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Team Fit",
     "notes": "Glean - AI enterprise search. $4.6B valuation. Pre-IPO equity very valuable. AI-native PM role. Fast growing.",
     "careerPage": "https://www.glean.com/careers",
     "glassdoorRating": 4.4,
@@ -1133,7 +1597,10 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "India Office",
     "category": "Streaming / Entertainment",
-    "locations": ["Mumbai", "Bangalore"],
+    "locations": [
+      "Mumbai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 26,
@@ -1143,8 +1610,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Streaming/Video", "Consumer Product", "Content", "Growth", "Live Sports", "Experimentation"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Streaming/Video",
+      "Consumer Product",
+      "Content",
+      "Growth",
+      "Live Sports",
+      "Experimentation"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Disney+ Hotstar PM. Massive concurrent users during IPL. Live sports + content PM. Disney RSUs. Consumer product at scale.",
     "careerPage": "https://careers.hotstar.com/",
     "glassdoorRating": 3.8,
@@ -1156,7 +1630,10 @@ const PM_COMPANIES_DATA =
     "hq": "Welwyn Garden City, UK",
     "type": "India Office",
     "category": "Retail / E-Commerce",
-    "locations": ["Bangalore", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior PM",
     "baseSalaryLPA": 24,
@@ -1166,8 +1643,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Retail Product", "E-Commerce", "Supply Chain", "Data Analysis", "Loyalty/CRM", "Agile"],
-    "hiringProcess": "Phone Screen → Product Case → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Retail Product",
+      "E-Commerce",
+      "Supply Chain",
+      "Data Analysis",
+      "Loyalty/CRM",
+      "Agile"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Tesco Tech Pune office (preferred). UK retailer. Good WLB. No RSUs but solid benefits. Grocery/retail PM. 5-day week.",
     "careerPage": "https://www.tescotechnology.com/careers/",
     "glassdoorRating": 3.8,
@@ -1179,7 +1663,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Fintech (Neo-banking)",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1189,8 +1675,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Fintech", "Credit/Lending", "Consumer Product", "Banking", "UPI", "SQL"],
-    "hiringProcess": "Phone Screen → Product Case → Analytical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Fintech",
+      "Credit/Lending",
+      "Consumer Product",
+      "Banking",
+      "UPI",
+      "SQL"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Analytical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "Slice (merged with NE Small Finance Bank). Banking license. Fintech PM. Credit card + UPI product. ESOPs.",
     "careerPage": "https://www.sliceit.com/careers",
     "glassdoorRating": 3.5,
@@ -1202,7 +1695,9 @@ const PM_COMPANIES_DATA =
     "hq": "New York, USA",
     "type": "India Office",
     "category": "Cloud Infrastructure",
-    "locations": ["Hyderabad"],
+    "locations": [
+      "Hyderabad"
+    ],
     "workMode": "Remote-friendly",
     "role": "Product Manager",
     "baseSalaryLPA": 28,
@@ -1212,8 +1707,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Cloud/Infra", "Developer Tools", "Technical Product", "B2B SaaS", "SMB Focus", "Platform"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
+    "skillsRequired": [
+      "Cloud/Infra",
+      "Developer Tools",
+      "Technical Product",
+      "B2B SaaS",
+      "SMB Focus",
+      "Platform"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
     "notes": "DigitalOcean Hyderabad (preferred!). Listed (DOCN). Cloud for SMBs/developers. RSUs. Remote-friendly culture.",
     "careerPage": "https://www.digitalocean.com/careers",
     "glassdoorRating": 3.9,
@@ -1225,7 +1727,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "Cybersecurity / AI",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 35,
@@ -1235,9 +1739,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["AI/ML", "Cybersecurity", "Email Security", "Technical Product", "B2B SaaS", "Threat Detection"],
-    "hiringProcess": "Phone Screen → Product Case → Technical → Behavioral → Hiring Manager",
-    "notes": "Abnormal Security PM base ~₹35L. $5B+ valuation. AI email security. Pre-IPO equity. Actively hiring PM in Bangalore per Levels.fyi jobs.",
+    "skillsRequired": [
+      "AI/ML",
+      "Cybersecurity",
+      "Email Security",
+      "Technical Product",
+      "B2B SaaS",
+      "Threat Detection"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Technical \u2192 Behavioral \u2192 Hiring Manager",
+    "notes": "Abnormal Security PM base ~\u20b935L. $5B+ valuation. AI email security. Pre-IPO equity. Actively hiring PM in Bangalore per Levels.fyi jobs.",
     "careerPage": "https://abnormalsecurity.com/careers",
     "glassdoorRating": 4.3,
     "source": "Glassdoor (2025-2026)"
@@ -1248,18 +1759,27 @@ const PM_COMPANIES_DATA =
     "hq": "London, UK",
     "type": "Remote (UK Company, Listed)",
     "category": "Fintech (Remittance)",
-    "locations": ["Remote"],
+    "locations": [
+      "Remote"
+    ],
     "workMode": "Fully Remote",
     "role": "Senior Product Manager",
     "baseSalaryLPA": 45,
-    "baseSalaryRange": "£45,000 - £85,000 GBP",
+    "baseSalaryRange": "\u00a345,000 - \u00a385,000 GBP",
     "currency": "GBP",
-    "totalCompRange": "£45K-£85K + RSUs",
+    "totalCompRange": "\u00a345K-\u00a385K + RSUs",
     "stocksRSU": true,
     "levelEquivalent": "Senior PM / Lead PM",
     "yearsExpNeeded": "4+",
-    "skillsRequired": ["Fintech", "Payments", "Global Product", "Localization", "Data Analysis", "Experimentation"],
-    "hiringProcess": "Phone Screen → Product Case → Paid Work Trial → Team Interview",
+    "skillsRequired": [
+      "Fintech",
+      "Payments",
+      "Global Product",
+      "Localization",
+      "Data Analysis",
+      "Experimentation"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Paid Work Trial \u2192 Team Interview",
     "notes": "Wise (LSE listed). Pays in GBP. Remote-friendly globally. Money transfer PM. Unique paid trial hiring process. Good WLB. Mission-driven.",
     "careerPage": "https://www.wise.jobs/",
     "glassdoorRating": 4.2,
@@ -1271,7 +1791,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "Remote (US Company)",
     "category": "HR Tech / Payroll",
-    "locations": ["Remote"],
+    "locations": [
+      "Remote"
+    ],
     "workMode": "Fully Remote",
     "role": "Product Manager",
     "baseSalaryLPA": 50,
@@ -1281,8 +1803,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "4+",
-    "skillsRequired": ["HR/Payroll", "Global Product", "Compliance", "B2B SaaS", "Platform", "Localization"],
-    "hiringProcess": "Phone Screen → Product Case → Async Exercise → Team Interview",
+    "skillsRequired": [
+      "HR/Payroll",
+      "Global Product",
+      "Compliance",
+      "B2B SaaS",
+      "Platform",
+      "Localization"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Async Exercise \u2192 Team Interview",
     "notes": "Deel - global payroll/HR platform. Fully remote. $12B+ valuation. Pays in USD. Pre-IPO equity. Fast-growing PM team.",
     "careerPage": "https://www.deel.com/careers",
     "glassdoorRating": 4.0,
@@ -1294,7 +1823,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "Remote (All-Remote Company)",
     "category": "Developer Tools / DevOps",
-    "locations": ["Remote"],
+    "locations": [
+      "Remote"
+    ],
     "workMode": "Fully Remote",
     "role": "Product Manager",
     "baseSalaryLPA": 42,
@@ -1304,8 +1835,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "4+",
-    "skillsRequired": ["DevOps/CI-CD", "Developer Tools", "Technical Product", "B2B SaaS", "Open Source", "Handbook-first"],
-    "hiringProcess": "Application → Screening → Technical Case → Team Interviews (async-heavy)",
+    "skillsRequired": [
+      "DevOps/CI-CD",
+      "Developer Tools",
+      "Technical Product",
+      "B2B SaaS",
+      "Open Source",
+      "Handbook-first"
+    ],
+    "hiringProcess": "Application \u2192 Screening \u2192 Technical Case \u2192 Team Interviews (async-heavy)",
     "notes": "GitLab - all-remote pioneer. Listed (GTLB). DevOps platform PM. RSUs. Remote from anywhere. Handbook-first culture. Transparent.",
     "careerPage": "https://about.gitlab.com/jobs/",
     "glassdoorRating": 4.0,
@@ -1317,7 +1855,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "Remote (Distributed Company)",
     "category": "SaaS / CMS",
-    "locations": ["Remote"],
+    "locations": [
+      "Remote"
+    ],
     "workMode": "Fully Remote",
     "role": "Product Manager (WordPress.com)",
     "baseSalaryLPA": 45,
@@ -1327,8 +1867,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "4+",
-    "skillsRequired": ["CMS/WordPress", "Consumer Product", "Open Source", "Data Analysis", "Growth", "Community"],
-    "hiringProcess": "Application → Written Interview → Trial Project (paid) → Team Interviews",
+    "skillsRequired": [
+      "CMS/WordPress",
+      "Consumer Product",
+      "Open Source",
+      "Data Analysis",
+      "Growth",
+      "Community"
+    ],
+    "hiringProcess": "Application \u2192 Written Interview \u2192 Trial Project (paid) \u2192 Team Interviews",
     "notes": "Automattic (WordPress.com, WooCommerce, Tumblr). Fully distributed. Pays in USD. Unique paid trial. Powers 40%+ of web.",
     "careerPage": "https://automattic.com/work-with-us/",
     "glassdoorRating": 4.2,
@@ -1340,7 +1887,9 @@ const PM_COMPANIES_DATA =
     "hq": "Ottawa, Canada",
     "type": "Remote (Global)",
     "category": "E-Commerce SaaS",
-    "locations": ["Remote"],
+    "locations": [
+      "Remote"
+    ],
     "workMode": "Fully Remote (Digital by Default)",
     "role": "Product Manager",
     "baseSalaryLPA": 48,
@@ -1350,8 +1899,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "4+",
-    "skillsRequired": ["E-Commerce", "SaaS", "SMB Product", "Platform Thinking", "Data Analysis", "Growth"],
-    "hiringProcess": "Application → Recruiter Screen → Life Story Interview → Technical Case → GSD Interview",
+    "skillsRequired": [
+      "E-Commerce",
+      "SaaS",
+      "SMB Product",
+      "Platform Thinking",
+      "Data Analysis",
+      "Growth"
+    ],
+    "hiringProcess": "Application \u2192 Recruiter Screen \u2192 Life Story Interview \u2192 Technical Case \u2192 GSD Interview",
     "notes": "Shopify - digital by default (remote). Listed (SHOP). E-commerce platform PM. RSUs. India-adjusted pay. Powers millions of merchants.",
     "careerPage": "https://www.shopify.com/careers",
     "glassdoorRating": 3.8,
@@ -1363,7 +1919,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "Remote / India",
     "category": "Productivity / SaaS",
-    "locations": ["Bangalore", "Remote"],
+    "locations": [
+      "Bangalore",
+      "Remote"
+    ],
     "workMode": "Hybrid / Remote",
     "role": "Product Manager",
     "baseSalaryLPA": 40,
@@ -1373,8 +1932,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Productivity Tools", "Consumer + B2B", "AI/LLM", "Design Thinking", "Platform", "Community"],
-    "hiringProcess": "Phone Screen → Product Case → Design Review → Team Fit",
+    "skillsRequired": [
+      "Productivity Tools",
+      "Consumer + B2B",
+      "AI/LLM",
+      "Design Thinking",
+      "Platform",
+      "Community"
+    ],
+    "hiringProcess": "Phone Screen \u2192 Product Case \u2192 Design Review \u2192 Team Fit",
     "notes": "Notion PM. India office growing. Pre-IPO equity (very valuable). AI-native product. Design-driven PM culture. One of the most desired PM roles.",
     "careerPage": "https://www.notion.so/careers",
     "glassdoorRating": 4.4,
@@ -1386,7 +1952,10 @@ const PM_COMPANIES_DATA =
     "hq": "Menlo Park, USA",
     "type": "India Office",
     "category": "Big Tech (FAANG)",
-    "locations": ["Gurugram", "Hyderabad"],
+    "locations": [
+      "Gurugram",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid (3 days office)",
     "role": "Product Manager (IC4/IC5)",
     "baseSalaryLPA": 55,
@@ -1396,9 +1965,16 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "IC4 (PM) / IC5 (Senior PM)",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "Data Analysis", "SQL", "Growth", "Experimentation", "Cross-functional leadership"],
-    "hiringProcess": "Recruiter Screen → Phone Screen → Onsite (Product Sense, Execution, Leadership & Drive)",
-    "notes": "Meta India PM roles in Whatsapp, Instagram, Reality Labs teams. IC4 base ~₹55L, IC5 base ~₹75L. Very high RSU grants. Gurugram & Hyderabad offices. 5-day hybrid. Strong PM culture.",
+    "skillsRequired": [
+      "Product Strategy",
+      "Data Analysis",
+      "SQL",
+      "Growth",
+      "Experimentation",
+      "Cross-functional leadership"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (Product Sense, Execution, Leadership & Drive)",
+    "notes": "Meta India PM roles in Whatsapp, Instagram, Reality Labs teams. IC4 base ~\u20b955L, IC5 base ~\u20b975L. Very high RSU grants. Gurugram & Hyderabad offices. 5-day hybrid. Strong PM culture.",
     "careerPage": "https://www.metacareers.com/jobs?q=product%20manager&location=India",
     "glassdoorRating": 4.1,
     "source": "Levels.fyi / Glassdoor (2025-2026)"
@@ -1409,7 +1985,10 @@ const PM_COMPANIES_DATA =
     "hq": "Cupertino, USA",
     "type": "India Office",
     "category": "Big Tech (FAANG)",
-    "locations": ["Hyderabad", "Bangalore"],
+    "locations": [
+      "Hyderabad",
+      "Bangalore"
+    ],
     "workMode": "Hybrid (3 days office)",
     "role": "Product Manager (ICT3/ICT4)",
     "baseSalaryLPA": 50,
@@ -1419,8 +1998,14 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "ICT3 (PM) / ICT4 (Senior PM)",
     "yearsExpNeeded": "4-10",
-    "skillsRequired": ["Product Strategy", "Technical Product Management", "Hardware-Software Integration", "Design Thinking", "Data Analysis"],
-    "hiringProcess": "Recruiter Screen → Technical Phone → Onsite (4-5 rounds: Product, Technical, Design, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Technical Product Management",
+      "Hardware-Software Integration",
+      "Design Thinking",
+      "Data Analysis"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Technical Phone \u2192 Onsite (4-5 rounds: Product, Technical, Design, Leadership)",
     "notes": "Apple India PM roles in Maps, Siri, Services, Apple Pay teams. Hyderabad is the major India office. Very secretive culture. RSU vesting over 4 yrs. 5-day week.",
     "careerPage": "https://jobs.apple.com/en-in/search?location=india&team=product",
     "glassdoorRating": 4.2,
@@ -1432,7 +2017,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "Fintech / Payments",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 35,
@@ -1442,8 +2029,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "Band 10 (PM) / Band 11 (Sr PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Payments", "Product Strategy", "Data Analytics", "API Products", "Stakeholder Management", "Fintech"],
-    "hiringProcess": "Recruiter Screen → Hiring Manager → Panel (3-4 rounds: Product Case, Analytical, Behavioral)",
+    "skillsRequired": [
+      "Payments",
+      "Product Strategy",
+      "Data Analytics",
+      "API Products",
+      "Stakeholder Management",
+      "Fintech"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Hiring Manager \u2192 Panel (3-4 rounds: Product Case, Analytical, Behavioral)",
     "notes": "Visa Bangalore PM roles in payment products, Visa Direct, tokenization. Strong WLB. RSUs + bonus. Fortune 500 stability. 5-day week. Very good benefits.",
     "careerPage": "https://corporate.visa.com/en/careers.html",
     "glassdoorRating": 4.1,
@@ -1455,7 +2049,10 @@ const PM_COMPANIES_DATA =
     "hq": "Purchase, USA",
     "type": "India Office",
     "category": "Fintech / Payments",
-    "locations": ["Pune", "Gurugram"],
+    "locations": [
+      "Pune",
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Manager, Product Management",
     "baseSalaryLPA": 30,
@@ -1465,8 +2062,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "Manager / Senior Manager",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Payments", "Product Lifecycle", "Data Analytics", "Digital Commerce", "Stakeholder Management", "Agile"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds: Product, Behavioral, Leadership)",
+    "skillsRequired": [
+      "Payments",
+      "Product Lifecycle",
+      "Data Analytics",
+      "Digital Commerce",
+      "Stakeholder Management",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds: Product, Behavioral, Leadership)",
     "notes": "Mastercard Pune & Gurugram offices (both preferred locations). PM roles in payments, cyber security, data products. Excellent WLB. RSUs + annual bonus. 5-day week.",
     "careerPage": "https://careers.mastercard.com/us/en/search-results?keywords=product%20manager&location=India",
     "glassdoorRating": 4.2,
@@ -1478,7 +2082,10 @@ const PM_COMPANIES_DATA =
     "hq": "New York, USA",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Bangalore", "Hyderabad"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid (3 days office)",
     "role": "Product Manager / Vice President - Product",
     "baseSalaryLPA": 40,
@@ -1488,8 +2095,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "Associate / VP",
     "yearsExpNeeded": "4-10",
-    "skillsRequired": ["Product Strategy", "Financial Products", "Data Analytics", "Technical PM", "Agile", "Stakeholder Management"],
-    "hiringProcess": "Recruiter Screen → HireVue → Superday (4-5 rounds: Product, Analytical, Behavioral, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Financial Products",
+      "Data Analytics",
+      "Technical PM",
+      "Agile",
+      "Stakeholder Management"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HireVue \u2192 Superday (4-5 rounds: Product, Analytical, Behavioral, Leadership)",
     "notes": "GS India product roles in Marcus, Transaction Banking, Platform Engineering. Hyderabad office is massive. Competitive bonus structure. 5-day week. Intense culture but great pay.",
     "careerPage": "https://www.goldmansachs.com/careers/find-a-job",
     "glassdoorRating": 3.8,
@@ -1501,7 +2115,11 @@ const PM_COMPANIES_DATA =
     "hq": "New York, USA",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Hyderabad", "Bangalore", "Mumbai"],
+    "locations": [
+      "Hyderabad",
+      "Bangalore",
+      "Mumbai"
+    ],
     "workMode": "Hybrid (3 days office)",
     "role": "Product Manager / Associate - Product",
     "baseSalaryLPA": 35,
@@ -1511,8 +2129,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "Associate / VP",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Management", "Banking Products", "Data Analytics", "Agile", "Technical Writing", "Stakeholder Management"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3-4 rounds: Product, Analytical, Behavioral)",
+    "skillsRequired": [
+      "Product Management",
+      "Banking Products",
+      "Data Analytics",
+      "Agile",
+      "Technical Writing",
+      "Stakeholder Management"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3-4 rounds: Product, Analytical, Behavioral)",
     "notes": "JPMC Hyderabad is a major tech hub (preferred). PM roles in Consumer Banking, Payments, Wealth Management. RSUs + cash bonus. 5-day week. Good WLB in India.",
     "careerPage": "https://careers.jpmorgan.com/global/en/search-results?keywords=product%20manager&location=India",
     "glassdoorRating": 3.9,
@@ -1524,7 +2149,9 @@ const PM_COMPANIES_DATA =
     "hq": "New York, USA",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Manager - Product Development",
     "baseSalaryLPA": 28,
@@ -1534,8 +2161,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "Band 30 (Manager)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Payments", "Digital Products", "Data Analytics", "Customer Experience", "Agile"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds: Product, Analytical, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Payments",
+      "Digital Products",
+      "Data Analytics",
+      "Customer Experience",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds: Product, Analytical, Leadership)",
     "notes": "AmEx Gurugram office (preferred location). PM roles in digital cards, travel, merchant products. Great WLB & culture. RSUs + bonus. 5-day week. Amex Blue Box values.",
     "careerPage": "https://www.americanexpress.com/en-us/careers/",
     "glassdoorRating": 4.0,
@@ -1547,7 +2181,10 @@ const PM_COMPANIES_DATA =
     "hq": "Frankfurt, Germany",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Pune", "Bangalore"],
+    "locations": [
+      "Pune",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / AVP - Product",
     "baseSalaryLPA": 28,
@@ -1557,8 +2194,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "AVP / VP",
     "yearsExpNeeded": "4-10",
-    "skillsRequired": ["Product Management", "Banking", "Digital Transformation", "Data Analytics", "Agile", "Regulatory"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds: Product, Technical, Leadership)",
+    "skillsRequired": [
+      "Product Management",
+      "Banking",
+      "Digital Transformation",
+      "Data Analytics",
+      "Agile",
+      "Regulatory"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds: Product, Technical, Leadership)",
     "notes": "Deutsche Bank Pune office is a major tech hub (preferred). PM roles in digital banking, wealth management, trading platforms. Decent WLB. Cash bonus. 5-day week.",
     "careerPage": "https://careers.db.com/explore-the-bank/careers-in-india/",
     "glassdoorRating": 3.8,
@@ -1570,7 +2214,9 @@ const PM_COMPANIES_DATA =
     "hq": "London, UK",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Pune"],
+    "locations": [
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / AVP - Product",
     "baseSalaryLPA": 26,
@@ -1580,8 +2226,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "AVP / VP",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Management", "Banking Products", "Digital", "Data Analytics", "Agile", "Stakeholder Management"],
-    "hiringProcess": "Recruiter Screen → Technical → Panel (3 rounds: Product, Analytical, Behavioral)",
+    "skillsRequired": [
+      "Product Management",
+      "Banking Products",
+      "Digital",
+      "Data Analytics",
+      "Agile",
+      "Stakeholder Management"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Technical \u2192 Panel (3 rounds: Product, Analytical, Behavioral)",
     "notes": "Barclays Pune campus is excellent (preferred location). PM roles in digital banking, cards, payments. Good WLB. Annual bonus. 5-day week. Strong L&D culture.",
     "careerPage": "https://search.jobs.barclays/search-jobs/India",
     "glassdoorRating": 3.9,
@@ -1593,7 +2246,11 @@ const PM_COMPANIES_DATA =
     "hq": "London, UK",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Hyderabad", "Pune", "Bangalore"],
+    "locations": [
+      "Hyderabad",
+      "Pune",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Manager - Digital Products",
     "baseSalaryLPA": 26,
@@ -1603,8 +2260,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "GCB5 (Manager) / GCB4 (AVP)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Management", "Digital Banking", "Data Analytics", "Customer Experience", "Agile", "Regulatory"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds)",
+    "skillsRequired": [
+      "Product Management",
+      "Digital Banking",
+      "Data Analytics",
+      "Customer Experience",
+      "Agile",
+      "Regulatory"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds)",
     "notes": "HSBC Hyderabad & Pune offices (both preferred). PM roles in digital banking, wealth, trade finance. Good WLB & benefits. Annual bonus. 5-day week.",
     "careerPage": "https://www.hsbc.com/careers/find-a-role",
     "glassdoorRating": 3.9,
@@ -1616,7 +2280,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Hyderabad", "Bangalore"],
+    "locations": [
+      "Hyderabad",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Senior Product Manager",
     "baseSalaryLPA": 28,
@@ -1626,8 +2293,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "Manager / Senior Manager",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Management", "Banking", "Data Analytics", "Agile", "Stakeholder Management", "Digital Products"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds: Product, Analytical, Behavioral)",
+    "skillsRequired": [
+      "Product Management",
+      "Banking",
+      "Data Analytics",
+      "Agile",
+      "Stakeholder Management",
+      "Digital Products"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds: Product, Analytical, Behavioral)",
     "notes": "Wells Fargo Hyderabad hub is large (preferred). PM roles in consumer banking, commercial banking, payments. Decent WLB. Cash bonus. 5-day week.",
     "careerPage": "https://www.wellsfargojobs.com/en/search-jobs/India",
     "glassdoorRating": 3.6,
@@ -1639,7 +2313,10 @@ const PM_COMPANIES_DATA =
     "hq": "London, UK",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Bangalore", "Chennai"],
+    "locations": [
+      "Bangalore",
+      "Chennai"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Manager - Digital Products",
     "baseSalaryLPA": 25,
@@ -1649,8 +2326,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "Band 5 (Manager) / Band 4 (AVP)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Management", "Digital Banking", "Payments", "Data Analytics", "Agile", "Customer Journeys"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds)",
+    "skillsRequired": [
+      "Product Management",
+      "Digital Banking",
+      "Payments",
+      "Data Analytics",
+      "Agile",
+      "Customer Journeys"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds)",
     "notes": "StanChart global tech hub in Bangalore. PM roles in SC Ventures, digital banking, payments. Good WLB. Annual bonus. 5-day week.",
     "careerPage": "https://www.sc.com/en/careers/",
     "glassdoorRating": 3.8,
@@ -1662,7 +2346,10 @@ const PM_COMPANIES_DATA =
     "hq": "Noida, India",
     "type": "Indian Origin",
     "category": "Fintech / Payments",
-    "locations": ["Noida", "Bangalore"],
+    "locations": [
+      "Noida",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -1672,8 +2359,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Payments", "Product Strategy", "POS/Merchant Products", "Data Analytics", "API Products", "Agile"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Product Case → Final Round",
+    "skillsRequired": [
+      "Payments",
+      "Product Strategy",
+      "POS/Merchant Products",
+      "Data Analytics",
+      "API Products",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Product Case \u2192 Final Round",
     "notes": "Pine Labs Noida HQ (preferred). Leading merchant commerce platform in India. Pre-IPO (Plural acquisition). PM roles in payments, lending, merchant solutions. 5-day week.",
     "careerPage": "https://www.pinelabs.com/careers",
     "glassdoorRating": 3.6,
@@ -1685,7 +2379,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Listed)",
     "category": "Fintech / InsurTech",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1695,8 +2391,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Insurance/Finance", "Data Analytics", "A/B Testing", "UX", "Growth"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Product Case → CEO Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Insurance/Finance",
+      "Data Analytics",
+      "A/B Testing",
+      "UX",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Product Case \u2192 CEO Round",
     "notes": "PolicyBazaar Gurugram HQ (preferred). India's largest insurance marketplace. Listed company. PM roles in insurance, lending, PaisaBazaar. 5-day week. Fast-paced culture.",
     "careerPage": "https://careers.policybazaar.com/",
     "glassdoorRating": 3.5,
@@ -1708,7 +2411,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Fintech / Payments",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1718,8 +2423,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Payments", "UPI", "Product Strategy", "Technical PM", "Data Analytics", "Checkout Flows"],
-    "hiringProcess": "Recruiter Screen → Product Case → Technical Discussion → Founder Round",
+    "skillsRequired": [
+      "Payments",
+      "UPI",
+      "Product Strategy",
+      "Technical PM",
+      "Data Analytics",
+      "Checkout Flows"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Technical Discussion \u2192 Founder Round",
     "notes": "Juspay powers payments for Amazon, Swiggy, Flipkart. Built NAMMA (UPI). Pre-IPO ESOPs. PM roles in payment orchestration, HyperSDK. Strong engineering-led culture. 5-day week.",
     "careerPage": "https://juspay.in/careers",
     "glassdoorRating": 3.8,
@@ -1731,7 +2443,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Fintech / InsurTech",
-    "locations": ["Bangalore", "Mumbai"],
+    "locations": [
+      "Bangalore",
+      "Mumbai"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1741,8 +2456,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Insurance", "Data Analytics", "Growth", "UX", "A/B Testing"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Product Case → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Insurance",
+      "Data Analytics",
+      "Growth",
+      "UX",
+      "A/B Testing"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Product Case \u2192 Final Round",
     "notes": "Acko is a digital-first insurance company. General insurance products (car, bike, health). ESOPs. PM roles in claims, underwriting, customer experience. 5-day week.",
     "careerPage": "https://www.acko.com/careers",
     "glassdoorRating": 3.5,
@@ -1754,7 +2476,10 @@ const PM_COMPANIES_DATA =
     "hq": "Pune, India",
     "type": "Indian Startup (Listed)",
     "category": "Fintech / InsurTech",
-    "locations": ["Pune", "Bangalore"],
+    "locations": [
+      "Pune",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -1764,8 +2489,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Insurance", "Data Analytics", "UX", "Claims Automation", "Agile"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Product Case → Final",
+    "skillsRequired": [
+      "Product Strategy",
+      "Insurance",
+      "Data Analytics",
+      "UX",
+      "Claims Automation",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Product Case \u2192 Final",
     "notes": "Go Digit (now listed) HQ in Pune (preferred). Backed by Fairfax. PM roles in motor, health, travel insurance. Strong tech culture. 5-day week.",
     "careerPage": "https://www.godigit.com/careers",
     "glassdoorRating": 3.8,
@@ -1777,7 +2509,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Fintech / Payments",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1787,8 +2521,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Payments", "API Products", "Product Strategy", "Data Analytics", "Merchant Experience", "Agile"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "Payments",
+      "API Products",
+      "Product Strategy",
+      "Data Analytics",
+      "Merchant Experience",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Cashfree is a leading payment gateway (competes with Razorpay). Pre-IPO ESOPs. PM roles in payouts, payment gateway, banking. Growing fast. 5-day week.",
     "careerPage": "https://www.cashfree.com/careers",
     "glassdoorRating": 3.5,
@@ -1800,7 +2541,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Fintech / Neobank",
-    "locations": ["Bangalore", "Mumbai"],
+    "locations": [
+      "Bangalore",
+      "Mumbai"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1810,8 +2554,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Consumer Products", "Neobanking", "UX", "Data Analytics", "Growth", "Fintech"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "Consumer Products",
+      "Neobanking",
+      "UX",
+      "Data Analytics",
+      "Growth",
+      "Fintech"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Jupiter neobank by Jitendra Gupta (ex-Citrus Pay). Backed by Tiger Global. PM roles in savings, credit, UPI, Edge CSB. ESOPs. Consumer PM culture. 5-day week.",
     "careerPage": "https://jupiter.money/careers/",
     "glassdoorRating": 3.5,
@@ -1823,7 +2574,10 @@ const PM_COMPANIES_DATA =
     "hq": "New York, USA",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Mumbai", "Bangalore"],
+    "locations": [
+      "Mumbai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / AVP - Product",
     "baseSalaryLPA": 35,
@@ -1833,8 +2587,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "AVP / VP",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Management", "Financial Products", "Data Analytics", "Technical PM", "Wealth Management", "Agile"],
-    "hiringProcess": "Recruiter Screen → Technical → Panel (4 rounds: Product, Analytical, Behavioral, Leadership)",
+    "skillsRequired": [
+      "Product Management",
+      "Financial Products",
+      "Data Analytics",
+      "Technical PM",
+      "Wealth Management",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Technical \u2192 Panel (4 rounds: Product, Analytical, Behavioral, Leadership)",
     "notes": "Morgan Stanley technology hub in Mumbai & Bangalore. PM roles in wealth management, trading platforms, institutional products. Top-tier compensation. Annual bonus. 5-day week.",
     "careerPage": "https://www.morganstanley.com/careers",
     "glassdoorRating": 3.8,
@@ -1846,7 +2607,10 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Origin (Listed)",
     "category": "Travel Tech",
-    "locations": ["Gurugram", "Bangalore"],
+    "locations": [
+      "Gurugram",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -1856,8 +2620,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Strategy", "Travel/Hospitality", "Data Analytics", "UX", "A/B Testing", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Leadership Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Travel/Hospitality",
+      "Data Analytics",
+      "UX",
+      "A/B Testing",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Leadership Round",
     "notes": "MMT Gurugram HQ (preferred). India's largest OTA. NASDAQ-listed. PM roles in flights, hotels, holidays, GoIbibo. RSUs. Consumer PM culture. 5-day week.",
     "careerPage": "https://careers.makemytrip.com/",
     "glassdoorRating": 3.6,
@@ -1869,7 +2640,10 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Startup (Listed)",
     "category": "E-Commerce / D2C",
-    "locations": ["Mumbai", "Noida"],
+    "locations": [
+      "Mumbai",
+      "Noida"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1879,8 +2653,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["E-Commerce", "Consumer Products", "Data Analytics", "Catalog", "Search/Discovery", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "E-Commerce",
+      "Consumer Products",
+      "Data Analytics",
+      "Catalog",
+      "Search/Discovery",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Nykaa is India's top beauty/fashion e-commerce. Listed company. PM roles in marketplace, fashion (Nykaa Fashion), content, supply chain. Fast-paced. 5-day week.",
     "careerPage": "https://www.nykaa.com/careers",
     "glassdoorRating": 3.2,
@@ -1892,7 +2673,10 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Unicorn)",
     "category": "D2C / Retail Tech",
-    "locations": ["Gurugram", "Bangalore"],
+    "locations": [
+      "Gurugram",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1902,8 +2686,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "E-Commerce", "Supply Chain", "Data Analytics", "O2O (Online-to-Offline)", "Consumer Tech"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → CXO Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "E-Commerce",
+      "Supply Chain",
+      "Data Analytics",
+      "O2O (Online-to-Offline)",
+      "Consumer Tech"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 CXO Round",
     "notes": "Lenskart Gurugram HQ (preferred). India's largest eyewear brand. Backed by SoftBank. PM roles in marketplace, 3D try-on, supply chain, retail tech. ESOPs. 5-day week.",
     "careerPage": "https://www.lenskart.com/careers",
     "glassdoorRating": 3.4,
@@ -1915,7 +2706,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Auto Tech / Marketplace",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1925,8 +2718,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Marketplace", "Data Analytics", "Pricing", "Consumer Tech", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Marketplace",
+      "Data Analytics",
+      "Pricing",
+      "Consumer Tech",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Cars24 Gurugram HQ (preferred). India's largest used car platform. Unicorn status. PM roles in marketplace, pricing, financing, refurbishment. ESOPs. 5-day week.",
     "careerPage": "https://www.cars24.com/careers/",
     "glassdoorRating": 3.3,
@@ -1938,7 +2738,9 @@ const PM_COMPANIES_DATA =
     "hq": "Amsterdam, Netherlands",
     "type": "India Office",
     "category": "Marketplace / Classifieds",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -1948,8 +2750,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "4-6",
-    "skillsRequired": ["Marketplace", "Product Strategy", "Data Analytics", "Growth", "Consumer Tech", "Search/Discovery"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Marketplace",
+      "Product Strategy",
+      "Data Analytics",
+      "Growth",
+      "Consumer Tech",
+      "Search/Discovery"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "OLX Gurugram office (preferred). Part of Adevinta (global classifieds). PM roles in auto, real estate, C2C marketplace. Good WLB. RSUs. 5-day week.",
     "careerPage": "https://www.adevinta.com/careers/",
     "glassdoorRating": 3.7,
@@ -1961,7 +2770,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Tata Group)",
     "category": "Health Tech",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -1971,8 +2782,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Healthcare", "E-Commerce", "Data Analytics", "Growth", "Supply Chain"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Healthcare",
+      "E-Commerce",
+      "Data Analytics",
+      "Growth",
+      "Supply Chain"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "1mg (now Tata Health) Gurugram HQ (preferred). E-pharmacy + diagnostics + teleconsultation. Tata group backing gives stability. PM roles in marketplace, supply chain. 5-day week.",
     "careerPage": "https://www.1mg.com/careers",
     "glassdoorRating": 3.4,
@@ -1984,7 +2802,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Tata Group)",
     "category": "E-Commerce / Grocery",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -1994,8 +2814,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "E-Commerce", "Supply Chain", "Data Analytics", "Growth", "Last-mile Logistics"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "E-Commerce",
+      "Supply Chain",
+      "Data Analytics",
+      "Growth",
+      "Last-mile Logistics"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "BigBasket (now part of Tata Digital). India's largest online grocery. PM roles in marketplace, supply chain, quick commerce (BB Now). Tata group stability. 5-day week.",
     "careerPage": "https://www.bigbasket.com/careers/",
     "glassdoorRating": 3.5,
@@ -2007,7 +2834,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Travel Tech / Hospitality",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2017,8 +2846,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Travel/Hospitality", "Data Analytics", "Marketplace", "Pricing", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Travel/Hospitality",
+      "Data Analytics",
+      "Marketplace",
+      "Pricing",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "OYO Gurugram HQ (preferred). Global hotel chain. PM roles in booking platform, supply, revenue management, OYO OS. Pre-IPO ESOPs. Fast-paced. 5-day week.",
     "careerPage": "https://www.oyorooms.com/careers/",
     "glassdoorRating": 3.2,
@@ -2030,7 +2866,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Listed)",
     "category": "Travel Tech",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -2040,8 +2878,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Travel", "Data Analytics", "Consumer Tech", "UX", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Travel",
+      "Data Analytics",
+      "Consumer Tech",
+      "UX",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Ixigo Gurugram HQ (preferred). Listed OTA focused on trains/buses/flights. PM roles in search, train booking, AbhiBus. Good WLB. Strong engineering culture. 5-day week.",
     "careerPage": "https://www.ixigo.com/careers",
     "glassdoorRating": 3.7,
@@ -2053,7 +2898,10 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Startup (Flipkart/Walmart)",
     "category": "Travel Tech",
-    "locations": ["Bangalore", "Mumbai"],
+    "locations": [
+      "Bangalore",
+      "Mumbai"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -2063,8 +2911,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Travel", "Data Analytics", "Consumer Tech", "UX", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Travel",
+      "Data Analytics",
+      "Consumer Tech",
+      "UX",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Cleartrip (acquired by Flipkart). OTA for flights, hotels, activities. Benefits from Flipkart/Walmart backing. PM roles in booking, search, payments. Good culture. 5-day week.",
     "careerPage": "https://www.cleartrip.com/careers",
     "glassdoorRating": 3.5,
@@ -2076,7 +2931,10 @@ const PM_COMPANIES_DATA =
     "hq": "Chennai, India",
     "type": "Indian Origin",
     "category": "SaaS / B2B",
-    "locations": ["Chennai", "Bangalore"],
+    "locations": [
+      "Chennai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -2086,8 +2944,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-8",
-    "skillsRequired": ["Product Strategy", "SaaS", "B2B Products", "Data Analytics", "UX", "Enterprise Software"],
-    "hiringProcess": "Recruiter Screen → Product Case → Technical Discussion → Leadership Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "SaaS",
+      "B2B Products",
+      "Data Analytics",
+      "UX",
+      "Enterprise Software"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Technical Discussion \u2192 Leadership Round",
     "notes": "Zoho is India's largest SaaS company ($1B+ revenue). 45+ products. No VC funding (bootstrapped). PM roles across CRM, WorkDrive, Desk, Books etc. Good culture. 5-day week. No ESOPs though.",
     "careerPage": "https://www.zoho.com/careers.html",
     "glassdoorRating": 3.6,
@@ -2099,7 +2964,10 @@ const PM_COMPANIES_DATA =
     "hq": "Chennai, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B",
-    "locations": ["Chennai", "Bangalore"],
+    "locations": [
+      "Chennai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid / Remote",
     "role": "Product Manager",
     "baseSalaryLPA": 28,
@@ -2109,8 +2977,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["SaaS", "Subscription Billing", "Product Strategy", "API Products", "Data Analytics", "Revenue Management"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "SaaS",
+      "Subscription Billing",
+      "Product Strategy",
+      "API Products",
+      "Data Analytics",
+      "Revenue Management"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Chargebee is a global subscription billing SaaS. Unicorn. PM roles in billing, revenue ops, integrations. ESOPs. Good WLB. 5-day week. Global exposure.",
     "careerPage": "https://www.chargebee.com/company/careers/",
     "glassdoorRating": 3.7,
@@ -2122,7 +2997,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B",
-    "locations": ["Bangalore", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -2132,8 +3010,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["SaaS", "Product Strategy", "Digital Adoption", "Data Analytics", "Enterprise Software", "UX"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "SaaS",
+      "Product Strategy",
+      "Digital Adoption",
+      "Data Analytics",
+      "Enterprise Software",
+      "UX"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Whatfix is a digital adoption platform (DAP). Unicorn backed by SoftBank. Pune office (preferred). PM roles in platform, analytics, integrations. ESOPs. Good culture. 5-day week.",
     "careerPage": "https://whatfix.com/careers/",
     "glassdoorRating": 3.8,
@@ -2145,7 +3030,9 @@ const PM_COMPANIES_DATA =
     "hq": "Pune, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B",
-    "locations": ["Pune"],
+    "locations": [
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -2155,8 +3042,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["SaaS", "Product Strategy", "Sales Enablement", "Data Analytics", "AI/ML", "Enterprise Software"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "SaaS",
+      "Product Strategy",
+      "Sales Enablement",
+      "Data Analytics",
+      "AI/ML",
+      "Enterprise Software"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Mindtickle Pune HQ (preferred). Revenue productivity & sales readiness platform. Unicorn. PM roles in content, coaching, analytics. ESOPs. Good culture. 5-day week.",
     "careerPage": "https://www.mindtickle.com/careers/",
     "glassdoorRating": 3.8,
@@ -2168,7 +3062,9 @@ const PM_COMPANIES_DATA =
     "hq": "Hyderabad, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B / HR Tech",
-    "locations": ["Hyderabad"],
+    "locations": [
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2178,8 +3074,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "HR Tech", "SaaS", "Data Analytics", "Enterprise Software", "Agile"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Leadership Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "HR Tech",
+      "SaaS",
+      "Data Analytics",
+      "Enterprise Software",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Leadership Round",
     "notes": "Darwinbox Hyderabad HQ (preferred). Asia's leading HCM platform. Unicorn backed by TCV. PM roles in core HR, payroll, talent management, AI features. ESOPs. 5-day week.",
     "careerPage": "https://www.darwinbox.com/careers",
     "glassdoorRating": 3.5,
@@ -2191,7 +3094,9 @@ const PM_COMPANIES_DATA =
     "hq": "Hyderabad, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B",
-    "locations": ["Hyderabad"],
+    "locations": [
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2201,8 +3106,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "SaaS", "SMB Products", "Data Analytics", "Scheduling", "Payments"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "SaaS",
+      "SMB Products",
+      "Data Analytics",
+      "Scheduling",
+      "Payments"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Zenoti Hyderabad HQ (preferred). #1 cloud software for beauty/wellness industry. Unicorn. PM roles in bookings, payments, marketing, AI. ESOPs. Good WLB. 5-day week.",
     "careerPage": "https://www.zenoti.com/careers",
     "glassdoorRating": 3.5,
@@ -2214,7 +3126,9 @@ const PM_COMPANIES_DATA =
     "hq": "Hyderabad, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B / FinTech",
-    "locations": ["Hyderabad"],
+    "locations": [
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2224,8 +3138,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "SaaS", "Treasury/Finance", "AI/ML", "Data Analytics", "Enterprise Software"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Leadership Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "SaaS",
+      "Treasury/Finance",
+      "AI/ML",
+      "Data Analytics",
+      "Enterprise Software"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Leadership Round",
     "notes": "HighRadius Hyderabad HQ (preferred). AI-powered order-to-cash & treasury platform. Unicorn. PM roles in AR, AP, treasury, AI. ESOPs. Growing fast. 5-day week.",
     "careerPage": "https://www.highradius.com/careers/",
     "glassdoorRating": 3.4,
@@ -2237,7 +3158,9 @@ const PM_COMPANIES_DATA =
     "hq": "Pune, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B",
-    "locations": ["Pune"],
+    "locations": [
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -2247,8 +3170,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Strategy", "SaaS", "Contract Management", "AI/ML", "Data Analytics", "Enterprise Software"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "SaaS",
+      "Contract Management",
+      "AI/ML",
+      "Data Analytics",
+      "Enterprise Software"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Icertis Pune HQ (preferred). World's #1 contract intelligence platform. Unicorn ($5B+ valuation). PM roles in CLM, AI, platform. ESOPs. Excellent culture. 5-day week.",
     "careerPage": "https://www.icertis.com/careers/",
     "glassdoorRating": 3.8,
@@ -2260,7 +3190,9 @@ const PM_COMPANIES_DATA =
     "hq": "Pune, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / Cloud / Data Protection",
-    "locations": ["Pune"],
+    "locations": [
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 28,
@@ -2270,8 +3202,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Strategy", "Cloud/SaaS", "Data Protection", "Data Analytics", "Security", "Enterprise"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Cloud/SaaS",
+      "Data Protection",
+      "Data Analytics",
+      "Security",
+      "Enterprise"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Druva Pune HQ (preferred). Cloud data protection SaaS. Unicorn backed by Viking Global. PM roles in backup, DR, compliance, AI. ESOPs. Strong engineering culture. 5-day week.",
     "careerPage": "https://www.druva.com/careers",
     "glassdoorRating": 3.7,
@@ -2283,7 +3222,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Origin (SaaS)",
     "category": "SaaS / B2B / CRM",
-    "locations": ["Bangalore", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -2293,8 +3235,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "CRM/SaaS", "Data Analytics", "Sales Automation", "UX", "Agile"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "CRM/SaaS",
+      "Data Analytics",
+      "Sales Automation",
+      "UX",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "LeadSquared CRM & marketing automation. Growing fast in India. Both Bangalore & Pune offices. PM roles in CRM, workflows, integrations. ESOPs. 5-day week.",
     "careerPage": "https://www.leadsquared.com/careers/",
     "glassdoorRating": 3.5,
@@ -2306,7 +3255,10 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B / MarTech",
-    "locations": ["Mumbai", "Bangalore"],
+    "locations": [
+      "Mumbai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -2316,8 +3268,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "MarTech", "Data Analytics", "Customer Engagement", "AI/ML", "SaaS"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "MarTech",
+      "Data Analytics",
+      "Customer Engagement",
+      "AI/ML",
+      "SaaS"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "CleverTap customer engagement platform. Global SaaS. PM roles in analytics, messaging, segmentation, AI. ESOPs. Good WLB. 5-day week.",
     "careerPage": "https://clevertap.com/careers/",
     "glassdoorRating": 3.6,
@@ -2329,7 +3288,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / B2B / MarTech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2339,8 +3300,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "MarTech", "Customer Engagement", "Data Analytics", "AI/Personalization", "SaaS"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "MarTech",
+      "Customer Engagement",
+      "Data Analytics",
+      "AI/Personalization",
+      "SaaS"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "MoEngage insights-led engagement platform. Competes with CleverTap/Braze. PM roles in messaging, analytics, web personalization. ESOPs. 5-day week.",
     "careerPage": "https://www.moengage.com/careers/",
     "glassdoorRating": 3.8,
@@ -2352,7 +3320,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / AI / Conversational AI",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -2362,8 +3332,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Conversational AI", "NLP/LLMs", "Enterprise SaaS", "Data Analytics", "Platform"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Conversational AI",
+      "NLP/LLMs",
+      "Enterprise SaaS",
+      "Data Analytics",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Yellow.ai is an Enterprise Conversational AI platform. Unicorn. PM roles in bot builder, AI models, integrations. ESOPs. AI-first PM culture. 5-day week.",
     "careerPage": "https://yellow.ai/careers/",
     "glassdoorRating": 3.4,
@@ -2375,7 +3352,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Origin (Global)",
     "category": "AdTech / Mobile",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 28,
@@ -2385,8 +3364,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Strategy", "AdTech", "Mobile Advertising", "Data Analytics", "Programmatic", "AI/ML"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "AdTech",
+      "Mobile Advertising",
+      "Data Analytics",
+      "Programmatic",
+      "AI/ML"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "InMobi is India's first unicorn. Global mobile advertising platform + Glance + Roposo. PM roles in DSP, SSP, Glance lock screen. ESOPs. Strong PM culture. 5-day week.",
     "careerPage": "https://www.inmobi.com/company/careers",
     "glassdoorRating": 3.6,
@@ -2398,7 +3384,12 @@ const PM_COMPANIES_DATA =
     "hq": "Walldorf, Germany",
     "type": "India Office",
     "category": "Enterprise / ERP",
-    "locations": ["Bangalore", "Hyderabad", "Gurugram", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad",
+      "Gurugram",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Product Owner",
     "baseSalaryLPA": 30,
@@ -2408,8 +3399,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "IC2 (PM) / IC3 (Senior PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Enterprise Software", "ERP/Cloud", "Data Analytics", "Agile/SAFe", "Design Thinking"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3-4 rounds: Product, Technical, Behavioral)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Enterprise Software",
+      "ERP/Cloud",
+      "Data Analytics",
+      "Agile/SAFe",
+      "Design Thinking"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3-4 rounds: Product, Technical, Behavioral)",
     "notes": "SAP Labs India (Bangalore, Hyderabad, Gurugram, Pune - all preferred). Massive India R&D. PM roles in S/4HANA, BTP, SuccessFactors, Concur. RSUs + bonus. Great WLB. 5-day week.",
     "careerPage": "https://www.sap.com/about/careers.html",
     "glassdoorRating": 4.1,
@@ -2421,7 +3419,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Jose, USA",
     "type": "India Office",
     "category": "Enterprise / Networking",
-    "locations": ["Bangalore", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Technical Product Manager",
     "baseSalaryLPA": 32,
@@ -2431,8 +3432,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "Grade 9 (PM) / Grade 10 (Sr PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Networking/Security", "Cloud", "Data Analytics", "Agile", "Technical PM"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3-4 rounds: Product, Technical, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Networking/Security",
+      "Cloud",
+      "Data Analytics",
+      "Agile",
+      "Technical PM"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3-4 rounds: Product, Technical, Leadership)",
     "notes": "Cisco Bangalore & Pune offices. PM roles in Webex, Meraki, ThousandEyes, security products. RSUs + bonus. Excellent WLB & benefits. 5-day week. Great for experienced PMs.",
     "careerPage": "https://jobs.cisco.com/jobs/SearchJobs/product+manager?3_109_3=391",
     "glassdoorRating": 4.2,
@@ -2444,7 +3452,10 @@ const PM_COMPANIES_DATA =
     "hq": "Palo Alto, USA",
     "type": "India Office",
     "category": "Enterprise / Cloud",
-    "locations": ["Bangalore", "Pune"],
+    "locations": [
+      "Bangalore",
+      "Pune"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Product Line Manager",
     "baseSalaryLPA": 30,
@@ -2454,8 +3465,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "IC3 (PM) / IC4 (Sr PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Virtualization/Cloud", "Data Analytics", "Technical PM", "Enterprise Software", "Agile"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds: Product, Technical, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Virtualization/Cloud",
+      "Data Analytics",
+      "Technical PM",
+      "Enterprise Software",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds: Product, Technical, Leadership)",
     "notes": "VMware (now Broadcom) India R&D in Bangalore & Pune (preferred). PM roles in vSphere, Tanzu, Carbon Black, SDWAN. RSUs (Broadcom stock). 5-day week.",
     "careerPage": "https://www.broadcom.com/company/careers",
     "glassdoorRating": 3.8,
@@ -2467,7 +3485,10 @@ const PM_COMPANIES_DATA =
     "hq": "Seoul, South Korea",
     "type": "India Office",
     "category": "Consumer Electronics / Tech",
-    "locations": ["Bangalore", "Noida"],
+    "locations": [
+      "Bangalore",
+      "Noida"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Lead Product Manager",
     "baseSalaryLPA": 28,
@@ -2477,8 +3498,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "E4 (Manager) / E5 (Senior Manager)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Mobile/IoT", "Consumer Products", "Data Analytics", "AI/ML", "Hardware-Software"],
-    "hiringProcess": "Recruiter Screen → Technical → Panel (3 rounds)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Mobile/IoT",
+      "Consumer Products",
+      "Data Analytics",
+      "AI/ML",
+      "Hardware-Software"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Technical \u2192 Panel (3 rounds)",
     "notes": "Samsung R&D India is Samsung's largest R&D center outside Korea. Noida & Bangalore. PM roles in Galaxy, SmartThings, Bixby, Health. Cash bonus. 5-day week.",
     "careerPage": "https://www.samsung.com/in/about-us/careers/",
     "glassdoorRating": 3.8,
@@ -2490,7 +3518,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Diego, USA",
     "type": "India Office",
     "category": "Semiconductor / Tech",
-    "locations": ["Hyderabad", "Bangalore"],
+    "locations": [
+      "Hyderabad",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Staff PM",
     "baseSalaryLPA": 30,
@@ -2500,8 +3531,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "E6 (PM) / E7 (Staff PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Chipset/SoC", "5G/Wireless", "Technical PM", "Data Analytics", "Platform"],
-    "hiringProcess": "Recruiter Screen → Technical → Panel (3-4 rounds)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Chipset/SoC",
+      "5G/Wireless",
+      "Technical PM",
+      "Data Analytics",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Technical \u2192 Panel (3-4 rounds)",
     "notes": "Qualcomm Hyderabad is huge (preferred). PM roles in Snapdragon, 5G, Auto, IoT. RSUs + bonus. Excellent WLB. 5-day week. Great for technical PMs.",
     "careerPage": "https://www.qualcomm.com/company/careers",
     "glassdoorRating": 4.0,
@@ -2513,7 +3551,10 @@ const PM_COMPANIES_DATA =
     "hq": "Santa Clara, USA",
     "type": "India Office",
     "category": "Semiconductor / Tech",
-    "locations": ["Bangalore", "Hyderabad"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Technical Product Manager",
     "baseSalaryLPA": 28,
@@ -2523,8 +3564,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "Grade 8 (PM) / Grade 9 (Sr PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Semiconductor", "AI/ML", "Cloud/Edge", "Technical PM", "Data Analytics"],
-    "hiringProcess": "Recruiter Screen → Technical → Panel (3 rounds)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Semiconductor",
+      "AI/ML",
+      "Cloud/Edge",
+      "Technical PM",
+      "Data Analytics"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Technical \u2192 Panel (3 rounds)",
     "notes": "Intel India has PM roles in client computing, data center, AI. Hyderabad & Bangalore. RSUs + bonus. Good WLB. 5-day week.",
     "careerPage": "https://jobs.intel.com/en/search-jobs/India",
     "glassdoorRating": 4.0,
@@ -2536,7 +3584,10 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Listed)",
     "category": "Logistics / Supply Chain",
-    "locations": ["Gurugram", "Bangalore"],
+    "locations": [
+      "Gurugram",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2546,8 +3597,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Logistics", "Supply Chain", "Data Analytics", "Operations Tech", "Platform"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Logistics",
+      "Supply Chain",
+      "Data Analytics",
+      "Operations Tech",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Delhivery Gurugram HQ (preferred). India's largest independent logistics platform. Listed. PM roles in shipment tracking, route optimization, warehouse tech. ESOPs. 5-day week.",
     "careerPage": "https://www.delhivery.com/careers/",
     "glassdoorRating": 3.4,
@@ -2559,7 +3617,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Manufacturing / B2B Marketplace",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -2569,8 +3629,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "B2B Marketplace", "Supply Chain", "Data Analytics", "Manufacturing", "Platform"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "B2B Marketplace",
+      "Supply Chain",
+      "Data Analytics",
+      "Manufacturing",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Zetwerk is a B2B manufacturing marketplace. Unicorn. PM roles in marketplace, procurement, quality, factory management platform. ESOPs. Fast-paced. 5-day week.",
     "careerPage": "https://www.zetwerk.com/careers/",
     "glassdoorRating": 3.3,
@@ -2582,7 +3649,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / Logistics Tech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2592,8 +3661,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Logistics SaaS", "Route Optimization", "Data Analytics", "AI/ML", "Enterprise"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Logistics SaaS",
+      "Route Optimization",
+      "Data Analytics",
+      "AI/ML",
+      "Enterprise"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Locus is a logistics automation platform (route optimization, dispatch). Series C. PM roles in platform, analytics, integrations. ESOPs. Good culture. 5-day week.",
     "careerPage": "https://locus.sh/careers/",
     "glassdoorRating": 3.5,
@@ -2605,7 +3681,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Mobility / Ride-hailing",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2615,8 +3693,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Marketplace", "Consumer Products", "Data Analytics", "Growth", "Platform"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Marketplace",
+      "Consumer Products",
+      "Data Analytics",
+      "Growth",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Rapido is India's largest bike-taxi platform. Unicorn. PM roles in rider, driver, auto, cab verticals. ESOPs. Fast-growing. 5-day week.",
     "careerPage": "https://rapido.bike/careers",
     "glassdoorRating": 3.3,
@@ -2628,7 +3713,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Gaming / Esports",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -2638,8 +3725,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Gaming", "Consumer Products", "Growth", "Data Analytics", "Gamification"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Gaming",
+      "Consumer Products",
+      "Growth",
+      "Data Analytics",
+      "Gamification"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "MPL is India's largest esports/gaming platform. Unicorn. PM roles in gaming, fantasy, payments, engagement. ESOPs. Young culture. 5-day week.",
     "careerPage": "https://www.mpl.live/careers",
     "glassdoorRating": 3.4,
@@ -2651,7 +3745,10 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Gaming / Real Money",
-    "locations": ["Mumbai", "Bangalore"],
+    "locations": [
+      "Mumbai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2661,8 +3758,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Gaming", "Consumer Products", "Data Analytics", "Gamification", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Gaming",
+      "Consumer Products",
+      "Data Analytics",
+      "Gamification",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Games24x7 runs RummyCircle & My11Circle. Unicorn backed by Tiger Global. PM roles in gaming, fantasy, responsible gaming. ESOPs. Good culture. 5-day week.",
     "careerPage": "https://www.games24x7.com/careers",
     "glassdoorRating": 3.6,
@@ -2674,7 +3778,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Health Tech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2684,8 +3790,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "HealthTech", "Marketplace", "Data Analytics", "Consumer Products", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "HealthTech",
+      "Marketplace",
+      "Data Analytics",
+      "Consumer Products",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Practo is India's leading health-tech platform (doctor discovery, teleconsultation, pharmacy). PM roles in marketplace, health records, teleconsult. ESOPs. 5-day week.",
     "careerPage": "https://www.practo.com/company/careers",
     "glassdoorRating": 3.5,
@@ -2697,7 +3810,9 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Startup",
     "category": "Health Tech / E-Pharmacy",
-    "locations": ["Mumbai"],
+    "locations": [
+      "Mumbai"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -2707,8 +3822,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "HealthTech", "E-Commerce", "Data Analytics", "Supply Chain", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "HealthTech",
+      "E-Commerce",
+      "Data Analytics",
+      "Supply Chain",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "PharmEasy (API Holdings) e-pharmacy + diagnostics. PM roles in marketplace, fulfillment, teleconsult. ESOPs. 5-day week.",
     "careerPage": "https://pharmeasy.in/careers",
     "glassdoorRating": 3.2,
@@ -2720,7 +3842,10 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Startup (Unicorn)",
     "category": "EdTech",
-    "locations": ["Mumbai", "Bangalore"],
+    "locations": [
+      "Mumbai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2730,8 +3855,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "EdTech", "Consumer Products", "Data Analytics", "Growth", "LMS"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "EdTech",
+      "Consumer Products",
+      "Data Analytics",
+      "Growth",
+      "LMS"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "upGrad online higher education platform. Unicorn. PM roles in learning platform, content, career services, AI tutoring. ESOPs. 5-day week.",
     "careerPage": "https://www.upgrad.com/careers/",
     "glassdoorRating": 3.4,
@@ -2743,7 +3875,11 @@ const PM_COMPANIES_DATA =
     "hq": "Minnetonka, USA",
     "type": "India Office",
     "category": "Health Tech / Enterprise",
-    "locations": ["Hyderabad", "Noida", "Gurugram"],
+    "locations": [
+      "Hyderabad",
+      "Noida",
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / Product Owner",
     "baseSalaryLPA": 25,
@@ -2753,8 +3889,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "Manager / Senior Manager",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Strategy", "Healthcare", "Data Analytics", "Enterprise Software", "AI/ML", "Agile"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds: Product, Analytical, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Healthcare",
+      "Data Analytics",
+      "Enterprise Software",
+      "AI/ML",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds: Product, Analytical, Leadership)",
     "notes": "Optum India (UnitedHealth Group) Hyderabad & Noida/Gurugram offices (preferred). PM roles in clinical analytics, RCM, provider solutions. RSUs (UNH stock). Great WLB. 5-day week.",
     "careerPage": "https://careers.unitedhealthgroup.com/",
     "glassdoorRating": 4.0,
@@ -2766,7 +3909,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "Remote / India",
     "category": "Fintech / Payments",
-    "locations": ["Bangalore", "Remote"],
+    "locations": [
+      "Bangalore",
+      "Remote"
+    ],
     "workMode": "Remote-first",
     "role": "Product Manager",
     "baseSalaryLPA": 50,
@@ -2776,8 +3922,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "L2 (PM) / L3 (Senior PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Payment Infrastructure", "API Products", "Product Strategy", "Data Analytics", "Developer Experience", "Platform"],
-    "hiringProcess": "Recruiter Screen → HM Screen → Work Sample → Onsite (Product, Analytical, Cross-functional)",
+    "skillsRequired": [
+      "Payment Infrastructure",
+      "API Products",
+      "Product Strategy",
+      "Data Analytics",
+      "Developer Experience",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Screen \u2192 Work Sample \u2192 Onsite (Product, Analytical, Cross-functional)",
     "notes": "Stripe India engineering hub in Bangalore. Remote-first PM roles. Pre-IPO equity (massive upside). PM roles in checkout, billing, treasury, identity. Top-tier PM culture. 5-day week.",
     "careerPage": "https://stripe.com/jobs/search?office_locations=Asia+Pacific",
     "glassdoorRating": 4.2,
@@ -2789,7 +3942,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "Remote / India",
     "category": "SaaS / Communication APIs",
-    "locations": ["Bangalore", "Remote"],
+    "locations": [
+      "Bangalore",
+      "Remote"
+    ],
     "workMode": "Remote-first",
     "role": "Product Manager",
     "baseSalaryLPA": 35,
@@ -2799,8 +3955,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "P2 (PM) / P3 (Sr PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "APIs/Developer Tools", "Communication Platforms", "Data Analytics", "Cloud", "Platform"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (Product, Technical, Behavioral)",
+    "skillsRequired": [
+      "Product Strategy",
+      "APIs/Developer Tools",
+      "Communication Platforms",
+      "Data Analytics",
+      "Cloud",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (Product, Technical, Behavioral)",
     "notes": "Twilio India PM roles in messaging, voice, email (SendGrid), Segment. RSUs (NYSE listed). Remote-first. Good PM culture. 5-day week.",
     "careerPage": "https://www.twilio.com/en-us/company/jobs",
     "glassdoorRating": 3.6,
@@ -2812,7 +3975,10 @@ const PM_COMPANIES_DATA =
     "hq": "Stockholm, Sweden",
     "type": "Remote / India",
     "category": "Media / Music Streaming",
-    "locations": ["Mumbai", "Remote"],
+    "locations": [
+      "Mumbai",
+      "Remote"
+    ],
     "workMode": "Remote-first (Work From Anywhere)",
     "role": "Product Manager",
     "baseSalaryLPA": 40,
@@ -2822,8 +3988,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Consumer Products", "Personalization/ML", "Data Analytics", "Growth", "Content"],
-    "hiringProcess": "Recruiter Screen → HM Screen → Case Study → Team Interview → Leadership",
+    "skillsRequired": [
+      "Product Strategy",
+      "Consumer Products",
+      "Personalization/ML",
+      "Data Analytics",
+      "Growth",
+      "Content"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Screen \u2192 Case Study \u2192 Team Interview \u2192 Leadership",
     "notes": "Spotify India has Mumbai office + WFA (Work From Anywhere) policy. PM roles in podcasts, ads, growth, creator tools. RSUs (NYSE). Amazing culture & WLB. 5-day week.",
     "careerPage": "https://www.lifeatspotify.com/jobs",
     "glassdoorRating": 4.2,
@@ -2835,7 +4008,9 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "Remote",
     "category": "Travel Tech / Marketplace",
-    "locations": ["Remote"],
+    "locations": [
+      "Remote"
+    ],
     "workMode": "Remote (Live & Work Anywhere)",
     "role": "Product Manager",
     "baseSalaryLPA": 55,
@@ -2845,8 +4020,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "IC3 (PM) / IC4 (Senior PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Marketplace", "Consumer Products", "Data Analytics", "Design Thinking", "Growth"],
-    "hiringProcess": "Recruiter Screen → HM Screen → Onsite (Product Sense, Execution, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Marketplace",
+      "Consumer Products",
+      "Data Analytics",
+      "Design Thinking",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Screen \u2192 Onsite (Product Sense, Execution, Leadership)",
     "notes": "Airbnb offers Live & Work Anywhere policy. PM roles in search, booking, hosting, trust & safety. RSUs (NASDAQ). Very selective hiring. Iconic PM culture. 5-day week.",
     "careerPage": "https://careers.airbnb.com/",
     "glassdoorRating": 4.1,
@@ -2858,7 +4040,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Origin (Global SaaS)",
     "category": "SaaS / Retail Tech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2868,8 +4052,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Loyalty/CRM", "Retail Tech", "Data Analytics", "AI/ML", "SaaS"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Loyalty/CRM",
+      "Retail Tech",
+      "Data Analytics",
+      "AI/ML",
+      "SaaS"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Capillary Technologies loyalty & customer engagement SaaS. Global clients (TATA, Puma, Pizza Hut). PM roles in loyalty platform, CDP, AI. ESOPs. 5-day week.",
     "careerPage": "https://www.capillarytech.com/careers/",
     "glassdoorRating": 3.5,
@@ -2881,7 +4072,9 @@ const PM_COMPANIES_DATA =
     "hq": "Pleasanton, USA",
     "type": "India Office",
     "category": "SaaS / Auto Tech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -2891,8 +4084,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Strategy", "SaaS", "Automotive DMS", "Data Analytics", "AI/ML", "Cloud"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "SaaS",
+      "Automotive DMS",
+      "Data Analytics",
+      "AI/ML",
+      "Cloud"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Tekion automotive cloud platform. $3.5B valuation. Founded by ex-Tesla CIO. Bangalore engineering hub. PM roles in dealer management, CRM, AI. Pre-IPO ESOPs. 5-day week.",
     "careerPage": "https://tekion.com/careers",
     "glassdoorRating": 3.5,
@@ -2904,7 +4104,9 @@ const PM_COMPANIES_DATA =
     "hq": "Noida, India",
     "type": "Indian Origin (Listed)",
     "category": "B2B Marketplace",
-    "locations": ["Noida"],
+    "locations": [
+      "Noida"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -2914,8 +4116,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "B2B Marketplace", "Data Analytics", "Search/Discovery", "Growth", "Monetization"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "B2B Marketplace",
+      "Data Analytics",
+      "Search/Discovery",
+      "Growth",
+      "Monetization"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "IndiaMART Noida HQ. India's largest B2B marketplace. Listed (profitable). PM roles in buyer, supplier, search, payments. RSUs. Good WLB & job security. 5-day week.",
     "careerPage": "https://careers.indiamart.com/",
     "glassdoorRating": 3.5,
@@ -2927,7 +4136,9 @@ const PM_COMPANIES_DATA =
     "hq": "Noida, India",
     "type": "Indian Origin (Listed)",
     "category": "Internet / Consumer",
-    "locations": ["Noida"],
+    "locations": [
+      "Noida"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2937,8 +4148,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Consumer Products", "Search/Matching", "Data Analytics", "Growth", "Monetization"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Consumer Products",
+      "Search/Matching",
+      "Data Analytics",
+      "Growth",
+      "Monetization"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Info Edge Noida HQ. Runs Naukri, 99acres, Jeevansathi, Shiksha. Highly profitable listed company. PM roles across verticals. RSUs. Good WLB. 5-day week.",
     "careerPage": "https://www.infoedge.in/careers",
     "glassdoorRating": 3.6,
@@ -2950,7 +4168,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Auto Tech / Marketplace",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -2960,8 +4180,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Marketplace", "Consumer Products", "Data Analytics", "Pricing", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Marketplace",
+      "Consumer Products",
+      "Data Analytics",
+      "Pricing",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Spinny Gurugram HQ (preferred). Full-stack used car platform with Spinny Assured. Unicorn. PM roles in buying, selling, financing, inspection. ESOPs. 5-day week.",
     "careerPage": "https://www.spinny.com/careers/",
     "glassdoorRating": 3.5,
@@ -2973,7 +4200,9 @@ const PM_COMPANIES_DATA =
     "hq": "Gurugram, India",
     "type": "Indian Startup",
     "category": "D2C / Grocery / FoodTech",
-    "locations": ["Gurugram"],
+    "locations": [
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -2983,8 +4212,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Consumer Products", "Supply Chain", "Data Analytics", "Growth", "Logistics"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Consumer Products",
+      "Supply Chain",
+      "Data Analytics",
+      "Growth",
+      "Logistics"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Country Delight Gurugram HQ (preferred). Farm-to-home dairy & essentials. Backed by Temasek. PM roles in app, supply chain, subscriptions. ESOPs. 5-day week.",
     "careerPage": "https://countrydelight.in/careers",
     "glassdoorRating": 3.3,
@@ -2996,7 +4232,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bozeman, USA",
     "type": "Remote / India",
     "category": "Cloud / Data Platform",
-    "locations": ["Bangalore", "Remote"],
+    "locations": [
+      "Bangalore",
+      "Remote"
+    ],
     "workMode": "Hybrid / Remote",
     "role": "Product Manager",
     "baseSalaryLPA": 45,
@@ -3006,8 +4245,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "P4 (PM) / P5 (Senior PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Data Cloud", "SQL/Data Warehousing", "AI/ML", "Platform", "Enterprise SaaS"],
-    "hiringProcess": "Recruiter Screen → HM Screen → Onsite (Product, Technical, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Data Cloud",
+      "SQL/Data Warehousing",
+      "AI/ML",
+      "Platform",
+      "Enterprise SaaS"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Screen \u2192 Onsite (Product, Technical, Leadership)",
     "notes": "Snowflake India office growing in Bangalore. PM roles in data cloud, data sharing, AI/ML features, governance. RSUs (NYSE). Top-tier compensation. 5-day week.",
     "careerPage": "https://careers.snowflake.com/us/en/search-results?keywords=product%20manager",
     "glassdoorRating": 4.2,
@@ -3019,7 +4265,11 @@ const PM_COMPANIES_DATA =
     "hq": "Mountain View, USA",
     "type": "Remote / India",
     "category": "SaaS / Search / Observability",
-    "locations": ["Bangalore", "Hyderabad", "Remote"],
+    "locations": [
+      "Bangalore",
+      "Hyderabad",
+      "Remote"
+    ],
     "workMode": "Remote-first (Distributed)",
     "role": "Product Manager",
     "baseSalaryLPA": 35,
@@ -3029,8 +4279,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "P3 (PM) / P4 (Senior PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Search/Analytics", "Observability", "Data Analytics", "Developer Tools", "Cloud"],
-    "hiringProcess": "Recruiter Screen → HM Screen → Panel (Product, Technical, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Search/Analytics",
+      "Observability",
+      "Data Analytics",
+      "Developer Tools",
+      "Cloud"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Screen \u2192 Panel (Product, Technical, Leadership)",
     "notes": "Elastic (Elasticsearch) distributed-first company. India presence in Bangalore & Hyderabad (preferred). PM roles in search, observability, security. RSUs (NYSE). 5-day week.",
     "careerPage": "https://www.elastic.co/careers",
     "glassdoorRating": 4.0,
@@ -3042,7 +4299,10 @@ const PM_COMPANIES_DATA =
     "hq": "San Francisco, USA",
     "type": "Remote / India",
     "category": "DevOps / Cloud Infrastructure",
-    "locations": ["Bangalore", "Remote"],
+    "locations": [
+      "Bangalore",
+      "Remote"
+    ],
     "workMode": "Remote-first",
     "role": "Product Manager",
     "baseSalaryLPA": 38,
@@ -3052,8 +4312,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "IC3 (PM) / IC4 (Senior PM)",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "DevOps/Infrastructure", "Cloud", "Developer Tools", "Open Source", "Platform"],
-    "hiringProcess": "Recruiter Screen → HM Screen → Panel (Product, Technical, Behavioral)",
+    "skillsRequired": [
+      "Product Strategy",
+      "DevOps/Infrastructure",
+      "Cloud",
+      "Developer Tools",
+      "Open Source",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Screen \u2192 Panel (Product, Technical, Behavioral)",
     "notes": "HashiCorp (now IBM-acquired) makes Terraform, Vault, Consul, Nomad. India PM roles. RSUs (IBM stock). Developer-focused PM culture. 5-day week.",
     "careerPage": "https://www.hashicorp.com/careers",
     "glassdoorRating": 4.0,
@@ -3065,7 +4332,9 @@ const PM_COMPANIES_DATA =
     "hq": "Santa Clara, USA",
     "type": "India Office",
     "category": "Database / Cloud",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -3075,8 +4344,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Database/NoSQL", "Cloud", "Developer Experience", "Data Analytics", "AI"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (Product, Technical, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Database/NoSQL",
+      "Cloud",
+      "Developer Experience",
+      "Data Analytics",
+      "AI"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (Product, Technical, Leadership)",
     "notes": "Couchbase NoSQL database company. Bangalore R&D hub. PM roles in database platform, cloud, mobile, AI. RSUs (NASDAQ listed). Good WLB. 5-day week.",
     "careerPage": "https://www.couchbase.com/careers/",
     "glassdoorRating": 3.9,
@@ -3088,7 +4364,9 @@ const PM_COMPANIES_DATA =
     "hq": "Boston, USA",
     "type": "Remote / India",
     "category": "DevSecOps / Security",
-    "locations": ["Remote"],
+    "locations": [
+      "Remote"
+    ],
     "workMode": "Remote-first",
     "role": "Product Manager",
     "baseSalaryLPA": 35,
@@ -3098,8 +4376,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Strategy", "Application Security", "Developer Tools", "SDLC", "Data Analytics", "Cloud"],
-    "hiringProcess": "Recruiter Screen → HM Screen → Panel (Product, Technical, Leadership)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Application Security",
+      "Developer Tools",
+      "SDLC",
+      "Data Analytics",
+      "Cloud"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Screen \u2192 Panel (Product, Technical, Leadership)",
     "notes": "Snyk developer security platform. Pre-IPO. Remote-first with India team. PM roles in container security, SAST, SCA, AI. Pre-IPO ESOPs. 5-day week.",
     "careerPage": "https://snyk.io/careers/",
     "glassdoorRating": 3.8,
@@ -3111,7 +4396,11 @@ const PM_COMPANIES_DATA =
     "hq": "New York, USA",
     "type": "India Office",
     "category": "Banking / Finance",
-    "locations": ["Pune", "Mumbai", "Bangalore"],
+    "locations": [
+      "Pune",
+      "Mumbai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager / VP - Digital Products",
     "baseSalaryLPA": 30,
@@ -3121,8 +4410,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "AVP / VP",
     "yearsExpNeeded": "4-8",
-    "skillsRequired": ["Product Management", "Banking", "Digital Products", "Data Analytics", "Payments", "Regulatory"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds)",
+    "skillsRequired": [
+      "Product Management",
+      "Banking",
+      "Digital Products",
+      "Data Analytics",
+      "Payments",
+      "Regulatory"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds)",
     "notes": "Citi Pune office is a major tech hub (preferred). PM roles in digital banking, cards, treasury, trade. RSUs (Citi stock) + bonus. Good WLB. 5-day week.",
     "careerPage": "https://jobs.citi.com/search-jobs/India",
     "glassdoorRating": 3.8,
@@ -3134,7 +4430,10 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Fintech / Payments",
-    "locations": ["Pune", "Bangalore"],
+    "locations": [
+      "Pune",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager - Curlec (International)",
     "baseSalaryLPA": 25,
@@ -3144,8 +4443,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Payments", "Product Strategy", "International Markets", "Data Analytics", "API Products", "Agile"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Payments",
+      "Product Strategy",
+      "International Markets",
+      "Data Analytics",
+      "API Products",
+      "Agile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Razorpay's international arm Curlec has Pune PM roles (preferred). PM roles in international payments, payroll (RazorpayX), lending (Razorpay Capital). ESOPs. 5-day week.",
     "careerPage": "https://razorpay.com/careers/",
     "glassdoorRating": 3.7,
@@ -3157,7 +4463,10 @@ const PM_COMPANIES_DATA =
     "hq": "Delhi, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Logistics / E-Commerce Enablement",
-    "locations": ["Delhi", "Gurugram"],
+    "locations": [
+      "Delhi",
+      "Gurugram"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -3167,8 +4476,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Logistics", "E-Commerce", "Data Analytics", "Growth", "Platform"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Logistics",
+      "E-Commerce",
+      "Data Analytics",
+      "Growth",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Shiprocket e-commerce shipping & logistics platform. Unicorn. Delhi/Gurugram HQ (preferred). PM roles in shipping, fulfillment, D2C enablement. ESOPs. 5-day week.",
     "careerPage": "https://www.shiprocket.in/careers/",
     "glassdoorRating": 3.3,
@@ -3180,7 +4496,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Unicorn)",
     "category": "D2C / FoodTech",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -3190,8 +4508,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Consumer Products", "Supply Chain", "Data Analytics", "Growth", "Logistics"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Consumer Products",
+      "Supply Chain",
+      "Data Analytics",
+      "Growth",
+      "Logistics"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Licious fresh meat & seafood D2C platform. Unicorn. PM roles in consumer app, supply chain, quality, subscriptions. ESOPs. 5-day week.",
     "careerPage": "https://www.licious.in/careers",
     "glassdoorRating": 3.4,
@@ -3203,7 +4528,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Health Tech / Fitness",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -3213,8 +4540,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Consumer Products", "Health/Fitness", "Data Analytics", "AI/ML", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Consumer Products",
+      "Health/Fitness",
+      "Data Analytics",
+      "AI/ML",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "HealthifyMe fitness & diet platform with AI coach (Ria). PM roles in meal tracking, workout, AI coaching, subscriptions. ESOPs. 5-day week.",
     "careerPage": "https://www.healthifyme.com/careers/",
     "glassdoorRating": 3.3,
@@ -3226,7 +4560,9 @@ const PM_COMPANIES_DATA =
     "hq": "Singapore",
     "type": "India Office",
     "category": "Super App / Mobility",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 30,
@@ -3236,8 +4572,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "L4 (PM) / L5 (Senior PM)",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Strategy", "Marketplace", "Mobility/Delivery", "Data Analytics", "Growth", "Platform"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Panel",
+    "skillsRequired": [
+      "Product Strategy",
+      "Marketplace",
+      "Mobility/Delivery",
+      "Data Analytics",
+      "Growth",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Panel",
     "notes": "Grab Bangalore engineering hub. Southeast Asia's super app. PM roles in ride-hailing, food, payments, fintech. RSUs (NASDAQ listed). Good WLB. 5-day week.",
     "careerPage": "https://grab.careers/",
     "glassdoorRating": 3.8,
@@ -3249,7 +4592,9 @@ const PM_COMPANIES_DATA =
     "hq": "Chennai, India",
     "type": "Indian Origin (SaaS)",
     "category": "SaaS / Low-Code / Workflow",
-    "locations": ["Chennai"],
+    "locations": [
+      "Chennai"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -3259,8 +4604,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Low-Code/No-Code", "Workflow Automation", "SaaS", "Data Analytics", "UX"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Low-Code/No-Code",
+      "Workflow Automation",
+      "SaaS",
+      "Data Analytics",
+      "UX"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Kissflow low-code work platform. Bootstrapped & profitable. PM roles in workflow, forms, analytics, integrations. ESOPs. Good WLB & culture. 5-day week.",
     "careerPage": "https://kissflow.com/careers/",
     "glassdoorRating": 3.7,
@@ -3272,7 +4624,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Listed)",
     "category": "EV / Clean Energy",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -3282,8 +4636,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "IoT/Connected Vehicles", "Consumer Products", "Data Analytics", "Firmware", "Platform"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Leadership Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "IoT/Connected Vehicles",
+      "Consumer Products",
+      "Data Analytics",
+      "Firmware",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Leadership Round",
     "notes": "Ola Electric listed EV company. PM roles in connected scooter, charging infra, app, battery management. RSUs. Fast-paced culture. 5-day week. Hardware+Software PM.",
     "careerPage": "https://olaelectric.com/careers",
     "glassdoorRating": 3.0,
@@ -3295,7 +4656,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "EV / Clean Energy",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -3305,8 +4668,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "IoT/Connected Vehicles", "Consumer Products", "Data Analytics", "UX", "Platform"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "IoT/Connected Vehicles",
+      "Consumer Products",
+      "Data Analytics",
+      "UX",
+      "Platform"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Ather Energy premium electric scooters. Strong engineering culture. PM roles in dashboard, charging (Ather Grid), connected features, app. ESOPs. 5-day week.",
     "careerPage": "https://www.atherenergy.com/careers",
     "glassdoorRating": 3.6,
@@ -3318,7 +4688,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Health & Fitness / Consumer",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -3328,8 +4700,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Consumer Products", "Health/Fitness", "Data Analytics", "Growth", "Marketplace"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Founder Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Consumer Products",
+      "Health/Fitness",
+      "Data Analytics",
+      "Growth",
+      "Marketplace"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Founder Round",
     "notes": "Cult.fit fitness platform (gym, yoga, dance) + Eat.fit (healthy food). Backed by Zomato & Tata. PM roles in fitness app, content, subscriptions, retail. ESOPs. 5-day week.",
     "careerPage": "https://www.cult.fit/careers",
     "glassdoorRating": 3.4,
@@ -3341,7 +4720,10 @@ const PM_COMPANIES_DATA =
     "hq": "Chennai, India",
     "type": "Indian Startup (Unicorn)",
     "category": "Fintech / Banking-as-a-Service",
-    "locations": ["Chennai", "Bangalore"],
+    "locations": [
+      "Chennai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -3351,8 +4733,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Banking APIs", "Fintech", "Data Analytics", "Platform", "Compliance"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Banking APIs",
+      "Fintech",
+      "Data Analytics",
+      "Platform",
+      "Compliance"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "M2P Fintech is a banking-as-a-service platform (API infrastructure for neobanks). Unicorn. PM roles in cards, lending, payments APIs. ESOPs. 5-day week.",
     "careerPage": "https://m2pfintech.com/careers/",
     "glassdoorRating": 3.3,
@@ -3364,7 +4753,11 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Conglomerate",
     "category": "Telecom / Digital",
-    "locations": ["Hyderabad", "Bangalore", "Mumbai"],
+    "locations": [
+      "Hyderabad",
+      "Bangalore",
+      "Mumbai"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 25,
@@ -3374,8 +4767,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "Manager / Senior Manager",
     "yearsExpNeeded": "3-7",
-    "skillsRequired": ["Product Strategy", "Telecom/Digital", "Consumer Products", "Data Analytics", "Platform", "5G/IoT"],
-    "hiringProcess": "Recruiter Screen → HM Interview → Panel (3 rounds)",
+    "skillsRequired": [
+      "Product Strategy",
+      "Telecom/Digital",
+      "Consumer Products",
+      "Data Analytics",
+      "Platform",
+      "5G/IoT"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 HM Interview \u2192 Panel (3 rounds)",
     "notes": "Jio Platforms PM roles in JioMart, JioCinema, JioCloud, 5G products. Hyderabad office (preferred). Competitive pay. Cash bonus. 5-day week. Massive scale.",
     "careerPage": "https://careers.jio.com/",
     "glassdoorRating": 3.4,
@@ -3387,7 +4787,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup (Reliance backed)",
     "category": "Quick Commerce / Delivery",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -3397,8 +4799,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Quick Commerce", "Marketplace", "Data Analytics", "Logistics", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Quick Commerce",
+      "Marketplace",
+      "Data Analytics",
+      "Logistics",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Dunzo quick commerce (now Reliance-backed). PM roles in ordering, delivery, merchant, last-mile. Restructuring but Reliance backing gives runway. ESOPs. 5-day week.",
     "careerPage": "https://www.dunzo.com/careers",
     "glassdoorRating": 3.2,
@@ -3410,7 +4819,10 @@ const PM_COMPANIES_DATA =
     "hq": "Mumbai, India",
     "type": "Indian Startup (Jio)",
     "category": "AI / Conversational AI",
-    "locations": ["Mumbai", "Bangalore"],
+    "locations": [
+      "Mumbai",
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 22,
@@ -3420,8 +4832,15 @@ const PM_COMPANIES_DATA =
     "stocksRSU": false,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Conversational AI", "NLP/LLMs", "Data Analytics", "Enterprise", "UX"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Conversational AI",
+      "NLP/LLMs",
+      "Data Analytics",
+      "Enterprise",
+      "UX"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Haptik (Jio-owned) conversational AI platform. Powers JioChat, enterprise chatbots. PM roles in bot builder, AI, analytics. Jio group benefits. 5-day week.",
     "careerPage": "https://www.haptik.ai/careers",
     "glassdoorRating": 3.5,
@@ -3433,7 +4852,9 @@ const PM_COMPANIES_DATA =
     "hq": "Bangalore, India",
     "type": "Indian Startup",
     "category": "Fintech / Neobank",
-    "locations": ["Bangalore"],
+    "locations": [
+      "Bangalore"
+    ],
     "workMode": "Hybrid",
     "role": "Product Manager",
     "baseSalaryLPA": 20,
@@ -3443,11 +4864,1027 @@ const PM_COMPANIES_DATA =
     "stocksRSU": true,
     "levelEquivalent": "PM / Senior PM",
     "yearsExpNeeded": "3-6",
-    "skillsRequired": ["Product Strategy", "Neobanking", "Fintech", "Data Analytics", "Consumer Products", "Growth"],
-    "hiringProcess": "Recruiter Screen → Product Case → HM Interview → Final Round",
+    "skillsRequired": [
+      "Product Strategy",
+      "Neobanking",
+      "Fintech",
+      "Data Analytics",
+      "Consumer Products",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 HM Interview \u2192 Final Round",
     "notes": "Niyo neobank for blue-collar workers + Niyo Global (travel card). PM roles in banking, cards, investments, Niyo Money. ESOPs. 5-day week.",
     "careerPage": "https://www.goniyo.com/careers",
     "glassdoorRating": 3.4,
     "source": "Glassdoor / AmbitionBox (2025-2026)"
+  },
+  {
+    "rank": 151,
+    "company": "DoorDash",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "E-Commerce / Delivery",
+    "locations": [
+      "Remote (US)",
+      "San Francisco",
+      "New York",
+      "Seattle"
+    ],
+    "workMode": "Remote",
+    "role": "Product Manager (E4/E5)",
+    "baseSalaryLPA": 140,
+    "baseSalaryRange": "$120K-$170K",
+    "currency": "USD",
+    "totalCompRange": "$200K-$350K",
+    "stocksRSU": true,
+    "levelEquivalent": "E4 (PM) / E5 (Senior PM)",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Marketplace Dynamics",
+      "Experimentation",
+      "SQL",
+      "Growth Strategy",
+      "Cross-functional Leadership",
+      "User Research"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Execution, Leadership)",
+    "notes": "DoorDash E5 Senior PM TC ~$330K. RSUs vest 40/30/20/10. Marketplace-heavy PM work. Growth and logistics PM roles actively hiring. Remote-first.",
+    "careerPage": "https://careers.doordash.com/",
+    "glassdoorRating": 3.8,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 152,
+    "company": "Pinterest",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "Social Media / Visual Discovery",
+    "locations": [
+      "Remote (US)",
+      "San Francisco",
+      "Seattle"
+    ],
+    "workMode": "Remote / Hybrid",
+    "role": "Product Manager (IC14/IC15)",
+    "baseSalaryLPA": 155,
+    "baseSalaryRange": "$130K-$180K",
+    "currency": "USD",
+    "totalCompRange": "$230K-$380K",
+    "stocksRSU": true,
+    "levelEquivalent": "IC14 (PM) / IC15 (Senior PM)",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Consumer Products",
+      "Visual/UX Sense",
+      "Data Analysis",
+      "A/B Testing",
+      "Growth",
+      "SEO/Discovery"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Execution, Cross-functional)",
+    "notes": "Pinterest IC15 Senior PM TC ~$370K. RSUs vest 50/33/17 over 3 years. Visual discovery and shopping PMs in demand. Great WLB reputation.",
+    "careerPage": "https://www.pinterestcareers.com/",
+    "glassdoorRating": 4.0,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 153,
+    "company": "Snap (Snapchat)",
+    "hq": "Santa Monica, USA",
+    "type": "Remote (US)",
+    "category": "Social Media / AR",
+    "locations": [
+      "Remote (US)",
+      "Los Angeles",
+      "San Francisco"
+    ],
+    "workMode": "Remote / Hybrid",
+    "role": "Product Manager (L4/L5)",
+    "baseSalaryLPA": 150,
+    "baseSalaryRange": "$125K-$175K",
+    "currency": "USD",
+    "totalCompRange": "$240K-$400K",
+    "stocksRSU": true,
+    "levelEquivalent": "L4 (PM) / L5 (Senior PM)",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Consumer Mobile",
+      "AR/Camera",
+      "Platform Strategy",
+      "Metrics",
+      "Growth",
+      "User Engagement"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Design, Leadership)",
+    "notes": "Snap L5 Senior PM TC ~$380K. Monthly RSU vesting. AR/Camera PMs are unique to Snap. Creator platform and Spotlight PM roles. Mobile-first product culture.",
+    "careerPage": "https://careers.snap.com/",
+    "glassdoorRating": 3.7,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 154,
+    "company": "Robinhood",
+    "hq": "Menlo Park, USA",
+    "type": "Remote (US)",
+    "category": "Fintech / Trading",
+    "locations": [
+      "Remote (US)",
+      "Menlo Park",
+      "New York"
+    ],
+    "workMode": "Remote / Hybrid",
+    "role": "Product Manager (L4/L5)",
+    "baseSalaryLPA": 150,
+    "baseSalaryRange": "$125K-$175K",
+    "currency": "USD",
+    "totalCompRange": "$230K-$380K",
+    "stocksRSU": true,
+    "levelEquivalent": "L4 (PM) / L5 (Senior PM)",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Fintech",
+      "Trading Products",
+      "Compliance",
+      "Data-Driven Decisions",
+      "Mobile-first",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Trading Domain, Leadership)",
+    "notes": "Robinhood L5 Senior PM TC ~$360K. Mobile-first fintech. PM roles for crypto, options, banking, Gold features. RSUs vest quarterly.",
+    "careerPage": "https://robinhood.com/careers/",
+    "glassdoorRating": 3.6,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 155,
+    "company": "Lyft",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "Transportation / Ride-sharing",
+    "locations": [
+      "Remote (US)",
+      "San Francisco",
+      "New York"
+    ],
+    "workMode": "Remote",
+    "role": "Senior Product Manager (T5/T6)",
+    "baseSalaryLPA": 140,
+    "baseSalaryRange": "$120K-$170K",
+    "currency": "USD",
+    "totalCompRange": "$200K-$330K",
+    "stocksRSU": true,
+    "levelEquivalent": "T5 (PM) / T6 (Senior PM)",
+    "yearsExpNeeded": "4-8",
+    "skillsRequired": [
+      "Marketplace",
+      "Pricing/Incentives",
+      "Maps/Routing",
+      "Driver/Rider Experience",
+      "SQL",
+      "Experimentation"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Execution, Values)",
+    "notes": "Lyft T6 Senior PM TC ~$310K. Fully remote. Marketplace dynamics, pricing, and safety PM roles. RSUs vest quarterly.",
+    "careerPage": "https://www.lyft.com/careers",
+    "glassdoorRating": 3.9,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 156,
+    "company": "Notion",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "SaaS / Productivity",
+    "locations": [
+      "Remote (US)",
+      "San Francisco",
+      "New York"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 155,
+    "baseSalaryRange": "$130K-$180K",
+    "currency": "USD",
+    "totalCompRange": "$240K-$400K",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Product Design",
+      "Developer Tools",
+      "AI/LLM",
+      "Collaboration",
+      "User Research",
+      "Technical Depth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Task \u2192 Onsite (4 rounds: Product Sense, Design, Analytical, Values)",
+    "notes": "Notion Senior PM TC ~$380K+. Pre-IPO equity very valuable. AI integration (Notion AI) is top priority. Small PM team with high ownership. Product-design culture.",
+    "careerPage": "https://www.notion.so/careers",
+    "glassdoorRating": 4.1,
+    "source": "Levels.fyi, Blind (2025-2026)"
+  },
+  {
+    "rank": 157,
+    "company": "Figma",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "SaaS / Design Tools",
+    "locations": [
+      "Remote (US)",
+      "San Francisco",
+      "New York"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 155,
+    "baseSalaryRange": "$130K-$180K",
+    "currency": "USD",
+    "totalCompRange": "$240K-$390K",
+    "stocksRSU": true,
+    "levelEquivalent": "E4 (PM) / E5 (Senior PM)",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Design Tools",
+      "Developer Platforms",
+      "Product Strategy",
+      "AI",
+      "Design Thinking",
+      "Enterprise Sales"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Task \u2192 Onsite (4 rounds: Product Sense, Design, Analytical, Cross-functional)",
+    "notes": "Figma Senior PM TC ~$370K. Pre-IPO equity. PM roles for Dev Mode, FigJam, AI features, Enterprise. Design-first culture. Very competitive hiring bar.",
+    "careerPage": "https://www.figma.com/careers/",
+    "glassdoorRating": 4.3,
+    "source": "Levels.fyi, Blind (2025-2026)"
+  },
+  {
+    "rank": 158,
+    "company": "Zomato",
+    "hq": "Gurugram, India",
+    "type": "Indian Company",
+    "category": "E-Commerce / Food Delivery",
+    "locations": [
+      "Gurugram"
+    ],
+    "workMode": "Hybrid",
+    "role": "Senior Product Manager",
+    "baseSalaryLPA": 35,
+    "baseSalaryRange": "28-42 LPA",
+    "currency": "INR",
+    "totalCompRange": "38-60 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "Senior PM / Lead PM",
+    "yearsExpNeeded": "4-8",
+    "skillsRequired": [
+      "Consumer Products",
+      "Marketplace",
+      "Growth",
+      "SQL",
+      "A/B Testing",
+      "Food/Quick Commerce"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Analytical Round \u2192 HM \u2192 Leadership",
+    "notes": "Zomato is India's #1 food delivery. PM roles for Zomato, Blinkit (quick commerce), Hyperpure. ESOPs on BSE-listed stock. Gurugram HQ. Recently profitable.",
+    "careerPage": "https://www.zomato.com/careers",
+    "glassdoorRating": 3.6,
+    "source": "AmbitionBox, Glassdoor (2025-2026)"
+  },
+  {
+    "rank": 159,
+    "company": "Agoda",
+    "hq": "Bangkok, Thailand",
+    "type": "India Office / APAC",
+    "category": "Travel / E-Commerce",
+    "locations": [
+      "Gurugram",
+      "Bangkok"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 38,
+    "baseSalaryRange": "30-45 LPA",
+    "currency": "INR",
+    "totalCompRange": "40-60 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Travel/Hospitality",
+      "Pricing",
+      "A/B Testing",
+      "SQL",
+      "Growth",
+      "Conversion Optimization"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Task \u2192 Technical (3 rounds: Case, Analytical, HM)",
+    "notes": "Agoda (Booking Holdings) Gurugram office hires PMs. Heavy experimentation culture \u2014 run 1000s of A/B tests. RSUs from Booking Holdings stock. Data-driven PM culture.",
+    "careerPage": "https://careersatagoda.com/",
+    "glassdoorRating": 3.8,
+    "source": "Glassdoor, LeetCode (2025-2026)"
+  },
+  {
+    "rank": 160,
+    "company": "Instacart",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "E-Commerce / Delivery",
+    "locations": [
+      "Remote (US)",
+      "San Francisco"
+    ],
+    "workMode": "Remote",
+    "role": "Senior Product Manager",
+    "baseSalaryLPA": 140,
+    "baseSalaryRange": "$120K-$165K",
+    "currency": "USD",
+    "totalCompRange": "$200K-$330K",
+    "stocksRSU": true,
+    "levelEquivalent": "L4 (PM) / L5 (Senior PM)",
+    "yearsExpNeeded": "4-8",
+    "skillsRequired": [
+      "Marketplace",
+      "Grocery/Retail",
+      "Ads Platform",
+      "Growth",
+      "SQL",
+      "Machine Learning"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Execution, Leadership)",
+    "notes": "Instacart IPO'd 2023. Senior PM TC ~$300K. PM roles for Ads, Shopper, Retailer platforms. RSUs vest quarterly. Remote-first.",
+    "careerPage": "https://instacart.careers/",
+    "glassdoorRating": 3.7,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 161,
+    "company": "Reddit",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "Social Media / Community",
+    "locations": [
+      "Remote (US)",
+      "San Francisco",
+      "New York"
+    ],
+    "workMode": "Remote / Hybrid",
+    "role": "Senior Product Manager",
+    "baseSalaryLPA": 150,
+    "baseSalaryRange": "$125K-$175K",
+    "currency": "USD",
+    "totalCompRange": "$220K-$360K",
+    "stocksRSU": true,
+    "levelEquivalent": "E5 (Senior PM) / E6 (Group PM)",
+    "yearsExpNeeded": "4-8",
+    "skillsRequired": [
+      "Community Products",
+      "Content Moderation",
+      "Growth",
+      "Ads Platform",
+      "Data Analysis",
+      "ML/AI"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Execution, Leadership)",
+    "notes": "Reddit IPO'd 2024. Senior PM TC ~$330K. PM roles for Feed, Communities, Ads, AI features. RSUs vest quarterly. Remote-friendly.",
+    "careerPage": "https://www.redditinc.com/careers",
+    "glassdoorRating": 3.8,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 162,
+    "company": "Discord",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "Social Media / Communications",
+    "locations": [
+      "Remote (US)",
+      "San Francisco"
+    ],
+    "workMode": "Remote / Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 150,
+    "baseSalaryRange": "$125K-$175K",
+    "currency": "USD",
+    "totalCompRange": "$230K-$370K",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Social/Community",
+      "Real-time Communication",
+      "Gaming",
+      "Trust & Safety",
+      "Growth",
+      "Monetization"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Design, Culture)",
+    "notes": "Discord has 200M+ MAU. Senior PM TC ~$350K. Pre-IPO equity. PM roles for voice/video, communities, monetization (Nitro), and trust & safety.",
+    "careerPage": "https://discord.com/careers",
+    "glassdoorRating": 4.0,
+    "source": "Levels.fyi, Blind (2025-2026)"
+  },
+  {
+    "rank": 163,
+    "company": "Palantir Technologies",
+    "hq": "Denver, USA",
+    "type": "Remote (US/UK)",
+    "category": "Enterprise / Defense Tech",
+    "locations": [
+      "Remote (US)",
+      "Palo Alto",
+      "New York",
+      "Denver",
+      "London"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 145,
+    "baseSalaryRange": "$120K-$170K",
+    "currency": "USD",
+    "totalCompRange": "$210K-$360K",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Enterprise Products",
+      "Data Platforms",
+      "Government/Defense",
+      "Technical PM",
+      "SQL",
+      "Product Strategy"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Karat Interview \u2192 Onsite (3-4 rounds: Product, Analytical, Decomposition, Values)",
+    "notes": "Palantir PM TC ~$330K at Senior. RPMs (Revenue Product Managers) work directly with clients. Highly technical PM role. RSUs with 4-year vesting. Very selective hiring.",
+    "careerPage": "https://www.palantir.com/careers/",
+    "glassdoorRating": 4.0,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 164,
+    "company": "JP Morgan Chase",
+    "hq": "New York, USA",
+    "type": "India Office",
+    "category": "Finance / Banking",
+    "locations": [
+      "Hyderabad",
+      "Bangalore",
+      "Mumbai"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager (VP)",
+    "baseSalaryLPA": 40,
+    "baseSalaryRange": "32-50 LPA",
+    "currency": "INR",
+    "totalCompRange": "42-70 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "VP / Associate",
+    "yearsExpNeeded": "4-10",
+    "skillsRequired": [
+      "Banking Products",
+      "Payments",
+      "Compliance/Regulation",
+      "Data Analysis",
+      "Agile",
+      "Stakeholder Management"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Technical (2 rounds) \u2192 HM \u2192 HR",
+    "notes": "JPMC India has PM roles for consumer banking, payments, and digital platforms. VP base ~\u20b940L. RSUs + bonus. Hyderabad is the largest India tech hub. 5-day work week mandate.",
+    "careerPage": "https://careers.jpmorgan.com/",
+    "glassdoorRating": 3.9,
+    "source": "Levels.fyi, LeetCode (Apr 2026)"
+  },
+  {
+    "rank": 165,
+    "company": "Roblox",
+    "hq": "San Mateo, USA",
+    "type": "Remote (US)",
+    "category": "Gaming / Metaverse",
+    "locations": [
+      "Remote (US)",
+      "San Mateo"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 155,
+    "baseSalaryRange": "$130K-$180K",
+    "currency": "USD",
+    "totalCompRange": "$240K-$400K",
+    "stocksRSU": true,
+    "levelEquivalent": "IC3 / IC4 (Senior PM)",
+    "yearsExpNeeded": "4-8",
+    "skillsRequired": [
+      "Gaming",
+      "Creator Economy",
+      "Platform Strategy",
+      "Safety/Trust",
+      "Growth",
+      "Monetization"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Strategy, Cross-functional)",
+    "notes": "Roblox IC4 Senior PM TC ~$380K. 70M+ DAU. PM roles for Creator Tools, Discovery, Monetization, Safety. RSUs vest quarterly. NYSE listed.",
+    "careerPage": "https://careers.roblox.com/",
+    "glassdoorRating": 3.8,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 166,
+    "company": "Zillow",
+    "hq": "Seattle, USA",
+    "type": "Remote (US)",
+    "category": "Real Estate / Marketplace",
+    "locations": [
+      "Remote (US)",
+      "Seattle",
+      "San Francisco"
+    ],
+    "workMode": "Remote",
+    "role": "Senior Product Manager",
+    "baseSalaryLPA": 140,
+    "baseSalaryRange": "$120K-$165K",
+    "currency": "USD",
+    "totalCompRange": "$200K-$330K",
+    "stocksRSU": true,
+    "levelEquivalent": "L5 (Senior PM) / L6 (Group PM)",
+    "yearsExpNeeded": "4-8",
+    "skillsRequired": [
+      "Marketplace",
+      "Real Estate",
+      "Search/Discovery",
+      "ML/Recommendations",
+      "Growth",
+      "Mobile"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Execution, Leadership)",
+    "notes": "Zillow Senior PM TC ~$310K. PM roles for Search, Zestimate, Rentals, Agent Tools. Remote-first. RSUs vest quarterly.",
+    "careerPage": "https://www.zillow.com/careers/",
+    "glassdoorRating": 3.9,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 167,
+    "company": "Rapido",
+    "hq": "Bangalore, India",
+    "type": "Indian Startup",
+    "category": "Transportation / Ride-sharing",
+    "locations": [
+      "Bangalore"
+    ],
+    "workMode": "Hybrid",
+    "role": "Senior Product Manager",
+    "baseSalaryLPA": 32,
+    "baseSalaryRange": "25-40 LPA",
+    "currency": "INR",
+    "totalCompRange": "32-55 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "Senior PM / Lead PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Marketplace",
+      "Maps/Routing",
+      "Driver Supply",
+      "Growth",
+      "SQL",
+      "Pricing"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Analytical \u2192 HM",
+    "notes": "Rapido is India's largest bike taxi platform, valued at $5B+. PM roles for Rider, Captain, Auto, Cab verticals. ESOPs. Maps and marketplace heavy PM work.",
+    "careerPage": "https://www.rapido.bike/careers",
+    "glassdoorRating": 3.5,
+    "source": "AmbitionBox, Glassdoor (2025-2026)"
+  },
+  {
+    "rank": 168,
+    "company": "Lenskart",
+    "hq": "Delhi NCR, India",
+    "type": "Indian Startup",
+    "category": "E-Commerce / Eyewear",
+    "locations": [
+      "Bangalore",
+      "Delhi NCR"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 30,
+    "baseSalaryRange": "24-38 LPA",
+    "currency": "INR",
+    "totalCompRange": "30-50 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-6",
+    "skillsRequired": [
+      "E-Commerce",
+      "Omnichannel",
+      "AR/Tech Products",
+      "Supply Chain",
+      "User Research",
+      "Growth"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Task \u2192 Case Round \u2192 HM",
+    "notes": "Lenskart valued at $5B. PM roles for app, AR virtual try-on, supply chain, retail tech. ESOPs available. Interesting blend of tech + retail product management.",
+    "careerPage": "https://www.lenskart.com/careers",
+    "glassdoorRating": 3.5,
+    "source": "AmbitionBox, Glassdoor (2025-2026)"
+  },
+  {
+    "rank": 169,
+    "company": "Tekion",
+    "hq": "Pleasanton, USA",
+    "type": "India Office",
+    "category": "SaaS / Automotive",
+    "locations": [
+      "Bangalore",
+      "Chennai"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 35,
+    "baseSalaryRange": "28-42 LPA",
+    "currency": "INR",
+    "totalCompRange": "38-60 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Automotive/Dealership",
+      "SaaS",
+      "Enterprise Products",
+      "CRM",
+      "Data Analysis",
+      "Technical PM"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Technical \u2192 HM",
+    "notes": "Tekion ($3.5B valuation) builds cloud-native automotive retail platform. Pre-IPO ESOPs. Founded by ex-Tesla CIO. India PM roles for DMS, CRM, Digital Retail.",
+    "careerPage": "https://www.tekion.com/careers",
+    "glassdoorRating": 3.3,
+    "source": "AmbitionBox, Glassdoor (2025-2026)"
+  },
+  {
+    "rank": 170,
+    "company": "Tinder (Match Group)",
+    "hq": "West Hollywood, USA",
+    "type": "Remote (US)",
+    "category": "Social / Dating",
+    "locations": [
+      "Remote (US)",
+      "Los Angeles",
+      "San Francisco",
+      "Seoul"
+    ],
+    "workMode": "Hybrid / Remote",
+    "role": "Product Manager",
+    "baseSalaryLPA": 140,
+    "baseSalaryRange": "$120K-$165K",
+    "currency": "USD",
+    "totalCompRange": "$200K-$320K",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Consumer Social",
+      "Monetization",
+      "Growth",
+      "Trust & Safety",
+      "A/B Testing",
+      "Mobile-first"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Monetization, Leadership)",
+    "notes": "Tinder Senior PM TC ~$290K. PM roles for matching, monetization (subscriptions/IAP), trust & safety, growth. RSUs from Match Group (MTCH).",
+    "careerPage": "https://www.lifeattinder.com/",
+    "glassdoorRating": 3.7,
+    "source": "Levels.fyi, Glassdoor (2025-2026)"
+  },
+  {
+    "rank": 171,
+    "company": "Datadog",
+    "hq": "New York, USA",
+    "type": "Remote (US)",
+    "category": "SaaS / DevOps",
+    "locations": [
+      "Remote (US)",
+      "New York",
+      "Boston",
+      "Paris"
+    ],
+    "workMode": "Hybrid / Remote",
+    "role": "Product Manager",
+    "baseSalaryLPA": 145,
+    "baseSalaryRange": "$125K-$170K",
+    "currency": "USD",
+    "totalCompRange": "$210K-$350K",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Observability",
+      "DevOps/SRE",
+      "Technical PM",
+      "Platform Strategy",
+      "Enterprise",
+      "ML/AI"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Technical, Analytical, Leadership)",
+    "notes": "Datadog Senior PM TC ~$320K. Highly technical PM roles for APM, Infrastructure, Security, Logs products. RSUs vest quarterly. NASDAQ listed.",
+    "careerPage": "https://careers.datadoghq.com/",
+    "glassdoorRating": 4.1,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 172,
+    "company": "Block (Square)",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "Fintech / Payments",
+    "locations": [
+      "Remote (US)",
+      "San Francisco",
+      "New York"
+    ],
+    "workMode": "Remote",
+    "role": "Product Manager - Cash App / Square",
+    "baseSalaryLPA": 145,
+    "baseSalaryRange": "$125K-$170K",
+    "currency": "USD",
+    "totalCompRange": "$210K-$350K",
+    "stocksRSU": true,
+    "levelEquivalent": "L5 (PM) / L6 (Senior PM)",
+    "yearsExpNeeded": "3-8",
+    "skillsRequired": [
+      "Payments",
+      "Consumer Fintech",
+      "Banking/Lending",
+      "Growth",
+      "Risk/Compliance",
+      "Mobile-first"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Execution, Leadership)",
+    "notes": "Block L6 Senior PM TC ~$320K. PM roles across Cash App (P2P, Banking, Bitcoin) and Square (Payments, Commerce). Remote-first. RSUs vest quarterly.",
+    "careerPage": "https://block.xyz/careers",
+    "glassdoorRating": 3.9,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 173,
+    "company": "Cloudflare",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US/UK)",
+    "category": "Cloud / Security",
+    "locations": [
+      "Remote (US)",
+      "San Francisco",
+      "Austin",
+      "London"
+    ],
+    "workMode": "Hybrid / Remote",
+    "role": "Product Manager",
+    "baseSalaryLPA": 140,
+    "baseSalaryRange": "$120K-$165K",
+    "currency": "USD",
+    "totalCompRange": "$190K-$310K",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Cloud/Infrastructure",
+      "Security",
+      "Developer Tools",
+      "Network/CDN",
+      "Technical PM",
+      "Enterprise"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Technical, Analytical, Leadership)",
+    "notes": "Cloudflare Senior PM TC ~$280K. PM roles for Workers, R2, Zero Trust, Bot Management. Very technical PM culture. RSUs vest quarterly. NYSE listed.",
+    "careerPage": "https://www.cloudflare.com/careers/",
+    "glassdoorRating": 4.0,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 174,
+    "company": "Wiz",
+    "hq": "New York, USA",
+    "type": "Remote (US/IL)",
+    "category": "Cloud Security",
+    "locations": [
+      "Remote (US)",
+      "New York",
+      "Tel Aviv"
+    ],
+    "workMode": "Remote / Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 150,
+    "baseSalaryRange": "$125K-$175K",
+    "currency": "USD",
+    "totalCompRange": "$240K-$400K",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Cloud Security",
+      "CSPM/CWPP",
+      "Enterprise",
+      "Technical PM",
+      "Platform Strategy",
+      "Go-to-Market"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Technical, Security Domain, Values)",
+    "notes": "Wiz ($12B+ valuation, acquired by Alphabet). Senior PM TC can be $380K+. Pre-IPO equity. PM roles for cloud security posture, vulnerability management. Fastest-growing security company.",
+    "careerPage": "https://www.wiz.io/careers",
+    "glassdoorRating": 4.5,
+    "source": "Levels.fyi, Blind (2025-2026)"
+  },
+  {
+    "rank": 175,
+    "company": "Ola Electric",
+    "hq": "Bangalore, India",
+    "type": "Indian Startup",
+    "category": "EV / Mobility",
+    "locations": [
+      "Bangalore"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 30,
+    "baseSalaryRange": "24-38 LPA",
+    "currency": "INR",
+    "totalCompRange": "30-50 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "EV/Mobility",
+      "IoT/Connected Devices",
+      "Hardware+Software",
+      "Growth",
+      "User Research",
+      "Data Analysis"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Analytical \u2192 HM \u2192 Leadership",
+    "notes": "Ola Electric recently IPO'd. PM roles for EV app, charging network, vehicle software. ESOPs/RSUs. Interesting hardware+software PM intersection. Bangalore HQ.",
+    "careerPage": "https://olaelectric.com/careers",
+    "glassdoorRating": 3.3,
+    "source": "AmbitionBox, Glassdoor (2025-2026)"
+  },
+  {
+    "rank": 176,
+    "company": "Nykaa",
+    "hq": "Mumbai, India",
+    "type": "Indian Company",
+    "category": "E-Commerce / Beauty",
+    "locations": [
+      "Mumbai"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 28,
+    "baseSalaryRange": "22-35 LPA",
+    "currency": "INR",
+    "totalCompRange": "28-45 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "E-Commerce",
+      "Beauty/Fashion",
+      "Growth",
+      "Personalization",
+      "Search/Discovery",
+      "Content Commerce"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Analytical \u2192 HM",
+    "notes": "Nykaa is NSE/BSE listed. PM roles for app, beauty commerce, fashion (Nykaa Fashion), content. ESOPs vest on listed stock. Mumbai HQ.",
+    "careerPage": "https://www.nykaa.com/careers",
+    "glassdoorRating": 3.4,
+    "source": "AmbitionBox, Glassdoor (2025-2026)"
+  },
+  {
+    "rank": 177,
+    "company": "Juspay",
+    "hq": "Bangalore, India",
+    "type": "Indian Startup",
+    "category": "Fintech / Payments",
+    "locations": [
+      "Bangalore"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 28,
+    "baseSalaryRange": "22-35 LPA",
+    "currency": "INR",
+    "totalCompRange": "28-45 LPA",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-6",
+    "skillsRequired": [
+      "Payments/UPI",
+      "SDK Products",
+      "Developer Platform",
+      "Technical PM",
+      "Merchant Solutions",
+      "Data Analysis"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Product Case \u2192 Technical Round \u2192 HM",
+    "notes": "Juspay powers payments for Amazon, Google Pay, NPCI. PM roles for payment SDKs, merchant dashboard, UPI Switch. ESOPs. Unique B2B payments PM domain.",
+    "careerPage": "https://juspay.in/careers",
+    "glassdoorRating": 3.5,
+    "source": "AmbitionBox, Glassdoor (2025-2026)"
+  },
+  {
+    "rank": 178,
+    "company": "Dropbox",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US/Global)",
+    "category": "SaaS / Productivity",
+    "locations": [
+      "Remote (US)",
+      "Remote (Global)",
+      "San Francisco"
+    ],
+    "workMode": "Remote",
+    "role": "Product Manager",
+    "baseSalaryLPA": 145,
+    "baseSalaryRange": "$120K-$170K",
+    "currency": "USD",
+    "totalCompRange": "$200K-$330K",
+    "stocksRSU": true,
+    "levelEquivalent": "IC3 (PM) / IC4 (Senior PM)",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Productivity/Collaboration",
+      "AI/ML",
+      "File Sync",
+      "Enterprise",
+      "Growth",
+      "Platform Strategy"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Analytical, Execution, Culture)",
+    "notes": "Dropbox IC4 Senior PM TC ~$310K. Virtual-first. PM roles for Dash (AI search), Paper, file sync, enterprise. RSUs vest quarterly. NASDAQ listed.",
+    "careerPage": "https://www.dropbox.com/jobs",
+    "glassdoorRating": 4.1,
+    "source": "Levels.fyi (Apr 2026)"
+  },
+  {
+    "rank": 179,
+    "company": "Twitter / X",
+    "hq": "San Francisco, USA",
+    "type": "Remote (US)",
+    "category": "Social Media",
+    "locations": [
+      "Remote (US)",
+      "San Francisco"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager",
+    "baseSalaryLPA": 140,
+    "baseSalaryRange": "$120K-$165K",
+    "currency": "USD",
+    "totalCompRange": "$200K-$320K",
+    "stocksRSU": false,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Social/Feed",
+      "Growth",
+      "Monetization",
+      "Trust & Safety",
+      "Ads Platform",
+      "Real-time Products"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (3-4 rounds: Product Sense, Analytical, Execution, Leadership)",
+    "notes": "X (formerly Twitter) PM roles rebuilt post-acquisition. Cash-heavy comp without public RSUs. PM roles for Grok AI, Premium, Ads, Creator monetization. Lean, high-impact team.",
+    "careerPage": "https://x.com/careers",
+    "glassdoorRating": 3.3,
+    "source": "Glassdoor, Blind (2025-2026)"
+  },
+  {
+    "rank": 180,
+    "company": "Rivian",
+    "hq": "Irvine, USA",
+    "type": "Remote (US)",
+    "category": "EV / Automotive",
+    "locations": [
+      "Remote (US)",
+      "Irvine",
+      "Palo Alto"
+    ],
+    "workMode": "Hybrid",
+    "role": "Product Manager - Digital Products",
+    "baseSalaryLPA": 140,
+    "baseSalaryRange": "$120K-$165K",
+    "currency": "USD",
+    "totalCompRange": "$200K-$320K",
+    "stocksRSU": true,
+    "levelEquivalent": "PM / Senior PM",
+    "yearsExpNeeded": "3-7",
+    "skillsRequired": [
+      "Connected Vehicle",
+      "IoT",
+      "Mobile/App",
+      "EV Charging",
+      "Maps/Navigation",
+      "Hardware+Software"
+    ],
+    "hiringProcess": "Recruiter Screen \u2192 Phone Screen \u2192 Onsite (4 rounds: Product Sense, Technical, Domain, Behavioral)",
+    "notes": "Rivian PM roles for vehicle companion app, charging network, fleet management. Senior PM TC ~$300K. RSUs from RIVN stock. Interesting hardware+software PM intersection.",
+    "careerPage": "https://rivian.com/careers",
+    "glassdoorRating": 3.7,
+    "source": "Levels.fyi, Glassdoor (2025-2026)"
   }
 ];
